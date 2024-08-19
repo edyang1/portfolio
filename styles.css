@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e2121; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+nav {
+    background-color: #1e2121; /* Match background color */
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em; /* Slightly larger text */
+}
+
+header {
+    background-color: #1e2121; /* Match background color */
+    padding: 4em 2em; /* More padding for emphasis */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0.5em 0;
+    font-size: 2.5em; /* Larger header text */
+    font-style: italic; /* Italicized font */
+}
+
+header p {
+    font-size: 1.5em; /* Larger paragraph text */
+    color: #d4d4d4; /* Slightly lighter text for contrast */
+}
+
+.section {
+    padding: 2em;
+    text-align: center;
+}
+
+.projects, .skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #2e2e2e; /* Darker card background */
+    border: 1px solid #3d3d3d; /* Darker border */
+    padding: 1.5em; /* More padding */
+    margin: 1.5em;
+    width: 30%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5); /* Deeper shadow for more contrast */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.card h3 {
+    margin: 0.5em 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #d4d4d4; /* Slightly lighter text for contrast */
+}
+
+footer {
+    background-color: #1e2121; /* Match background color */
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.1em;
+}
