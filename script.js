@@ -1,0 +1,74 @@
+// Function to show or hide the Back to Top button
+window.onscroll = function() {
+    var backToTopButton = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.classList.add("visible");
+    } else {
+        backToTopButton.classList.remove("visible");
+    }
+};
+
+// Smooth scrolling for the Back to Top button
+document.querySelector('#back-to-top').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// script.js
+
+document.addEventListener("DOMContentLoaded", function() {
+    const titles = [
+        "an entrepreneur.",
+        "a banana bandit.",
+        "a student.",
+        "a coder.",
+        "a designer.",
+        "a content creator.",
+        "a gamer.",
+        "a storyteller.",
+        "a dreamer.",
+        "a thinker.",
+        "a doer.",
+        "a problem solver."
+    ];
+    
+    let titleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typingSpeed = 100;
+    const deletingSpeed = 50;
+    const delayBetweenTitles = 1500;
+    const dynamicText = document.getElementById("dynamic-text");
+
+    function type() {
+        const currentTitle = titles[titleIndex];
+        if (isDeleting) {
+            if (charIndex > 0) {
+                charIndex--;
+                dynamicText.textContent = currentTitle.substring(0, charIndex);
+                setTimeout(type, deletingSpeed);
+            } else {
+                isDeleting = false;
+                titleIndex = (titleIndex + 1) % titles.length;
+                setTimeout(type, 500); // Pause before typing next title
+            }
+        } else {
+            if (charIndex < currentTitle.length) {
+                dynamicText.textContent = currentTitle.substring(0, charIndex + 1);
+                charIndex++;
+                setTimeout(type, typingSpeed);
+            } else {
+                setTimeout(() => {
+                    isDeleting = true;
+                    setTimeout(type, deletingSpeed);
+                }, delayBetweenTitles);
+            }
+        }
+    }
+
+    // Start the typing effect
+    type();
+});
