@@ -21,18 +21,23 @@ document.querySelector('#back-to-top').addEventListener('click', function(e) {
 
 document.addEventListener("DOMContentLoaded", function() {
     const titles = [
+        "a doer.",
+        "a maker.",
         "an entrepreneur.",
         "a banana bandit.",
-        "a student.",
-        "a coder.",
-        "a designer.",
+        "a podcaster.",
+        "a youtuber.",
+        "a streamer.",
         "a content creator.",
         "a gamer.",
-        "a storyteller.",
-        "a dreamer.",
-        "a thinker.",
-        "a doer.",
-        "a problem solver."
+        "a designer.",
+        "a programmer.",
+        "a weightlifter.",
+        "a guitarist.",
+        "a musician.",
+        "a student.",
+        "a problem solver.",
+        "a dreamer."
     ];
     
     let titleIndex = 0;
