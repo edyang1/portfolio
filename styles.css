@@ -46,37 +46,62 @@ header p {
 
 .projects, .skills {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
-.card {
-    background-color: #2e2e2e; /* Darker card background */
-    border: 1px solid #3d3d3d; /* Darker border */
-    padding: 1.5em; /* More padding */
-    margin: 1.5em;
-    width: 30%;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5); /* Deeper shadow for more contrast */
-    border-radius: 8px; /* Rounded corners */
+.project-card, .skill-card {
+    background-color: #2e2e2e;
+    border: 1px solid #3d3d3d;
+    padding: 1.5em;
+    margin: 1.5em 0;
+    width: 90%; /* Takes up most of the screen horizontally */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth shrinking and color change */
+    position: relative;
+}
+
+.project-card:hover, .skill-card:hover {
+    transform: scale(0.98); /* Slightly reduce the shrink effect */
 }
 
 .card img {
-    max-width: 100%;
+    max-width: 150px; /* Set a fixed width for the image */
     height: auto;
-    border-radius: 5px; /* Rounded corners for images */
+    border-radius: 5px;
+    margin-right: 1.5em; /* Space between image and text */
 }
 
-.card h3 {
+.card-content {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.card-content h3 {
     margin: 0.5em 0;
-    font-size: 1.5em;
+    font-size: 1.5em; /* Adjust text size */
 }
 
-.card p {
-    color: #d4d4d4; /* Slightly lighter text for contrast */
+.card-content p {
+    color: #d4d4d4;
+}
+
+.project-card .year {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffdd57;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 footer {
-    background-color: #1e2121; /* Match background color */
+    background-color: #1e2121;
     color: white;
     text-align: center;
     padding: 1.5em;
