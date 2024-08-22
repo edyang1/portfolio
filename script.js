@@ -28,7 +28,6 @@ document.querySelector('#back-to-top').addEventListener('click', function(e) {
     });
 });
 
-
 document.addEventListener("DOMContentLoaded", function() {
     const titles = [
         "a doer.",

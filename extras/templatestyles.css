@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e2121; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+.content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.back-button a {
+    color: #888;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.back-button a:hover {
+    color: #ccc;
+}
+
+.article h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.article {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.toc {
+    flex: 1;
+    position: sticky;
+    top: 20px; /* Keeps the TOC 20px from the top of the viewport */
+    align-self: flex-start; /* Ensures the TOC aligns with the top of the container */
+    max-height: calc(100vh - 40px); /* Limits TOC height to viewport height minus margin */
+    overflow-y: auto; /* Adds scrolling if TOC exceeds viewport height */
+}
+
+/* Example styles for the TOC */
+.toc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.toc ul li {
+    margin-bottom: 10px;
+}
+
+.toc ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.toc ul li a:hover {
+    color: cyan;
+}
+
+.toc ul li a.active {
+    color: blue;
+}
+
+footer {
+    background-color: #1e2121;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.1em;
+}
+
+/* Back to Top Button Styles */
+#back-to-top {
+    position: fixed;
+    bottom: 20px; /* Position the button near the bottom of the screen */
+    left: 50%; /* Align the left edge of the button with the center of the screen */
+    transform: translateX(-50%); /* Offset by 50% of its own width to truly center it */
+    background-color: #2e2e2e; /* Initial background is grey */
+    color: cyan; /* Initial text color is cyan */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    z-index: 1000;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Prevent clicking when hidden */
+}
+
+/* Hover effect for Back to Top Button */
+#back-to-top:hover {
+    background-color: cyan; /* Change to cyan background on hover */
+    color: white; /* Change text to white on hover */
+}
+
+/* Show the button when it's visible */
+#back-to-top.visible {
+    opacity: 1;
+    pointer-events: auto; /* Enable clicking */
+}
