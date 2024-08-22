@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e2121; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+/* Wrapper Styling */
+.video-wrapper, .stream-wrapper {
+    position: relative;
+    max-width: 720px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+/* Video Styling */
+#youtube-video, #twitch-stream {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    transform: scale(0.95);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+/* Hover Effect */
+.video-wrapper:hover #youtube-video,
+.stream-wrapper:hover #twitch-stream {
+    transform: scale(1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Glowing Border */
+.video-wrapper::before, .stream-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5, #ffb86c);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
+    border-radius: 20px;
+    filter: blur(8px);
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Animated Glow */
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px #ff6ec4, 0 0 10px #7873f5, 0 0 20px #ffb86c; }
+    50% { box-shadow: 0 0 20px #ff6ec4, 0 0 30px #7873f5, 0 0 40px #ffb86c; }
+    100% { box-shadow: 0 0 5px #ff6ec4, 0 0 10px #7873f5, 0 0 20px #ffb86c; }
+}
+
+.video-wrapper:hover::before, .stream-wrapper:hover::before {
+    animation: glowing 1.5s ease-in-out infinite alternate;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-wrapper, .stream-wrapper {
+        max-width: 100%;
+    }
+}
