@@ -3,7 +3,7 @@
 // *************
 
 document.addEventListener("DOMContentLoaded", function() {
-    const titles = [
+    let titles = [
         "a doer.",
         "a maker.",
         "an entrepreneur.",
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "a problem solver.",
         "a dreamer."
     ];
-    
+
     let titleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -30,6 +30,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const deletingSpeed = 50;
     const delayBetweenTitles = 1500;
     const dynamicText = document.getElementById("dynamic-text");
+
+    // Function to shuffle the titles array
+    function shuffleTitles() {
+        for (let i = titles.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [titles[i], titles[j]] = [titles[j], titles[i]];
+        }
+    }
+
+    // Initial shuffle
+    shuffleTitles();
 
     function type() {
         const currentTitle = titles[titleIndex];
@@ -40,7 +51,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(type, deletingSpeed);
             } else {
                 isDeleting = false;
-                titleIndex = (titleIndex + 1) % titles.length;
+                titleIndex++;
+                if (titleIndex >= titles.length) {
+                    titleIndex = 0;
+                    shuffleTitles(); // Shuffle again after going through all titles
+                }
                 setTimeout(type, 500); // Pause before typing next title
             }
         } else {
