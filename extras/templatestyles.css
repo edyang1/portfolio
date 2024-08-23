@@ -1,10 +1,10 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-body);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1e2121; /* Dark background */
-    color: #ffffff; /* White text */
+    background-color: var(--background-color); /* Light background */
+    color: var(--primary-color); /* Dark text */
 }
 
 .content {
@@ -16,7 +16,7 @@ body {
 }
 
 .back-button a {
-    color: #888;
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 18px;
     padding: 5px 10px;
@@ -24,17 +24,18 @@ body {
 }
 
 .back-button a:hover {
-    color: #ccc;
+    color: var(--highlight-color);
 }
 
 .article h1 {
+    font-family: var(--font-heading);
     font-size: 36px;
     margin-bottom: 5px;
 }
 
 .article-meta {
     font-size: 14px;
-    color: #888;
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
@@ -63,23 +64,23 @@ body {
 }
 
 .toc ul li a {
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s;
 }
 
 .toc ul li a:hover {
-    color: cyan;
+    color: var(--highlight-color);
 }
 
 .toc ul li a.active {
-    color: blue;
+    color: var(--secondary-color);
 }
 
 footer {
-    background-color: #1e2121;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--background-color);
     text-align: center;
     padding: 1.5em;
     font-size: 1.1em;

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #272727;  /* Midnight Blue */
-    --secondary-color: #3e48ff; /* Bright Cyan */
-    --neutral-color: #90e0f3; /* Cool Gray */
-    --highlight-color: #33c9ff; /* Electric Yellow */
-    --background-color: #f4f1de; /* Off-White */
-    --second-highlight-color: #b42d43; /* Crimson Red */
+    --primary-color: #272727;
+    --secondary-color: #3e48ff;
+    --neutral-color: #90e0f3;
+    --highlight-color: #33c9ff;
+    --background-color: #f4f1de;
+    --second-highlight-color: #b42d43;
 
     --font-body: 'Lato', sans-serif;
     --font-header: 'Montserrat', sans-serif;

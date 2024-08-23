@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-body);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1e2121; /* Dark background */
-    color: #ffffff; /* White text */
+    background-color: var(--background-color); /* Off-White background */
+    color: var(--primary-color); /* Dark text color */
 }
 
 .content, .header-content, .highlights, .projects {
@@ -17,20 +17,20 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #1e2121;
+    background-color: var(--primary-color);
     padding: 20px;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid var(--neutral-color);
     text-align: left;
 }
 
 header h1 {
     font-size: 3em;
     margin: 10px 0;
-    color: #ffffff;
+    color: var(--background-color); /* Off-White text */
 }
 
 .back-button a {
-    color: #888;
+    color: var(--neutral-color);
     text-decoration: none;
     font-size: 18px;
     padding: 5px 10px;
@@ -38,7 +38,7 @@ header h1 {
 }
 
 .back-button a:hover {
-    color: #ccc;
+    color: var(--highlight-color);
 }
 
 /* Section Titles (Highlights and All Projects) */
@@ -52,7 +52,7 @@ header h1 {
 .card-item {
     display: flex;
     align-items: center;
-    background-color: #2e2e2e;
+    background-color: var(--primary-color); /* Dark background for card */
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -63,7 +63,7 @@ header h1 {
 .card-item img {
     width: 40%;
     height: auto;
-    border-right: 2px solid #444;
+    border-right: 2px solid var(--neutral-color);
 }
 
 .card-details {
@@ -75,17 +75,19 @@ header h1 {
 .card-details h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
+    color: var(--background-color); /* Off-White text */
 }
 
 .card-details p {
     font-size: 1.1em;
     line-height: 1.5;
     margin: 0;
+    color: var(--neutral-color); /* Cool Gray text */
 }
 
 .card-details .year-duration {
     font-size: 0.9em;
-    color: #888;
+    color: var(--neutral-color);
     margin-top: 10px;
     text-align: right;
 }
@@ -98,7 +100,7 @@ header h1 {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2e2e2e;
-    color: #888;
-    border-top: 2px solid #444;
+    background-color: var(--primary-color); /* Dark background */
+    color: var(--neutral-color); /* Cool Gray text */
+    border-top: 2px solid var(--neutral-color);
 }
