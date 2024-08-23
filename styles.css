@@ -1,16 +1,16 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif; /* Lato as the body font */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1e2121; /* Dark background */
-    color: #ffffff; /* White text */
+    background-color: #ECF0F1; /* Off-White background */
+    color: #2C3E50; /* Midnight Blue text */
 }
 
 #cursor {
     display: inline-block;
     width: 10px;
-    background-color: black;
+    background-color: #E74C3C; /* Crimson Red for the cursor */
     animation: blink 0.7s steps(1) infinite;
     margin-left: 2px;
 }
@@ -22,35 +22,45 @@ body {
 }
 
 header {
-    background-color: #1e2121; /* Match background color */
-    padding: 4em 2em; /* More padding for emphasis */
+    background-color: #2C3E50; /* Midnight Blue background for header */
+    padding: 4em 2em;
     text-align: center;
 }
 
 header h1 {
     margin: 0.5em 0;
-    font-size: 2.5em; /* Larger header text */
-    font-style: italic; /* Italicized font */
+    font-size: 2.5em;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif; /* Montserrat for header text */
+    color: #F1C40F; /* Electric Yellow for header text */
 }
 
 header p {
-    font-size: 1.5em; /* Larger paragraph text */
-    color: #d4d4d4; /* Slightly lighter text for contrast */
+    font-size: 1.5em;
+    color: #95A5A6; /* Cool Gray for header paragraph text */
+}
+
+h2 {
+    font-family: 'Silkscreen', sans-serif; /* Silkscreen for h2 headings */
+    font-weight: 400;
+    color: #E74C3C; /* Crimson Red for h2 headings */
 }
 
 .section {
     padding: 2em;
     text-align: center;
+    background-color: #ECF0F1; /* Off-White background */
+    color: #2C3E50; /* Midnight Blue text */
 }
 
 .section a {
-    color: inherit; /* Inherit the color of the parent element */
-    text-decoration: none; /* Remove the underline */
+    color: #1ABC9C; /* Bright Cyan for links */
+    text-decoration: none;
 }
 
 .section a:hover {
-    color: #ffdd57; /* Add a hover effect if desired */
-    text-decoration: none; /* Ensure underline stays removed on hover */
+    color: #F1C40F; /* Electric Yellow for hover effect */
+    text-decoration: none;
 }
 
 .projects, .skills {
@@ -60,30 +70,31 @@ header p {
 }
 
 .project-card, .skill-card {
-    background-color: #2e2e2e;
-    border: 1px solid #3d3d3d;
+    background-color: #2C3E50; /* Midnight Blue background for cards */
+    border: 1px solid #95A5A6; /* Cool Gray border */
     padding: 1.5em;
     margin: 1.5em 0;
-    width: 90%; /* Takes up most of the screen horizontally */
+    width: 90%;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     text-decoration: none;
-    color: inherit;
+    color: #ECF0F1; /* Off-White text */
     display: flex;
     align-items: center;
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth shrinking and color change */
+    transition: transform 0.3s ease, color 0.3s ease;
     position: relative;
 }
 
 .project-card:hover, .skill-card:hover {
-    transform: scale(0.98); /* Slightly reduce the shrink effect */
+    transform: scale(0.98);
+    color: #F1C40F; /* Electric Yellow for hover effect */
 }
 
 .card img {
-    max-width: 150px; /* Set a fixed width for the image */
+    max-width: 150px;
     height: auto;
     border-radius: 5px;
-    margin-right: 1.5em; /* Space between image and text */
+    margin-right: 1.5em;
 }
 
 .card-content {
@@ -93,26 +104,30 @@ header p {
 
 .card-content h3 {
     margin: 0.5em 0;
-    font-size: 1.5em; /* Adjust text size */
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif; /* Montserrat for card titles */
+    color: #F1C40F; /* Electric Yellow for card titles */
 }
 
 .card-content p {
-    color: #d4d4d4;
+    color: #95A5A6; /* Cool Gray for card text */
+    font-family: 'Lato', sans-serif; /* Lato for card paragraph text */
 }
 
 .project-card .year {
     font-size: 1.2em;
     font-weight: bold;
-    color: #ffdd57;
+    color: #E74C3C; /* Crimson Red for year text */
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
 footer {
-    background-color: #1e2121;
-    color: white;
+    background-color: #2C3E50; /* Midnight Blue background for footer */
+    color: #ECF0F1; /* Off-White text */
     text-align: center;
     padding: 1.5em;
     font-size: 1.1em;
+    font-family: 'Lato', sans-serif; /* Lato for footer text */
 }
