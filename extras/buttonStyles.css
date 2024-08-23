@@ -4,8 +4,8 @@
     bottom: 20px; /* Position the button near the bottom of the screen */
     left: 50%; /* Align the left edge of the button with the center of the screen */
     transform: translateX(-50%); /* Offset by 50% of its own width to truly center it */
-    background-color: var(--primary-color); /* Use primary color for the background */
-    color: var(--secondary-color); /* Use secondary color for the text */
+    background-color: var(--link-color); /* Use primary color for the background */
+    color: var(--highlight-color); /* Use secondary color for the text */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -19,8 +19,8 @@
 
 /* Hover effect for Back to Top Button */
 #back-to-top:hover {
-    background-color: var(--secondary-color); /* Change to secondary color on hover */
-    color: var(--background-color); /* Change text to background color on hover */
+    background-color: var(--highlight-color); /* Change to secondary color on hover */
+    color: var(--link-color); /* Change text to background color on hover */
 }
 
 /* Show the button when it's visible */

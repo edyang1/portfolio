@@ -4,7 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: var(--background-color);
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 #cursor {
@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background-color: var(--neutral-color);
+    background-color: var(--highlight-color);
     padding: 4em 2em;
     text-align: center;
 }
@@ -31,18 +31,18 @@ header h1 {
     font-size: 2.5em;
     font-style: italic;
     font-family: var(--font-header);
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 header p {
     font-size: 1.5em;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 h2 {
     font-family: var(--font-subheader);
     font-weight: 400;
-    color: var(--second-highlight-color);
+    color: var(--title-color);
     font-size: 2em;
 }
 
@@ -52,8 +52,7 @@ h2 {
     align-items: center;
     flex-direction: column;
 
-    background-color: var(--neutral-color); /* Use the background color variable */
-    /* border: 1px solid var(--neutral-color); */
+    background-color: var(--highlight-color); /* Updated to use the highlight color */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow for a subtle effect */
     border-radius: 10px; /* Optional: rounded corners */
     padding: 2em; /* Add padding inside the box */
@@ -67,22 +66,23 @@ h2 {
     max-width: 800px; /* Limits the width for better readability */
     text-align: center; /* Centers the text inside the paragraph */
     margin: 0 auto; /* Centers the paragraph horizontally */
+    color: var(--text-color);
 }
 
 .section {
     padding: 2em;
     text-align: center;
     background-color: var(--background-color);
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .section a {
-    color: var(--secondary-color);
+    color: var(--link-color);
     text-decoration: none;
 }
 
 .section a:hover {
-    color: var(--highlight-color);
+    color: var(--title-color);
     text-decoration: none;
 }
 
@@ -93,15 +93,15 @@ h2 {
 }
 
 .project-card, .skill-card {
-    background-color: var(--neutral-color);
-    border: 1px solid var(--neutral-color);
+    background-color: var(--highlight-color); /* Updated to use the highlight color */
+    border: 1px solid var(--highlight-color);
     padding: 1.5em;
     margin: 1.5em 0;
     width: 90%;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     text-decoration: none;
-    color: var(--background-color);
+    color: var(--text-color);
     display: flex;
     align-items: center;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -110,7 +110,7 @@ h2 {
 
 .project-card:hover, .skill-card:hover {
     transform: scale(0.98);
-    color: var(--highlight-color);
+    color: var(--title-color); /* Updated to use the title color */
 }
 
 .card img {
@@ -129,25 +129,25 @@ h2 {
     margin: 0.5em 0;
     font-size: 1.5em;
     font-family: var(--font-header);
-    color: var(--primary-color);
+    color: var(--title-color);
 }
 
 .card-content p {
-    color: var(--primary-color);
+    color: var(--text-color);
     font-family: var(--font-body);
 }
 
 .project-card .year {
     font-size: 1.2em;
     font-weight: bold;
-    color: var(--second-highlight-color);
+    color: var(--title-color); /* Updated to use the title color */
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--title-color); /* Updated to use the title color */
     color: var(--background-color);
     text-align: center;
     padding: 1.5em;

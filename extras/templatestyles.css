@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--background-color); /* Light background */
-    color: var(--primary-color); /* Dark text */
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .content {
@@ -16,7 +16,7 @@ body {
 }
 
 .back-button a {
-    color: var(--primary-color);
+    color: var(--link-color);
     text-decoration: none;
     font-size: 18px;
     padding: 5px 10px;
@@ -29,13 +29,14 @@ body {
 
 .article h1 {
     font-family: var(--font-heading);
+    color: var(--title-color);
     font-size: 36px;
     margin-bottom: 5px;
 }
 
 .article-meta {
     font-size: 14px;
-    color: var(--primary-color);
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
@@ -64,18 +65,18 @@ body {
 }
 
 .toc ul li a {
-    color: var(--primary-color);
+    color: var(--text-color);
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s;
 }
 
 .toc ul li a:hover {
-    color: var(--highlight-color);
+    color: var(--link-color);
 }
 
 .toc ul li a.active {
-    color: var(--secondary-color);
+    color: var(--highlight-color);
 }
 
 footer {
