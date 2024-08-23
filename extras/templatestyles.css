@@ -19,6 +19,8 @@ body {
     color: #888;
     text-decoration: none;
     font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .back-button a:hover {
@@ -81,35 +83,4 @@ footer {
     text-align: center;
     padding: 1.5em;
     font-size: 1.1em;
-}
-
-/* Back to Top Button Styles */
-#back-to-top {
-    position: fixed;
-    bottom: 20px; /* Position the button near the bottom of the screen */
-    left: 50%; /* Align the left edge of the button with the center of the screen */
-    transform: translateX(-50%); /* Offset by 50% of its own width to truly center it */
-    background-color: #2e2e2e; /* Initial background is grey */
-    color: cyan; /* Initial text color is cyan */
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2em;
-    z-index: 1000;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
-    opacity: 0; /* Initially hidden */
-    pointer-events: none; /* Prevent clicking when hidden */
-}
-
-/* Hover effect for Back to Top Button */
-#back-to-top:hover {
-    background-color: cyan; /* Change to cyan background on hover */
-    color: white; /* Change text to white on hover */
-}
-
-/* Show the button when it's visible */
-#back-to-top.visible {
-    opacity: 1;
-    pointer-events: auto; /* Enable clicking */
 }

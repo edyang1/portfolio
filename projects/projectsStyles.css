@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,33 +8,97 @@ body {
     color: #ffffff; /* White text */
 }
 
-/* Back to Top Button Styles */
-#back-to-top {
-    position: fixed;
-    bottom: 20px; /* Position the button near the bottom of the screen */
-    left: 50%; /* Align the left edge of the button with the center of the screen */
-    transform: translateX(-50%); /* Offset by 50% of its own width to truly center it */
-    background-color: #2e2e2e; /* Initial background is grey */
-    color: cyan; /* Initial text color is cyan */
-    padding: 10px 20px;
-    border-radius: 5px;
+.content, .header-content, .highlights, .projects {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #1e2121;
+    padding: 20px;
+    border-bottom: 2px solid #444;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.back-button a {
+    color: #888;
     text-decoration: none;
-    font-size: 1.2em;
-    z-index: 1000;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
-    opacity: 0; /* Initially hidden */
-    pointer-events: none; /* Prevent clicking when hidden */
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-/* Hover effect for Back to Top Button */
-#back-to-top:hover {
-    background-color: cyan; /* Change to cyan background on hover */
-    color: white; /* Change text to white on hover */
+.back-button a:hover {
+    color: #ccc;
 }
 
-/* Show the button when it's visible */
-#back-to-top.visible {
-    opacity: 1;
-    pointer-events: auto; /* Enable clicking */
+/* Section Titles (Highlights and All Projects) */
+.highlights h2, .projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Card Styles (Shared by Highlights and Projects) */
+.card-item {
+    display: flex;
+    align-items: center;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-item img {
+    width: 40%;
+    height: auto;
+    border-right: 2px solid #444;
+}
+
+.card-details {
+    padding: 20px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.card-details h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.card-details p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.card-details .year-duration {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.card-item:hover {
+    transform: scale(0.98);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2e2e;
+    color: #888;
+    border-top: 2px solid #444;
 }
