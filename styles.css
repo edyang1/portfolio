@@ -1,10 +1,10 @@
 body {
-    font-family: 'Lato', sans-serif; /* Lato as the body font */
+    font-family: var(--font-body);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--background-color); /* Off-White background */
-    color: var(--primary-color); /* Midnight Blue text */
+    background-color: var(--background-color);
+    color: var(--primary-color);
 }
 
 #cursor {
@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background-color: var(--primary-color); /* Midnight Blue background for header */
+    background-color: var(--neutral-color);
     padding: 4em 2em;
     text-align: center;
 }
@@ -30,19 +30,19 @@ header h1 {
     margin: 0.5em 0;
     font-size: 2.5em;
     font-style: italic;
-    font-family: 'Montserrat', sans-serif; /* Montserrat for header text */
-    color: var(--highlight-color); /* Electric Yellow for header text */
+    font-family: var(--font-header);
+    color: var(--primary-color);
 }
 
 header p {
     font-size: 1.5em;
-    color: var(--neutral-color); /* Cool Gray for header paragraph text */
+    color: var(--primary-color);
 }
 
 h2 {
-    font-family: 'Silkscreen', sans-serif; /* Silkscreen for h2 headings */
+    font-family: var(--font-subheader);
     font-weight: 400;
-    color: var(--second-highlight-color); /* Crimson Red for h2 headings */
+    color: var(--second-highlight-color);
     font-size: 2em;
 }
 
@@ -72,17 +72,17 @@ h2 {
 .section {
     padding: 2em;
     text-align: center;
-    background-color: var(--background-color); /* Off-White background */
-    color: var(--primary-color); /* Midnight Blue text */
+    background-color: var(--background-color);
+    color: var(--primary-color);
 }
 
 .section a {
-    color: var(--secondary-color); /* Bright Cyan for links */
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
 .section a:hover {
-    color: var(--highlight-color); /* Electric Yellow for hover effect */
+    color: var(--highlight-color);
     text-decoration: none;
 }
 
@@ -93,15 +93,15 @@ h2 {
 }
 
 .project-card, .skill-card {
-    background-color: var(--primary-color); /* Midnight Blue background for cards */
-    border: 1px solid var(--neutral-color); /* Cool Gray border */
+    background-color: var(--neutral-color);
+    border: 1px solid var(--neutral-color);
     padding: 1.5em;
     margin: 1.5em 0;
     width: 90%;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     text-decoration: none;
-    color: var(--background-color); /* Off-White text */
+    color: var(--background-color);
     display: flex;
     align-items: center;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -110,7 +110,7 @@ h2 {
 
 .project-card:hover, .skill-card:hover {
     transform: scale(0.98);
-    color: var(--highlight-color); /* Electric Yellow for hover effect */
+    color: var(--highlight-color);
 }
 
 .card img {
@@ -128,29 +128,29 @@ h2 {
 .card-content h3 {
     margin: 0.5em 0;
     font-size: 1.5em;
-    font-family: 'Montserrat', sans-serif; /* Montserrat for card titles */
-    color: var(--highlight-color); /* Electric Yellow for card titles */
+    font-family: var(--font-header);
+    color: var(--primary-color);
 }
 
 .card-content p {
-    color: var(--neutral-color); /* Cool Gray for card text */
-    font-family: 'Lato', sans-serif; /* Lato for card paragraph text */
+    color: var(--primary-color);
+    font-family: var(--font-body);
 }
 
 .project-card .year {
     font-size: 1.2em;
     font-weight: bold;
-    color: var(--second-highlight-color); /* Crimson Red for year text */
+    color: var(--second-highlight-color);
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
 footer {
-    background-color: var(--primary-color); /* Midnight Blue background for footer */
-    color: var(--background-color); /* Off-White text */
+    background-color: var(--primary-color);
+    color: var(--background-color);
     text-align: center;
     padding: 1.5em;
     font-size: 1.1em;
-    font-family: 'Lato', sans-serif; /* Lato for footer text */
+    font-family: var(--font-body);
 }

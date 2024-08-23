@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #272727; /*use cases: */
-    --secondary-color: #3e48ff; /*use cases: */
+    --background-color: #B8B3E9;/*use cases: */
     --neutral-color: #90e0f3; /*use cases: */
-    --highlight-color: #33c9ff; /*use cases: */
-    --background-color: #f4f1de;/*use cases: */
-    --second-highlight-color: #b42d43; /*use cases: */
 
+    --primary-color: #0d0c0c; /*use cases: */
+    --secondary-color: #d999b9; /*use cases: */
+
+    
+    --highlight-color: #75F4F4; /*use cases: */
+    --second-highlight-color: #D17B88; /*use cases: */
+    
     --font-body: 'Lato', sans-serif;
     --font-header: 'Montserrat', sans-serif;
-    --font-heading: 'Silkscreen', sans-serif;
+    --font-subheader: 'Silkscreen', sans-serif;
 }
