@@ -3,14 +3,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ECF0F1; /* Off-White background */
-    color: #2C3E50; /* Midnight Blue text */
+    background-color: var(--background-color); /* Off-White background */
+    color: var(--primary-color); /* Midnight Blue text */
 }
 
 #cursor {
     display: inline-block;
     width: 10px;
-    background-color: #E74C3C; /* Crimson Red for the cursor */
     animation: blink 0.7s steps(1) infinite;
     margin-left: 2px;
 }
@@ -22,7 +21,7 @@ body {
 }
 
 header {
-    background-color: #2C3E50; /* Midnight Blue background for header */
+    background-color: var(--primary-color); /* Midnight Blue background for header */
     padding: 4em 2em;
     text-align: center;
 }
@@ -32,34 +31,58 @@ header h1 {
     font-size: 2.5em;
     font-style: italic;
     font-family: 'Montserrat', sans-serif; /* Montserrat for header text */
-    color: #F1C40F; /* Electric Yellow for header text */
+    color: var(--highlight-color); /* Electric Yellow for header text */
 }
 
 header p {
     font-size: 1.5em;
-    color: #95A5A6; /* Cool Gray for header paragraph text */
+    color: var(--neutral-color); /* Cool Gray for header paragraph text */
 }
 
 h2 {
     font-family: 'Silkscreen', sans-serif; /* Silkscreen for h2 headings */
     font-weight: 400;
-    color: #E74C3C; /* Crimson Red for h2 headings */
+    color: var(--second-highlight-color); /* Crimson Red for h2 headings */
+    font-size: 2em;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--neutral-color); /* Use the background color variable */
+    /* border: 1px solid var(--neutral-color); */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow for a subtle effect */
+    border-radius: 10px; /* Optional: rounded corners */
+    padding: 2em; /* Add padding inside the box */
+    margin: 2em auto; /* Center the box with some space around it */
+    max-width: 800px; /* Limit the width to prevent it from stretching too much */
+}
+
+#about p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 800px; /* Limits the width for better readability */
+    text-align: center; /* Centers the text inside the paragraph */
+    margin: 0 auto; /* Centers the paragraph horizontally */
 }
 
 .section {
     padding: 2em;
     text-align: center;
-    background-color: #ECF0F1; /* Off-White background */
-    color: #2C3E50; /* Midnight Blue text */
+    background-color: var(--background-color); /* Off-White background */
+    color: var(--primary-color); /* Midnight Blue text */
 }
 
 .section a {
-    color: #1ABC9C; /* Bright Cyan for links */
+    color: var(--secondary-color); /* Bright Cyan for links */
     text-decoration: none;
 }
 
 .section a:hover {
-    color: #F1C40F; /* Electric Yellow for hover effect */
+    color: var(--highlight-color); /* Electric Yellow for hover effect */
     text-decoration: none;
 }
 
@@ -70,15 +93,15 @@ h2 {
 }
 
 .project-card, .skill-card {
-    background-color: #2C3E50; /* Midnight Blue background for cards */
-    border: 1px solid #95A5A6; /* Cool Gray border */
+    background-color: var(--primary-color); /* Midnight Blue background for cards */
+    border: 1px solid var(--neutral-color); /* Cool Gray border */
     padding: 1.5em;
     margin: 1.5em 0;
     width: 90%;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     text-decoration: none;
-    color: #ECF0F1; /* Off-White text */
+    color: var(--background-color); /* Off-White text */
     display: flex;
     align-items: center;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -87,7 +110,7 @@ h2 {
 
 .project-card:hover, .skill-card:hover {
     transform: scale(0.98);
-    color: #F1C40F; /* Electric Yellow for hover effect */
+    color: var(--highlight-color); /* Electric Yellow for hover effect */
 }
 
 .card img {
@@ -106,26 +129,26 @@ h2 {
     margin: 0.5em 0;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif; /* Montserrat for card titles */
-    color: #F1C40F; /* Electric Yellow for card titles */
+    color: var(--highlight-color); /* Electric Yellow for card titles */
 }
 
 .card-content p {
-    color: #95A5A6; /* Cool Gray for card text */
+    color: var(--neutral-color); /* Cool Gray for card text */
     font-family: 'Lato', sans-serif; /* Lato for card paragraph text */
 }
 
 .project-card .year {
     font-size: 1.2em;
     font-weight: bold;
-    color: #E74C3C; /* Crimson Red for year text */
+    color: var(--second-highlight-color); /* Crimson Red for year text */
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
 footer {
-    background-color: #2C3E50; /* Midnight Blue background for footer */
-    color: #ECF0F1; /* Off-White text */
+    background-color: var(--primary-color); /* Midnight Blue background for footer */
+    color: var(--background-color); /* Off-White text */
     text-align: center;
     padding: 1.5em;
     font-size: 1.1em;
