@@ -140,15 +140,6 @@ section.projects {
     margin-bottom: 5px; /* Small space below the description */
 }
 
-.year {
-    position: absolute; /* Absolute positioning */
-    top: 10px; /* Positioning from the top */
-    right: 10px; /* Positioning from the right */
-    font-family: var(--font-subheader); /* Year in a different font */
-    font-size: 0.9rem; /* Smaller size */
-    color: var(--link-color); /* Link color */
-}
-
 /* About Section */
 #about {
     background-color: var(--highlight-color);
@@ -245,26 +236,6 @@ footer a {
 
 footer a:hover {
     color: var(--link-color);
-}
-
-/* Back to Top Button */
-#back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: var(--link-color);
-    color: var(--background-color);
-    padding: 10px 15px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 1.2rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    z-index: 100;
-    transition: background-color 0.3s ease;
-}
-
-#back-to-top:hover {
-    background-color: var(--title-color);
 }
 
 /* Aligning Content */
