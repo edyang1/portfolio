@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
 
 :root {
-    --background-color: #FFFAFF;/*use cases: background*/
-    --highlight-color: #15f4ee; /*use cases: bg colors of divs that stand out from the background*/
+    --background-color: #F4EBE8;/*use cases: background*/
+    --highlight-color: #12d0c9; /*use cases: bg colors of divs that stand out from the background*/
 
     --text-color: #292F36; /*use cases: default text*/
     --title-color: #6B7FD7; /*use cases: default title color, links turn this color on hover*/
