@@ -45,7 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", changeLinkState);
 });
 
-// aoeurhgauiwrg
+// ***********************
+// REVEAL IMAGES ON SCROLL
+// ***********************
 
 document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll('.reveal');
@@ -68,14 +70,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener('scroll', reveal);
     reveal(); // Reveal images on page load if they're already in view
-});
-
-// 
-
-document.addEventListener("DOMContentLoaded", function() {
-    const tldr = document.querySelector('.reveal-tldr');
-
-    tldr.addEventListener('click', function() {
-        this.style.animation = 'rainbowWipe 6s forwards, turnBlack 6.5s forwards';
-    });
 });
