@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Write-Up</title>
+    <title>{{ Article Title }}</title>
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="templateStyles.css">
-    <link rel="stylesheet" href="buttonStyles.css">
+    <link rel="stylesheet" href="../extras/buttonStyles.css">
 </head>
 <body>
     <div class="content">
@@ -16,32 +16,52 @@
             <div class="back-button">
                 <a href="../projects/projects.html">← Project Feed</a>
             </div>
-            <h1 id="top">Project Title</h1>
+            <h1 id="top">{{ Article Title }}</h1>
             <!-- Author, Date, and Reading time -->
             <div class="article-meta">
                 <span class="author">Eddie Yang</span> |
-                <span class="reading-time">⏱ 24-31 minutes</span>
+                <span class="reading-time">⏱ {{ Reading Time }}</span>
             </div>
             
-            <h2 id="section1">Introduction</h2>
-            <p>Content for the introduction...</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <h2 id="section2">Project Overview</h2>
-            <p>Content for the project overview...</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <h2 id="section3">Implementation</h2>
-            <p>Content for the implementation...</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <h2 id="section4">Conclusion</h2>
-            <p>Content for the conclusion...</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <!-- TL;DR Section -->
+            <h2>TL;DR</h2>
+            <p class="reveal-tldr">{{ TLDR Summary }}</p>
+
+            <!-- Introduction Section -->
+            <h2>{{ Introduction Title }}</h2>
+            <p>{{ Introduction Paragraph 1 }}</p>
+            <p>{{ Introduction Paragraph 2 }}</p>
+            <p>{{ Introduction Paragraph 3 }}</p>
+
+            <!-- Process Section -->
+            <h2>{{ Process Title }}</h2>
+            <p>{{ Process Paragraph 1 }}</p>
+            <p>{{ Process Paragraph 2 }}</p>
+            <div class="tidbit-container reveal">
+                <h3>{{ Tidbit Title }}</h3>
+                <p>{{ Tidbit Content }}</p>
+            </div>
+            <p>{{ Process Paragraph 3 }}</p>
+
+            <img src="{{ Image 1 Source }}" alt="{{ Image 1 Alt Text }}" class="article-image reveal">
+            <p>{{ Process Paragraph 4 }}</p>
+            
+            <img src="{{ Image 2 Source }}" alt="{{ Image 2 Alt Text }}" class="article-image reveal">
+            <p>{{ Process Paragraph 5 }}</p>
+            
+            <img src="{{ Image 3 Source }}" alt="{{ Image 3 Alt Text }}" class="article-image reveal">
+            <p>{{ Process Paragraph 6 }}</p>
+            
+            <img src="{{ Image 4 Source }}" alt="{{ Image 4 Alt Text }}" class="article-image reveal">
+            <p>{{ Process Paragraph 7 }}</p>
+            
+            <h3>Skills leveled up: {{ Skill 1 }}, {{ Skill 2 }}</h3>
         </div>
 
         <!-- Table of contents -->
         <div class="toc">
             <h3>On this page</h3>
             <ul id="toc-list">
-                <!-- Dynamic TOC will be inserted here -->
             </ul>
         </div>
     </div>
@@ -56,6 +76,6 @@
 
     <!-- Link to the external JavaScript file -->
     <script src="templateScript.js"></script>
-    <script src="buttonScript.js"></script>
+    <script src="../extras/buttonScript.js"></script>
 </body>
 </html>

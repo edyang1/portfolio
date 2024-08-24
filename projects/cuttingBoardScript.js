@@ -4,7 +4,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     const tocList = document.getElementById("toc-list");
-    const headers = document.querySelectorAll(".article h2, .article h3"); // Select all h2 and h3 elements
+    const headers = document.querySelectorAll(".article h2"); // Select all h2 and h3 elements
 
     headers.forEach((header) => {
         const tocItem = document.createElement("li");
@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", changeLinkState);
 });
 
-// ***********************
-// REVEAL IMAGES ON SCROLL
-// ***********************
+// **********************************
+// REVEAL IMAGES AND TIDBIT ON SCROLL
+// **********************************
 
 document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll('.reveal');
