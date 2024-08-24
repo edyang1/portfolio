@@ -1,3 +1,7 @@
+:root {
+    --left-margin: 6.5%; /* Define a custom property for the left margin */
+}
+
 body {
     font-family: var(--font-body);
     margin: 0;
@@ -22,14 +26,19 @@ body {
 
 header {
     background-color: var(--highlight-color);
+    width: 100%; /* Ensure the header takes full width */
     padding: 4em 2em;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left;
+    margin: 0; /* Remove any potential margin */
 }
 
 header h1 {
-    margin: 0.5em 0;
+    margin: 0 var(--left-margin);
     font-size: 2.5em;
-    font-style: italic;
     font-family: var(--font-header);
     color: var(--text-color);
 }
@@ -37,36 +46,68 @@ header h1 {
 header p {
     font-size: 1.5em;
     color: var(--text-color);
+    max-width: 40%;
+    margin: 1em var(--left-margin);
 }
 
-h2 {
-    font-family: var(--font-subheader);
-    font-weight: 400;
-    color: var(--title-color);
-    font-size: 2em;
+#dynamic-text {
+    display: inline;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    gap: 1.5em; /* Add space between the images */
+    margin: 2em auto; /* Add some margin for spacing */
+}
+
+.image-row img {
+    max-width: 150px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.02); /* Slight zoom on hover for effect */
 }
 
 #about {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    border-radius: 10px;
+    padding: 2em;
+    margin: 2em 0; /* Remove auto margin and set to zero on the sides */
+    max-width: 800px; /* Limit the width */
+    text-align: left; /* Left justify text */
+    margin-left: 6.5%; /* Adjust to perfectly match the header's margin */
+}
 
-    background-color: var(--highlight-color); /* Updated to use the highlight color */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow for a subtle effect */
-    border-radius: 10px; /* Optional: rounded corners */
-    padding: 2em; /* Add padding inside the box */
-    margin: 2em auto; /* Center the box with some space around it */
-    max-width: 800px; /* Limit the width to prevent it from stretching too much */
+#about h2 {
+    font-family: var(--font-subheader);
+    color: var(--title-color);
+    text-align: left; /* Left justify the title */
+    margin-bottom: 1em; /* Add some space below the title */
 }
 
 #about p {
     font-size: 1.25rem;
     line-height: 1.6;
-    max-width: 800px; /* Limits the width for better readability */
-    text-align: center; /* Centers the text inside the paragraph */
-    margin: 0 auto; /* Centers the paragraph horizontally */
+    max-width: 90%; /* Restrict the paragraph width to 90% of the section */
+    text-align: left; /* Left justify the text */
     color: var(--text-color);
+    margin: 0; /* Remove the default margin */
+}
+
+#about a {
+    color: var(--link-color);
+    text-decoration: underline; /* Optional: add underline to links */
+}
+
+#about a:hover {
+    color: var(--title-color);
 }
 
 .section {
@@ -109,7 +150,7 @@ h2 {
 }
 
 .project-card:hover, .skill-card:hover {
-    transform: scale(0.98);
+    transform: scale(1.02);
     color: var(--title-color); /* Updated to use the title color */
 }
 
