@@ -1,16 +1,15 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-body);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1e2121; /* Dark background */
-    color: #ffffff; /* White text */
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 #cursor {
     display: inline-block;
     width: 10px;
-    background-color: black;
     animation: blink 0.7s steps(1) infinite;
     margin-left: 2px;
 }
@@ -22,35 +21,69 @@ body {
 }
 
 header {
-    background-color: #1e2121; /* Match background color */
-    padding: 4em 2em; /* More padding for emphasis */
+    background-color: var(--highlight-color);
+    padding: 4em 2em;
     text-align: center;
 }
 
 header h1 {
     margin: 0.5em 0;
-    font-size: 2.5em; /* Larger header text */
-    font-style: italic; /* Italicized font */
+    font-size: 2.5em;
+    font-style: italic;
+    font-family: var(--font-header);
+    color: var(--text-color);
 }
 
 header p {
-    font-size: 1.5em; /* Larger paragraph text */
-    color: #d4d4d4; /* Slightly lighter text for contrast */
+    font-size: 1.5em;
+    color: var(--text-color);
+}
+
+h2 {
+    font-family: var(--font-subheader);
+    font-weight: 400;
+    color: var(--title-color);
+    font-size: 2em;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--highlight-color); /* Updated to use the highlight color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow for a subtle effect */
+    border-radius: 10px; /* Optional: rounded corners */
+    padding: 2em; /* Add padding inside the box */
+    margin: 2em auto; /* Center the box with some space around it */
+    max-width: 800px; /* Limit the width to prevent it from stretching too much */
+}
+
+#about p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 800px; /* Limits the width for better readability */
+    text-align: center; /* Centers the text inside the paragraph */
+    margin: 0 auto; /* Centers the paragraph horizontally */
+    color: var(--text-color);
 }
 
 .section {
     padding: 2em;
     text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .section a {
-    color: inherit; /* Inherit the color of the parent element */
-    text-decoration: none; /* Remove the underline */
+    color: var(--link-color);
+    text-decoration: none;
 }
 
 .section a:hover {
-    color: #ffdd57; /* Add a hover effect if desired */
-    text-decoration: none; /* Ensure underline stays removed on hover */
+    color: var(--title-color);
+    text-decoration: none;
 }
 
 .projects, .skills {
@@ -60,30 +93,31 @@ header p {
 }
 
 .project-card, .skill-card {
-    background-color: #2e2e2e;
-    border: 1px solid #3d3d3d;
+    background-color: var(--highlight-color); /* Updated to use the highlight color */
+    border: 1px solid var(--highlight-color);
     padding: 1.5em;
     margin: 1.5em 0;
-    width: 90%; /* Takes up most of the screen horizontally */
+    width: 90%;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     text-decoration: none;
-    color: inherit;
+    color: var(--text-color);
     display: flex;
     align-items: center;
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth shrinking and color change */
+    transition: transform 0.3s ease, color 0.3s ease;
     position: relative;
 }
 
 .project-card:hover, .skill-card:hover {
-    transform: scale(0.98); /* Slightly reduce the shrink effect */
+    transform: scale(0.98);
+    color: var(--title-color); /* Updated to use the title color */
 }
 
 .card img {
-    max-width: 150px; /* Set a fixed width for the image */
+    max-width: 150px;
     height: auto;
     border-radius: 5px;
-    margin-right: 1.5em; /* Space between image and text */
+    margin-right: 1.5em;
 }
 
 .card-content {
@@ -93,26 +127,30 @@ header p {
 
 .card-content h3 {
     margin: 0.5em 0;
-    font-size: 1.5em; /* Adjust text size */
+    font-size: 1.5em;
+    font-family: var(--font-header);
+    color: var(--title-color);
 }
 
 .card-content p {
-    color: #d4d4d4;
+    color: var(--text-color);
+    font-family: var(--font-body);
 }
 
 .project-card .year {
     font-size: 1.2em;
     font-weight: bold;
-    color: #ffdd57;
+    color: var(--title-color); /* Updated to use the title color */
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
 footer {
-    background-color: #1e2121;
-    color: white;
+    background-color: var(--title-color); /* Updated to use the title color */
+    color: var(--background-color);
     text-align: center;
     padding: 1.5em;
     font-size: 1.1em;
+    font-family: var(--font-body);
 }
