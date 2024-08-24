@@ -28,12 +28,23 @@ body {
     color: var(--highlight-color);
 }
 
+.article a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.article a:hover {
+    color: var(--title-color);
+    text-decoration: none;
+}
+
 /* cuttingBoardStyles.css */
 .reveal-tldr {
     background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
     background-size: 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     animation: rainbowWipe 6s forwards, turnBlack 6.5s forwards;
     cursor: pointer;
 }

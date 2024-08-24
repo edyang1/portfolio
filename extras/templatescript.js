@@ -44,3 +44,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener("scroll", changeLinkState);
 });
+
+// **********************************
+// REVEAL IMAGES AND TIDBIT ON SCROLL
+// **********************************
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('.reveal');
+
+    function reveal() {
+        for (let i = 0; i < images.length; i++) {
+            let windowHeight = window.innerHeight;
+            let elementTop = images[i].getBoundingClientRect().top;
+            let elementBottom = images[i].getBoundingClientRect().bottom;
+            let elementVisible = 150; // Adjust this value to control when the reveal happens
+
+            // Check if the image is within the viewport
+            if (elementTop < windowHeight - elementVisible && elementBottom > elementVisible) {
+                images[i].classList.add('visible');
+            } else {
+                images[i].classList.remove('visible');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', reveal);
+    reveal(); // Reveal images on page load if they're already in view
+});
