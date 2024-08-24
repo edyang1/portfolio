@@ -48,6 +48,12 @@ header h1 {
     text-align: center;
 }
 
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 /* Card Styles (Shared by Highlights and Projects) */
 .card-item {
     display: flex;
