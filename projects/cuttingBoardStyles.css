@@ -1,0 +1,163 @@
+body {
+    font-family: var(--font-body);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.back-button a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.back-button a:hover {
+    color: var(--highlight-color);
+}
+
+/* cuttingBoardStyles.css */
+.reveal-tldr {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowWipe 6s forwards, turnBlack 6.5s forwards;
+    cursor: pointer;
+}
+
+@keyframes rainbowWipe {
+    0% {
+        background-position: 0%;
+    }
+    25% {
+        background-position: 100%;
+    }
+    50% {
+        background-position: 0%;
+    }
+    75% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+@keyframes turnBlack {
+    0% {
+        -webkit-text-fill-color: transparent;
+    }
+    100% {
+        -webkit-text-fill-color: black;
+    }
+}
+
+
+.article h1 {
+    font-family: var(--font-heading);
+    color: var(--title-color);
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.article {
+    flex: 3;
+    padding-right: 20px;
+}
+
+/* Rounded corners and shadows for images */
+.article-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* Hidden by default for scroll reveal */
+    transform: translateY(20px); /* Slightly moves the image down for scroll reveal */
+}
+
+/* Scroll reveal effect */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ensure images are responsive */
+.article-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Optional: Add hover effect to images */
+.article-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.toc {
+    flex: 1;
+    position: sticky;
+    top: 20px; /* Keeps the TOC 20px from the top of the viewport */
+    align-self: flex-start; /* Ensures the TOC aligns with the top of the container */
+    max-height: calc(100vh - 40px); /* Limits TOC height to viewport height minus margin */
+    overflow-y: auto; /* Adds scrolling if TOC exceeds viewport height */
+}
+
+/* Example styles for the TOC */
+.toc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.toc ul li {
+    margin-bottom: 10px;
+}
+
+.toc ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.toc ul li a:hover {
+    color: var(--link-color);
+}
+
+.toc ul li a.active {
+    color: var(--highlight-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.1em;
+}
