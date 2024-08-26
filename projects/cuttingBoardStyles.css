@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: var(--font-body);
     font-size: 20px;
@@ -8,24 +9,50 @@ body {
     color: var(--text-color);
 }
 
-.content {
-    display: flex;
+.container {
+    width: 90%;
     max-width: 1200px;
-    width: 100%;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
-.back-button a {
-    color: var(--link-color);
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    border-radius: 5px;
+/* Content */
+.content {
+    display: flex;
+    margin: 20px auto;
 }
 
+/* Article */
+.article {
+    flex: 3;
+    padding-right: 20px;
+}
+
+/* Back Button Styles */
+/* Back Button Styles */
+.back-button {
+    margin-bottom: 20px; /* Add some space below the button */
+}
+
+.back-button a {
+    display: inline-block;
+    background-color: var(--highlight-color) !important; /* Use primary color for the background */
+    color: var(--link-color) !important; /* Use secondary color for the text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    z-index: 1000;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
+    text-align: center; /* Center the text within the button */
+    line-height: 1.5; /* Improve vertical alignment of text */
+}
+
+/* Hover effect for Back Button */
 .back-button a:hover {
-    color: var(--highlight-color);
+    background-color: var(--link-color) !important; /* Change to secondary color on hover */
+    color: var(--highlight-color) !important; /* Change text to background color on hover */
 }
 
 .article a {
@@ -35,77 +62,33 @@ body {
 
 .article a:hover {
     color: var(--title-color);
-    text-decoration: none;
-}
-
-/* cuttingBoardStyles.css */
-.reveal-tldr {
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-    background-size: 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: rainbowWipe 6s forwards, turnBlack 6.5s forwards;
-    cursor: pointer;
-}
-
-@keyframes rainbowWipe {
-    0% {
-        background-position: 0%;
-    }
-    25% {
-        background-position: 100%;
-    }
-    50% {
-        background-position: 0%;
-    }
-    75% {
-        background-position: 100%;
-    }
-    100% {
-        background-position: 0%;
-    }
-}
-
-@keyframes turnBlack {
-    0% {
-        -webkit-text-fill-color: transparent;
-    }
-    100% {
-        -webkit-text-fill-color: black;
-    }
 }
 
 .article h1 {
     font-family: var(--font-heading);
     color: var(--title-color);
-    font-size: 36px;
+    font-size: 50px;
     margin-bottom: 5px;
 }
 
 .article-meta {
-    font-size: 14px;
+    font-size: 20px;
     color: var(--text-color);
     margin-bottom: 20px;
 }
 
-.article {
-    flex: 3;
-    padding-right: 20px;
-}
-
-/* Rounded corners and shadows for images */
+/* Image Styles */
 .article-image {
     width: 100%;
     max-width: 100%;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0; /* Hidden by default for scroll reveal */
-    transform: translateY(20px); /* Slightly moves the image down for scroll reveal */
+    opacity: 0;
+    transform: translateY(20px);
 }
 
-/* Scroll reveal effect */
+/* Scroll Reveal */
 .reveal {
     opacity: 0;
     transform: translateY(20px);
@@ -117,36 +100,29 @@ body {
     transform: translateY(0);
 }
 
-/* Ensure images are responsive */
-.article-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-/* Optional: Add hover effect to images */
-.article-image:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
+/* TOC Styling */
 .toc {
     flex: 1;
     position: sticky;
-    top: 20px; /* Keeps the TOC 20px from the top of the viewport */
-    align-self: flex-start; /* Ensures the TOC aligns with the top of the container */
-    max-height: calc(100vh - 40px); /* Limits TOC height to viewport height minus margin */
-    overflow-y: auto; /* Adds scrolling if TOC exceeds viewport height */
+    top: 20px;
+    align-self: flex-start;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border: 2px solid var(--title-color); /* Elegant border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-/* Example styles for the TOC */
+.toc h3 {
+    font-family: var(--font-subheader);
+    color: var(--title-color);
+}
+
 .toc ul {
     list-style: none;
     padding: 0;
-}
-
-.toc ul li {
-    margin-bottom: 10px;
 }
 
 .toc ul li a {
@@ -164,6 +140,7 @@ body {
     color: var(--highlight-color);
 }
 
+/* Tidbit Container */
 .tidbit-container {
     background-color: var(--highlight-color);
     padding: 20px;
@@ -179,14 +156,15 @@ body {
 }
 
 .tidbit-container p {
-    margin: 10px 0 0; /* Optional: Adjust margin for the paragraph */
-    color: var(--text-color); /* You can define this in your CSS variables */
+    margin: 10px 0 0;
+    color: var(--text-color);
 }
 
-.tidbit-container:hover{
+.tidbit-container:hover {
     transform: scale(1.02);
 }
 
+/* Footer */
 footer {
     background-color: var(--highlight-color);
     color: var(--text-color);
