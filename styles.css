@@ -54,22 +54,21 @@ header.container {
 
 header h1 {
     font-family: var(--font-header); /* Use the font specified for headers */
-    font-size: 2.5rem; /* Large font size */
+    font-size: 3rem; /* Large font size */
     color: var(--title-color); /* Title color */
     margin-bottom: 10px; /* Space between the title and dynamic text */
 }
 
 #dynamic-text {
-    font-family: var(--font-subheader); /* Dynamic text font */
-    font-size: 1.5rem; /* Slightly smaller than the title */
-    color: var(--link-color); /* Link color */
+    font-size: 3rem; /* Slightly smaller than the title */
 }
 
 header p {
     font-family: var(--font-body); /* Default body font */
-    font-size: 1rem; /* Regular size for the introduction text */
+    font-size: 2rem; /* Regular size for the introduction text */
     color: var(--text-color); /* Default text color */
     margin-top: 15px; /* Space above the paragraph */
+    width: 70%; /* Limit the width of the paragraph */
 }
 
 /* Gallery Section within Header */
@@ -93,11 +92,6 @@ header.container div img {
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Rounded corners for images */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-}
-
-/* Projects Section */
-section.projects {
-    background-color: var(--highlight-color); /* Background color for contrast */
 }
 
 .projects h2 {
@@ -142,9 +136,7 @@ section.projects {
 
 /* About Section */
 #about {
-    background-color: var(--highlight-color);
     border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #about p {
@@ -174,11 +166,6 @@ section.projects {
 
 #about .resume-link:hover {
     background-color: var(--link-color);
-}
-
-/* Skills Section */
-.skills {
-    background-color: var(--highlight-color);
 }
 
 .skill-card {
