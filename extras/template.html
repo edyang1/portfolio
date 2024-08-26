@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../extras/buttonStyles.css">
 </head>
 <body>
-    <div class="content">
+    <div class="container content">
         <!-- Article content -->
         <div class="article">
             <!-- Back button -->
@@ -24,17 +24,19 @@
             </div>
             
             <!-- TL;DR Section -->
-            <h2>TL;DR</h2>
-            <p class="reveal-tldr">{{ TLDR Summary }}</p>
+            <div class="tidbit-container reveal">
+                <h3 id="Section 1">TL;DR</h3>
+                <p class="reveal-tldr">{{ TLDR Summary }}</p>
+            </div>
 
             <!-- Introduction Section -->
-            <h2>{{ Introduction Title }}</h2>
+            <h2 id="Section 2">{{ Introduction Title }}</h2>
             <p>{{ Introduction Paragraph 1 }}</p>
             <p>{{ Introduction Paragraph 2 }}</p>
             <p>{{ Introduction Paragraph 3 }}</p>
 
             <!-- Process Section -->
-            <h2>{{ Process Title }}</h2>
+            <h2 id="Section 3">{{ Process Title }}</h2>
             <p>{{ Process Paragraph 1 }}</p>
             <p>{{ Process Paragraph 2 }}</p>
             <div class="tidbit-container reveal">
