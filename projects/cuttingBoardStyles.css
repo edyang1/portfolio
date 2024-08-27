@@ -166,9 +166,15 @@ body {
 
 /* Footer */
 footer {
-    background-color: var(--highlight-color);
-    color: var(--text-color);
+    background-color: var(--title-color);
+    color: var(--background-color);
     text-align: center;
-    padding: 1.5em;
-    font-size: 1.1em;
+    padding: 20px;
+    font-family: var(--font-body);
+    font-size: 20px;
+    border-top: 3px solid var(--link-color);
+}
+
+footer p {
+    margin: 0;
 }
