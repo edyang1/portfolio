@@ -12,6 +12,21 @@ h1, h2, h3 {
     padding: 0;
 }
 
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#cursor {
+    font-weight: bold;
+    font-size: 3rem; /* Adjust size to match dynamic text */
+    color: var(--title-color); /* Match color with your text */
+    animation: blink 1s step-start infinite;
+    margin-left: 5px; /* Add some space between the dynamic text and cursor */
+    vertical-align: middle; /* Align cursor with text */
+}
+
 a {
     text-decoration: none;
     color: var(--link-color);
