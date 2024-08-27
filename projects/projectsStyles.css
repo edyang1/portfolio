@@ -120,7 +120,13 @@ header h1 {
 footer {
     background-color: var(--title-color);
     color: var(--background-color);
-    padding: 20px 0;
     text-align: center;
-    border-top: 2px solid var(--neutral-color);
+    padding: 20px;
+    font-family: var(--font-body);
+    font-size: 20px;
+    border-top: 3px solid var(--link-color);
+}
+
+footer p {
+    margin: 0;
 }
