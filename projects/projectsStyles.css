@@ -8,6 +8,10 @@ body {
     color: var(--text-color);
 }
 
+.material-icons {
+    vertical-align: middle; /* Align icon with text */
+}
+
 .container {
     width: 90%;
     max-width: 1200px;

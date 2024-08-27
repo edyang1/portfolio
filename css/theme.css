@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Metal+Mania&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root {
     --background-color: #F4EBE8;/*use cases: background*/
@@ -8,7 +8,32 @@
     --title-color: #6B7FD7; /*use cases: default title color, links turn this color on hover*/
     --link-color: #FF6B6B; /*use cases: default links color*/
     
-    --font-body: 'Lato', sans-serif;
-    --font-header: 'Montserrat', sans-serif;
-    --font-subheader: 'Silkscreen', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    --font-header: 'Merriweather', serif;
+    --font-subheader: 'Raleway', sans-serif;
+}
+
+/*****************
+ * GLOBAL STYLES *
+ ****************/
+
+/* Footer */
+footer {
+    background-color: var(--title-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 20px;
+    font-family: var(--font-body);
+    font-size: 20px;
+    border-top: 3px solid var(--link-color);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Icons */
+
+ .material-icons {
+    vertical-align: middle; /* Align icon with text */
 }
