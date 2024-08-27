@@ -8,37 +8,45 @@ body {
     color: var(--text-color);
 }
 
-.content, .header-content, .highlights, .projects {
+.container {
+    width: 90%;
     max-width: 1200px;
-    width: 100%;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
 /* Header Styles */
 header {
     background-color: var(--highlight-color);
-    padding: 20px;
+    padding: 20px 0;
     border-bottom: 2px solid var(--neutral-color);
     text-align: left;
 }
 
 header h1 {
     font-size: 3em;
-    margin: 10px 0;
+    margin: 20px 0;
     color: var(--title-color);
+}
+
+.back-button {
+    margin-bottom: 20px;
 }
 
 .back-button a {
-    color: var(--link-color);
+    background-color: var(--link-color);
+    color: var(--highlight-color);
     text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
+    font-size: 1.2em;
+    padding: 10px 20px;
     border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .back-button a:hover {
-    color: var(--title-color);
+    background-color: var(--highlight-color);
+    color: var(--link-color);
 }
 
 /* Section Titles (Highlights and All Projects) */
@@ -46,8 +54,10 @@ header h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     text-align: center;
+    color: var(--title-color);
 }
 
+/* Card Styles (Shared by Highlights and Projects) */
 .card-link {
     text-decoration: none;
     color: inherit;
@@ -57,7 +67,7 @@ header h1 {
 /* Card Styles (Shared by Highlights and Projects) */
 .card-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
     background-color: var(--highlight-color);
     border-radius: 10px;
     margin-bottom: 20px;
@@ -67,46 +77,50 @@ header h1 {
 }
 
 .card-item img {
-    width: 40%;
-    height: auto;
-    border-right: 2px solid var(--text-color);
+    width: 33%; /* Photo takes up one-third of the card width */
+    height: 250px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    border-right: 2px solid var(--text-color); /* Separate the image from the content */
 }
 
 .card-details {
     padding: 20px;
-    flex-grow: 1;
-    text-align: left;
+    flex-grow: 1; /* Allow the content to take up the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    text-align: left; /* Ensure all text is left-aligned */
 }
 
 .card-details h3 {
     font-size: 1.8em;
-    margin-bottom: 10px;
-    color: var(--text-color);
+    margin: 0 0 10px 0; /* Remove default margin, add space below */
+    color: var(--title-color);
 }
 
 .card-details p {
     font-size: 1.1em;
     line-height: 1.5;
-    margin: 0;
+    margin: 0 0 10px 0; /* Add margin between description and year/reading time */
     color: var(--text-color);
 }
 
 .card-details .year-duration {
     font-size: 0.9em;
     color: var(--text-color);
-    margin-top: 10px;
-    text-align: right;
+    margin: 0; /* Ensure no additional margin */
+    text-align: left;
 }
 
 .card-item:hover {
-    transform: scale(0.98);
+    transform: scale(1.02); /* Slight shrink on hover for a subtle effect */
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: var(--title-color);
     color: var(--background-color);
+    padding: 20px 0;
+    text-align: center;
     border-top: 2px solid var(--neutral-color);
 }
