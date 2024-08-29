@@ -72,12 +72,14 @@ header h1 {
 .card-item {
     display: flex;
     align-items: flex-start; /* Align items to the top */
-    background-color: var(--highlight-color);
+    background-color: var(--background-color);
     border-radius: 10px;
     margin-bottom: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: transform 0.3s ease;
+    border: 2px solid var(--link-color); /* Add border to the cards */
+    box-sizing: border-box;
 }
 
 .card-item img {
