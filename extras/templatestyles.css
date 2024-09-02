@@ -33,6 +33,7 @@ body {
 }
 
 /* Back Button Styles */
+/* Back Button Styles */
 .back-button {
     margin-bottom: 20px; /* Add some space below the button */
 }
@@ -161,10 +162,6 @@ body {
 .tidbit-container p {
     margin: 10px 0 0;
     color: var(--text-color);
-}
-
-.tidbit-container:hover {
-    transform: scale(1.02);
 }
 
 /* Footer */
