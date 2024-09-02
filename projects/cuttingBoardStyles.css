@@ -164,10 +164,6 @@ body {
     color: var(--text-color);
 }
 
-.tidbit-container:hover {
-    transform: scale(1.02);
-}
-
 /* Footer */
 footer {
     background-color: var(--title-color);
