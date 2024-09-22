@@ -33,18 +33,18 @@ body {
 }
 
 /* Back Button Styles */
-/* Back Button Styles */
 .back-button {
     margin-bottom: 20px; /* Add some space below the button */
 }
 
 .back-button a {
     display: inline-block;
-    background-color: var(--highlight-color) !important; /* Use primary color for the background */
-    color: var(--link-color) !important; /* Use secondary color for the text */
+    background-color: var(--title-color) !important; /* Use primary color for the background */
+    color: var(--background-color) !important; /* Use secondary color for the text */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
+    font-family : var(--font-body);
     font-size: 1.2em;
     z-index: 1000;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
@@ -56,7 +56,6 @@ body {
 /* Hover effect for Back Button */
 .back-button a:hover {
     background-color: var(--link-color) !important; /* Change to secondary color on hover */
-    color: var(--highlight-color) !important; /* Change text to background color on hover */
 }
 
 .article a {
@@ -156,7 +155,6 @@ body {
 .tidbit-container h3 {
     margin-top: 0;
     font-size: 1.2em;
-    color: var(--title-color);
 }
 
 .tidbit-container p {
