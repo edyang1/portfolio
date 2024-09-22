@@ -159,6 +159,31 @@ header div img {
     margin-bottom: 5px; /* Small space below the description */
 }
 
+/* Button Styles */
+.see-more-button {
+    display: block;
+    box-sizing: border-box;
+    width: 30%; /* Same width as the card */
+    margin-right: 3%; /* Same margin as the card */
+    margin-bottom: 20px; /* Space below the button */
+    padding: 10px;
+    background-color: var(--background-color); /* Button background */
+    color: var(--text-color); /* Button text color */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    font-family: var(--font-header); /* Font matching headers */
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid var(--link-color);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.see-more-button:hover {
+    background-color: var(--title-color); /* Change background color on hover */
+    color: var(--background-color); /* Change text color on hover */
+    transform: scale(1.02); /* Slight scaling effect on hover */
+}
+
 /* Hover Effects */
 .card:hover {
     transform: scale(1.02); /* Slight scaling effect on hover */

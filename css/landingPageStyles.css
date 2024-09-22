@@ -34,23 +34,28 @@ header h1 {
 }
 
 .back-button {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add some space below the button */
 }
 
 .back-button a {
-    background-color: var(--link-color);
-    color: var(--highlight-color);
-    text-decoration: none;
-    font-size: 1.2em;
+    display: inline-block;
+    background-color: var(--title-color) !important; /* Use primary color for the background */
+    color: var(--background-color) !important; /* Use secondary color for the text */
     padding: 10px 20px;
     border-radius: 5px;
+    text-decoration: none;
+    font-family : var(--font-body);
+    font-size: 1.2em;
+    z-index: 1000;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
+    text-align: center; /* Center the text within the button */
+    line-height: 1.5; /* Improve vertical alignment of text */
 }
 
+/* Hover effect for Back Button */
 .back-button a:hover {
-    background-color: var(--highlight-color);
-    color: var(--link-color);
+    background-color: var(--link-color) !important; /* Change to secondary color on hover */
 }
 
 /* Section Titles (Highlights and All Projects) */
