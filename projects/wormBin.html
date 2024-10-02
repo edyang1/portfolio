@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worm Bin</title>
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/articleStyles.css">
+    <link rel="stylesheet" href="../css/buttonStyles.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="container content">
+        <!-- Article content -->
+        <div class="article">
+            <!-- Back button -->
+            <div class="back-button">
+                <a href="../projects/projects.html"><span class="material-icons">arrow_back</span> Project feed</a>
+            </div>
+            <h1 id="top">Custom Engraved Cutting Board</h1>
+            <!-- Author, Date, and Reading time -->
+            <div class="article-meta">
+                <span class="author">Eddie Yang</span> |
+                <span class="reading-time">⏱ 6-8 minutes</span>
+            </div>
+            
+            <!-- TL;DR Section -->
+            <div class="tidbit-container reveal">
+                <h3 id="Section 1">TL;DR</h3>
+                <p class="reveal-tldr">During the summer of 2024 at UNC, I found myself stuck on campus with a desire to cook and no cutting board. Instead of buying one like a normal person, I decided to make my own using a piece of plywood and the Shaper Origin handheld CNC machine. The process was full of trial and error, from designing the board in Adobe Illustrator to dealing with SVG file issues, but in the end, I created a custom engraved cutting board. Sure, it might have taken five hours and could've been easier to buy one, but now I have a unique, handmade piece.</p>
+            </div>
+
+            <!-- Introduction Section -->
+            <h2 id="Section 2">Summer, 2024:</h2>
+            <p>Spending your summer on campus at UNC is about as boring as it gets: most of your friends aren't on campus and all you do is grind out your classes, play video games, and hit the gym (at least, if you're me). Also, I had a lot of free time to cook. Unfortunately, I didn't have a cutting board. Of course, that didn't stop me. Conveniently, I had a lot of plastic bins, and the lids served as fantastic temporary cutting boards.</p>
+            
+            <img src="../images/cuttingBoard/cuttingboardShrug.jpg" alt="" class="article-image reveal">
+
+            <p>Bad idea. Every time I wielded the chef's knife with grace and skill (naturally) the blade left deep grooves in the plastic.</p>
+            
+            <img src="../images/cuttingBoard/plasticScratches.jpg" alt="" class="article-image reveal">
+
+            <p>That summer, I probably consumed several grams of microplastics. Alas, water under the bridge. A normal person might have bought a cutting board, but fortunately for you, dear reader, I'm anything but normal.</p>
+
+            <!-- Process Section -->
+            <h2 id="Section 3">Process</h2>
+            <p>I got to work making my own. My idea was that I would use a 1/2 inch thick piece of plywood and cut out a cutting board using the Shaper Origin, a handheld CNC machine.</p>
+
+            <p>First, I had to design what I wanted. I knew I wanted a fun engraving. I was worried that food might get stuck on the edges of the engraving and it would be hard to clean, but that was a problem for future me.</p>
+            
+            <p>Time to open Adobe Illustrator. The Shaper Origin uses SVG files, so I needed vectors for both the cutting board outline and the engraving. Shaper had a default design for the board, which I edited to add my own flair: “Top 500” cooking with some icons.</p>
+            
+            <div class="tidbit-container reveal">
+                <h3>What is “Top 500 cooking”?</h3>
+                <p>One of my favorite games is Overwatch, where competitive players are ranked based on their skill and placed on a leaderboard of the Top 500 in their region. Being in the Top 500 is a brag-worthy achievement, so I decided to declare myself Top 500 at cooking.</p>
+            </div>
+            
+            <p>I gathered my materials and PPE, prepared the Shaper Origin, but ran into an issue—the SVG file wasn't being read properly. It took about an hour to fix, and honestly, I've forgotten what exactly I did, but I do remember making at least nine test versions and tweaking the SVG's HTML. That was annoying.</p>
+
+            <p>Finally, I started engraving. In hindsight, I wish I had made the design larger because some of the letters didn't turn out clear due to the size of the router bit, which was too large for the tiny symbols.</p>
+            
+            <img src="../images/cuttingBoard/shaperOrigin.jpg" alt="" class="article-image reveal">
+
+            <p>After engraving, I cut out the board. It wasn't perfect—very unsanded and splintery—but it was a cutting board.</p>
+            
+            <img src="../images/cuttingBoard/unsanded.jpg" alt="" class="article-image reveal">
+
+            <p>Next, I used a hand router to smooth the edges, giving the board a nice curved edge all around. Usually people don't hand route such a weird shape: hand routing is much easier when doing it in a straight line. Thankfully, although the hand router was unwieldy, I still have all my fingers. Then came the sanding: I used a belt sander and a disc sander to smooth the edge and the face of the board.</p>
+            
+            <img src="../images/cuttingBoard/routingBits.jpg" alt="" class="article-image reveal">
+
+            <p>After that I applied <a href="https://amzn.to/4cJYrP4" target="_blank">food-safe mineral oil</a> 3 times, letting the board dry for about 20 minutes between applications. I didn't have anything to apply it with, so I stole a piece of scrap fabric from the textiles lab and used that as a cloth. My hands were pretty oily by the end of it.</p>
+            
+            <img src="../images/cuttingBoard/holdingBoard.jpg" alt="" class="article-image reveal">
+
+            <p>That's an affiliate link, by the way. I get revenue if you use it to check out on Amazon.</p>
+            
+            <p>I entered the makerspace at about noon and left at about 5. For my first time making a cutting board, 5 hours is pretty good. Would it have been easier, more cost effective, and more time effective to have bought a cutting board? Absolutely. But now I have a really cool cutting board. And I can finally stop making my chicken breast strips on a plastic bin lid.■</p>
+            
+            <img src="../images/cuttingBoard/finishedBoard.jpg" alt="" class="article-image reveal">
+
+            <h3>Skills leveled up: Woodworking, Adobe Illustrator</h3>
+        </div>
+
+        <!-- Table of contents -->
+        <div class="toc">
+            <h3>On this page</h3>
+            <ul id="toc-list">
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Eddie Yang. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top button -->
+    <a href="#top" id="back-to-top">Back to Top</a>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="../js/articleScript.js"></script>
+    <script src="../js/buttonScript.js"></script>
+</body>
+</html>
