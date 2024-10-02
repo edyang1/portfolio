@@ -2,14 +2,14 @@
 // DYNAMICALLY GENERATED TABLE OF CONTENTS
 // ***************************************
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const tocList = document.getElementById("toc-list");
     const headers = document.querySelectorAll(".article h2"); // Select all h2 and h3 elements
 
     headers.forEach((header) => {
         const tocItem = document.createElement("li");
         const tocLink = document.createElement("a");
-        
+
         tocLink.textContent = header.textContent;
         tocLink.href = `#${header.id}`;
         tocLink.classList.add("toc-link");
@@ -23,14 +23,14 @@ document.addEventListener("DOMContentLoaded", function() {
     function changeLinkState() {
         let index = headers.length;
 
-        while (--index && window.scrollY + 50 < headers[index].offsetTop) {}
+        while (--index && window.scrollY + 50 < headers[index].offsetTop) { }
 
         tocLinks.forEach((link) => link.classList.remove("active"));
         tocLinks[index].classList.add("active");
     }
 
     tocLinks.forEach((link) => {
-        link.addEventListener("click", function(e) {
+        link.addEventListener("click", function (e) {
             e.preventDefault();
             const targetId = this.getAttribute("href").substring(1);
             const targetSection = document.getElementById(targetId);
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // REVEAL IMAGES AND TIDBIT ON SCROLL
 // **********************************
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll('.reveal');
 
     function reveal() {
