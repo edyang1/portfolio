@@ -6,7 +6,7 @@
 let lastScrollTop = 0;
 
 // Function to show or hide the Back to Top button based on scroll direction
-window.onscroll = function() {
+window.onscroll = function () {
     var backToTopButton = document.getElementById("back-to-top");
     let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -24,7 +24,7 @@ window.onscroll = function() {
 };
 
 // Smooth scrolling for the Back to Top button
-document.querySelector('#back-to-top').addEventListener('click', function(e) {
+document.querySelector('#back-to-top').addEventListener('click', function (e) {
     e.preventDefault();
     window.scrollTo({
         top: 0,

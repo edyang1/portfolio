@@ -2,7 +2,7 @@
 // TYPING EFFECT
 // *************
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     let titles = [
         "a doer.",
         "a maker.",
