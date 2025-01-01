@@ -1,4 +1,4 @@
-const globalCopyrightMessage = "&copy; 2025 Eddie Yang. All rights reserved.";
+const globalCopyrightMessage = "2025 Eddie Yang. All rights reserved.";
 
 document.addEventListener("DOMContentLoaded", () => {
     const yearElements = document.querySelectorAll(".copyrightMessage");
