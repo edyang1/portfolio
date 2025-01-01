@@ -8,6 +8,11 @@ body {
     color: var(--text-color);
 }
 
+.material-icons {
+    vertical-align: middle;
+    /* Align icon with text */
+}
+
 h1,
 h2,
 h3 {
