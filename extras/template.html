@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{{ Article Title }}</title>
+		<link rel="stylesheet" href="../css/theme.css" />
+		<link rel="stylesheet" href="../css/articleStyles.css" />
+		<link rel="stylesheet" href="../css/buttonStyles.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ Article Title }}</title>
-    <link rel="stylesheet" href="../css/theme.css">
-    <link rel="stylesheet" href="../css/articleStyles.css">
-    <link rel="stylesheet" href="../css/buttonStyles.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	</head>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
+	<body>
+		<div class="container content">
+			<!-- Article content -->
+			<div class="article">
+				<!-- Back button -->
+				<div class="back-button">
+					<a href="../projects/projects.html"><span class="material-icons">arrow_back</span> Project feed</a>
+				</div>
+				<h1 id="top">{{ Article Title }}</h1>
+				<!-- Author, Date, and Reading time -->
+				<div class="article-meta">
+					<span class="author">Eddie Yang</span> |
+					<span class="reading-time"><span class="material-icons">schedule</span> {{ Reading Time }}</span>
+				</div>
 
-<body>
-    <div class="container content">
-        <!-- Article content -->
-        <div class="article">
-            <!-- Back button -->
-            <div class="back-button">
-                <a href="../projects/projects.html"><span class="material-icons">arrow_back</span> Project feed</a>
-            </div>
-            <h1 id="top">{{ Article Title }}</h1>
-            <!-- Author, Date, and Reading time -->
-            <div class="article-meta">
-                <span class="author">Eddie Yang</span> |
-                <span class="reading-time"><span class="material-icons">schedule</span> {{ Reading Time }}</span>
-            </div>
+				<!-- TL;DR Section -->
+				<div class="tidbit-container reveal">
+					<h3 id="Section 1">TL;DR</h3>
+					<p class="reveal-tldr">{{ TLDR Summary }}</p>
+				</div>
 
-            <!-- TL;DR Section -->
-            <div class="tidbit-container reveal">
-                <h3 id="Section 1">TL;DR</h3>
-                <p class="reveal-tldr">{{ TLDR Summary }}</p>
-            </div>
+				<!-- Introduction Section -->
+				<h2 id="Section 2">{{ Introduction Title }}</h2>
+				<p>{{ Introduction Paragraph 1 }}</p>
+				<p>{{ Introduction Paragraph 2 }}</p>
+				<p>{{ Introduction Paragraph 3 }}</p>
 
-            <!-- Introduction Section -->
-            <h2 id="Section 2">{{ Introduction Title }}</h2>
-            <p>{{ Introduction Paragraph 1 }}</p>
-            <p>{{ Introduction Paragraph 2 }}</p>
-            <p>{{ Introduction Paragraph 3 }}</p>
+				<!-- Process Section -->
+				<h2 id="Section 3">{{ Process Title }}</h2>
+				<p>{{ Process Paragraph 1 }}</p>
+				<p>{{ Process Paragraph 2 }}</p>
+				<div class="tidbit-container reveal">
+					<h3>{{ Tidbit Title }}</h3>
+					<p>{{ Tidbit Content }}</p>
+				</div>
+				<p>{{ Process Paragraph 3 }}</p>
 
-            <!-- Process Section -->
-            <h2 id="Section 3">{{ Process Title }}</h2>
-            <p>{{ Process Paragraph 1 }}</p>
-            <p>{{ Process Paragraph 2 }}</p>
-            <div class="tidbit-container reveal">
-                <h3>{{ Tidbit Title }}</h3>
-                <p>{{ Tidbit Content }}</p>
-            </div>
-            <p>{{ Process Paragraph 3 }}</p>
+				<img src="{{ Image 1 Source }}" alt="{{ Image 1 Alt Text }}" class="article-image reveal" />
+				<p>{{ Process Paragraph 4 }}</p>
 
-            <img src="{{ Image 1 Source }}" alt="{{ Image 1 Alt Text }}" class="article-image reveal">
-            <p>{{ Process Paragraph 4 }}</p>
+				<img src="{{ Image 2 Source }}" alt="{{ Image 2 Alt Text }}" class="article-image reveal" />
+				<p>{{ Process Paragraph 5 }}</p>
 
-            <img src="{{ Image 2 Source }}" alt="{{ Image 2 Alt Text }}" class="article-image reveal">
-            <p>{{ Process Paragraph 5 }}</p>
+				<img src="{{ Image 3 Source }}" alt="{{ Image 3 Alt Text }}" class="article-image reveal" />
+				<p>{{ Process Paragraph 6 }}</p>
 
-            <img src="{{ Image 3 Source }}" alt="{{ Image 3 Alt Text }}" class="article-image reveal">
-            <p>{{ Process Paragraph 6 }}</p>
+				<img src="{{ Image 4 Source }}" alt="{{ Image 4 Alt Text }}" class="article-image reveal" />
+				<p>{{ Process Paragraph 7 }}</p>
 
-            <img src="{{ Image 4 Source }}" alt="{{ Image 4 Alt Text }}" class="article-image reveal">
-            <p>{{ Process Paragraph 7 }}</p>
+				<h3>Skills leveled up: {{ Skill 1 }}, {{ Skill 2 }}</h3>
+			</div>
 
-            <h3>Skills leveled up: {{ Skill 1 }}, {{ Skill 2 }}</h3>
-        </div>
+			<!-- Table of contents -->
+			<div class="toc">
+				<h3>On this page</h3>
+				<ul id="toc-list"></ul>
+			</div>
+		</div>
 
-        <!-- Table of contents -->
-        <div class="toc">
-            <h3>On this page</h3>
-            <ul id="toc-list">
-            </ul>
-        </div>
-    </div>
+		<!-- Footer -->
+		<footer>
+			<p>
+				<span class="material-icons">copyright</span>
+				<span class="copyrightMessage"></span>
+			</p>
+		</footer>
 
-    <!-- Footer -->
-    <footer>
-        <p><span class="material-icons">copyright</span>
-            <span class="copyrightMessage"></span>
-        </p>
-    </footer>
+		<!-- Back to Top button -->
+		<a href="#top" id="back-to-top">Back to Top</a>
 
-    <!-- Back to Top button -->
-    <a href="#top" id="back-to-top">Back to Top</a>
-
-    <!-- Link to the external JavaScript file -->
-    <script src="../js/globalScript.js"></script>
-    <script src="../js/articleScript.js"></script>
-    <script src="../js/buttonScript.js"></script>
-</body>
-
+		<!-- Link to the external JavaScript file -->
+		<script src="../js/globalScript.js"></script>
+		<script src="../js/articleScript.js"></script>
+		<script src="../js/buttonScript.js"></script>
+	</body>
 </html>
