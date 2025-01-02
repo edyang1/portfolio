@@ -1,166 +1,166 @@
 /* General Styles */
 body {
-    font-family: var(--font-body);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--background-color);
-    color: var(--text-color);
+	font-family: var(--font-body);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: var(--background-color);
+	color: var(--text-color);
 }
 
 .material-icons {
-    vertical-align: middle;
-    /* Align icon with text */
+	vertical-align: middle;
+	/* Align icon with text */
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 /* Header Styles */
 header {
-    font-family: var(--font-header);
-    padding: 20px 0;
-    border-bottom: 2px solid var(--neutral-color);
-    text-align: left;
+	font-family: var(--font-header);
+	padding: 20px 0;
+	border-bottom: 2px solid var(--neutral-color);
+	text-align: left;
 }
 
 header h1 {
-    font-size: 3em;
-    margin: 20px 0;
-    color: var(--title-color);
+	font-size: 3em;
+	margin: 20px 0;
+	color: var(--title-color);
 }
 
 .back-button {
-    margin-bottom: 20px;
-    /* Add some space below the button */
+	margin-bottom: 20px;
+	/* Add some space below the button */
 }
 
 .back-button a {
-    display: inline-block;
-    background-color: var(--title-color) !important;
-    /* Use primary color for the background */
-    color: var(--background-color) !important;
-    /* Use secondary color for the text */
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-family: var(--font-body);
-    font-size: 1.2em;
-    z-index: 1000;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
-    text-align: center;
-    /* Center the text within the button */
-    line-height: 1.5;
-    /* Improve vertical alignment of text */
+	display: inline-block;
+	background-color: var(--title-color) !important;
+	/* Use primary color for the background */
+	color: var(--background-color) !important;
+	/* Use secondary color for the text */
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-family: var(--font-body);
+	font-size: 1.2em;
+	z-index: 1000;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+	transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
+	text-align: center;
+	/* Center the text within the button */
+	line-height: 1.5;
+	/* Improve vertical alignment of text */
 }
 
 /* Hover effect for Back Button */
 .back-button a:hover {
-    background-color: var(--link-color) !important;
-    /* Change to secondary color on hover */
+	background-color: var(--link-color) !important;
+	/* Change to secondary color on hover */
 }
 
 /* Section Titles (Highlights and All Projects) */
 .highlights h2,
 .projects h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: var(--title-color);
-    font-family: var(--font-header);
+	font-size: 2.5em;
+	margin-bottom: 20px;
+	color: var(--title-color);
+	font-family: var(--font-header);
 }
 
 /* Card Styles (Shared by Highlights and Projects) */
 .card-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+	text-decoration: none;
+	color: inherit;
+	display: block;
 }
 
 /* Card Styles (Shared by Highlights and Projects) */
 .card-item {
-    font-family: var(--font-body);
-    display: flex;
-    align-items: flex-start;
-    /* Align items to the top */
-    background-color: var(--background-color);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    border: 2px solid var(--link-color);
-    /* Add border to the cards */
-    box-sizing: border-box;
+	font-family: var(--font-body);
+	display: flex;
+	align-items: flex-start;
+	/* Align items to the top */
+	background-color: var(--background-color);
+	border-radius: 10px;
+	margin-bottom: 20px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	transition: transform 0.3s ease;
+	border: 2px solid var(--link-color);
+	/* Add border to the cards */
+	box-sizing: border-box;
 }
 
 .card-item img {
-    width: 33%;
-    /* Photo takes up one-third of the card width */
-    height: 250px;
-    /* Maintain aspect ratio */
-    object-fit: cover;
-    /* Ensure the image covers the entire area without distortion */
-    border-right: 2px solid var(--text-color);
-    /* Separate the image from the content */
+	width: 33%;
+	/* Photo takes up one-third of the card width */
+	height: 250px;
+	/* Maintain aspect ratio */
+	object-fit: cover;
+	/* Ensure the image covers the entire area without distortion */
+	border-right: 2px solid var(--text-color);
+	/* Separate the image from the content */
 }
 
 .card-details {
-    padding: 20px;
-    flex-grow: 1;
-    /* Allow the content to take up the remaining space */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* Align content to the top */
-    text-align: left;
-    /* Ensure all text is left-aligned */
+	padding: 20px;
+	flex-grow: 1;
+	/* Allow the content to take up the remaining space */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	/* Align content to the top */
+	text-align: left;
+	/* Ensure all text is left-aligned */
 }
 
 .card-details h3 {
-    font-size: 1.8em;
-    margin: 0 0 10px 0;
-    /* Remove default margin, add space below */
-    color: var(--title-color);
-    font-family: var(--font-subheader);
+	font-size: 1.8em;
+	margin: 0 0 10px 0;
+	/* Remove default margin, add space below */
+	color: var(--title-color);
+	font-family: var(--font-subheader);
 }
 
 .card-details p {
-    font-size: 1.1em;
-    line-height: 1.5;
-    margin: 0 0 10px 0;
-    /* Add margin between description and year/reading time */
-    color: var(--text-color);
+	font-size: 1.1em;
+	line-height: 1.5;
+	margin: 0 0 10px 0;
+	/* Add margin between description and year/reading time */
+	color: var(--text-color);
 }
 
 .card-details .year-duration {
-    font-size: 0.9em;
-    color: var(--text-color);
-    margin: 0;
-    /* Ensure no additional margin */
-    text-align: left;
+	font-size: 0.9em;
+	color: var(--text-color);
+	margin: 0;
+	/* Ensure no additional margin */
+	text-align: left;
 }
 
 .card-item:hover {
-    transform: scale(1.02);
-    /* Slight shrink on hover for a subtle effect */
+	transform: scale(1.02);
+	/* Slight shrink on hover for a subtle effect */
 }
 
 /* Footer */
 footer {
-    background-color: var(--title-color);
-    color: var(--background-color);
-    text-align: center;
-    padding: 20px;
-    font-family: var(--font-body);
-    font-size: 20px;
-    border-top: 3px solid var(--link-color);
+	background-color: var(--title-color);
+	color: var(--background-color);
+	text-align: center;
+	padding: 20px;
+	font-family: var(--font-body);
+	font-size: 20px;
+	border-top: 3px solid var(--link-color);
 }
 
 footer p {
-    margin: 0;
+	margin: 0;
 }

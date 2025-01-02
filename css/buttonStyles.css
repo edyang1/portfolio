@@ -1,32 +1,32 @@
 /* Back to Top Button Styles */
 #back-to-top {
-    position: fixed;
-    bottom: 20px; /* Position the button near the bottom of the screen */
-    left: 50%; /* Align the left edge of the button with the center of the screen */
-    transform: translateX(-50%); /* Offset by 50% of its own width to truly center it */
-    background-color: var(--title-color); /* Use primary color for the background */
-    color: var(--background-color); /* Use secondary color for the text */
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2em;
-    z-index: 1000;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
-    opacity: 0; /* Initially hidden */
-    pointer-events: none; /* Prevent clicking when hidden */
-    text-align: center; /* Center the text within the button */
-    line-height: 1.5; /* Improve vertical alignment of text */
+	position: fixed;
+	bottom: 20px; /* Position the button near the bottom of the screen */
+	left: 50%; /* Align the left edge of the button with the center of the screen */
+	transform: translateX(-50%); /* Offset by 50% of its own width to truly center it */
+	background-color: var(--title-color); /* Use primary color for the background */
+	color: var(--background-color); /* Use secondary color for the text */
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 1.2em;
+	z-index: 1000;
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+	transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
+	opacity: 0; /* Initially hidden */
+	pointer-events: none; /* Prevent clicking when hidden */
+	text-align: center; /* Center the text within the button */
+	line-height: 1.5; /* Improve vertical alignment of text */
 }
 
 /* Hover effect for Back to Top Button */
 #back-to-top:hover {
-    background-color: var(--link-color); /* Change to secondary color on hover */
-    /* color: var(--highlight-color); Change text to background color on hover */
+	background-color: var(--link-color); /* Change to secondary color on hover */
+	/* color: var(--highlight-color); Change text to background color on hover */
 }
 
 /* Show the button when it's visible */
 #back-to-top.visible {
-    opacity: 1;
-    pointer-events: auto; /* Enable clicking */
+	opacity: 1;
+	pointer-events: auto; /* Enable clicking */
 }

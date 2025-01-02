@@ -1,350 +1,350 @@
 /* Global Styles */
 body {
-    margin: 0;
-    padding: 50px 0 0 0;
-    /* Add padding at the top */
-    font-family: var(--font-body);
-    background-color: var(--background-color);
-    color: var(--text-color);
+	margin: 0;
+	padding: 50px 0 0 0;
+	/* Add padding at the top */
+	font-family: var(--font-body);
+	background-color: var(--background-color);
+	color: var(--text-color);
 }
 
 .material-icons {
-    vertical-align: middle;
-    /* Align icon with text */
+	vertical-align: middle;
+	/* Align icon with text */
 }
 
 h1,
 h2,
 h3 {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 1;
-    }
+	0% {
+		opacity: 1;
+	}
 
-    50% {
-        opacity: 0;
-    }
+	50% {
+		opacity: 0;
+	}
 
-    100% {
-        opacity: 1;
-    }
+	100% {
+		opacity: 1;
+	}
 }
 
 #cursor {
-    font-weight: bold;
-    font-size: 3rem;
-    /* Adjust size to match dynamic text */
-    color: var(--title-color);
-    /* Match color with your text */
-    animation: blink 1s step-start infinite;
-    margin-left: 5px;
-    /* Add some space between the dynamic text and cursor */
-    vertical-align: middle;
-    /* Align cursor with text */
+	font-weight: bold;
+	font-size: 3rem;
+	/* Adjust size to match dynamic text */
+	color: var(--title-color);
+	/* Match color with your text */
+	animation: blink 1s step-start infinite;
+	margin-left: 5px;
+	/* Add some space between the dynamic text and cursor */
+	vertical-align: middle;
+	/* Align cursor with text */
 }
 
 a {
-    text-decoration: none;
-    color: var(--link-color);
+	text-decoration: none;
+	color: var(--link-color);
 }
 
 a:hover {
-    color: var(--title-color);
+	color: var(--title-color);
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* Center align the container */
-    padding: 0 20px;
-    /* Horizontal padding only */
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	/* Center align the container */
+	padding: 0 20px;
+	/* Horizontal padding only */
 }
 
 .section {
-    padding: 30px 0;
-    /* Padding above and below the section */
+	padding: 30px 0;
+	/* Padding above and below the section */
 }
 
 .section h2 {
-    font-family: var(--font-header);
-    font-size: 2rem;
-    color: var(--title-color);
-    margin-bottom: 15px;
-    border-bottom: 2px solid var(--link-color);
-    /* Add border below section titles */
-    padding-bottom: 5px;
-    /* Space below the title */
+	font-family: var(--font-header);
+	font-size: 2rem;
+	color: var(--title-color);
+	margin-bottom: 15px;
+	border-bottom: 2px solid var(--link-color);
+	/* Add border below section titles */
+	padding-bottom: 5px;
+	/* Space below the title */
 }
 
 .section p {
-    font-size: 1rem;
-    color: var(--text-color);
+	font-size: 1rem;
+	color: var(--text-color);
 }
 
 /* Header Styles */
 header {
-    text-align: left;
-    /* Left justification */
-    padding: 20px 0;
-    /* Vertical padding */
-    background-color: var(--background-color);
-    /* Background color */
-    margin-top: 50px;
+	text-align: left;
+	/* Left justification */
+	padding: 20px 0;
+	/* Vertical padding */
+	background-color: var(--background-color);
+	/* Background color */
+	margin-top: 50px;
 }
 
 header h1 {
-    font-family: var(--font-header);
-    /* Header font */
-    font-size: 3rem;
-    /* Large font size */
-    color: var(--title-color);
-    /* Title color */
-    margin-bottom: 10px;
-    /* Space between the title and dynamic text */
+	font-family: var(--font-header);
+	/* Header font */
+	font-size: 3rem;
+	/* Large font size */
+	color: var(--title-color);
+	/* Title color */
+	margin-bottom: 10px;
+	/* Space between the title and dynamic text */
 }
 
 header div img {
-    transition: transform 0.2s;
+	transition: transform 0.2s;
 }
 
 /* Gallery Image Hover Effect */
 header div img:hover {
-    transform: scale(1.02);
-    /* Slight scaling effect on hover */
+	transform: scale(1.02);
+	/* Slight scaling effect on hover */
 }
 
 #dynamic-text {
-    font-size: 3rem;
-    /* Font size for dynamic text */
+	font-size: 3rem;
+	/* Font size for dynamic text */
 }
 
 header p {
-    font-family: var(--font-body);
-    /* Body font */
-    font-size: 2rem;
-    /* Introduction text size */
-    color: var(--text-color);
-    /* Text color */
-    margin-top: 15px;
-    /* Space above the paragraph */
-    max-width: 70%;
-    /* Limit the width of the paragraph */
+	font-family: var(--font-body);
+	/* Body font */
+	font-size: 2rem;
+	/* Introduction text size */
+	color: var(--text-color);
+	/* Text color */
+	margin-top: 15px;
+	/* Space above the paragraph */
+	max-width: 70%;
+	/* Limit the width of the paragraph */
 }
 
 /* Gallery Section within Header */
 header div {
-    display: flex;
-    /* Display images in a row */
-    justify-content: space-between;
-    /* Space images evenly */
-    margin-top: 20px;
-    /* Space between text and images */
+	display: flex;
+	/* Display images in a row */
+	justify-content: space-between;
+	/* Space images evenly */
+	margin-top: 20px;
+	/* Space between text and images */
 }
 
 header div a {
-    flex: 1;
-    /* Allow images to take equal width */
-    margin-right: 10px;
-    /* Space between images */
+	flex: 1;
+	/* Allow images to take equal width */
+	margin-right: 10px;
+	/* Space between images */
 }
 
 header div a:last-child {
-    margin-right: 0;
-    /* Remove margin from the last image */
+	margin-right: 0;
+	/* Remove margin from the last image */
 }
 
 header div img {
-    width: 100%;
-    /* Image covers the full width of its container */
-    height: 80%;
-    /* Maintain aspect ratio */
-    object-fit: cover;
-    border-radius: 8px;
-    /* Rounded corners for images */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Add shadow for depth */
+	width: 100%;
+	/* Image covers the full width of its container */
+	height: 80%;
+	/* Maintain aspect ratio */
+	object-fit: cover;
+	border-radius: 8px;
+	/* Rounded corners for images */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	/* Add shadow for depth */
 }
 
 /* Card Styles (Projects and Skills) */
 .card {
-    display: inline-block;
-    /* Allow cards to be side by side */
-    width: 30%;
-    /* Make each card take up 30% of the container width */
-    margin-right: 3%;
-    /* Space between cards */
-    margin-bottom: 20px;
-    /* Space below each card */
-    background-color: var(--background-color);
-    /* Card background */
-    border-radius: 8px;
-    /* Rounded corners */
-    overflow: hidden;
-    /* Ensure content stays inside the card */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Soft shadow for depth */
-    transition: transform 0.2s;
-    /* Add smooth scaling on hover */
-    border: 2px solid var(--link-color);
-    /* Add border to the cards */
-    box-sizing: border-box;
+	display: inline-block;
+	/* Allow cards to be side by side */
+	width: 30%;
+	/* Make each card take up 30% of the container width */
+	margin-right: 3%;
+	/* Space between cards */
+	margin-bottom: 20px;
+	/* Space below each card */
+	background-color: var(--background-color);
+	/* Card background */
+	border-radius: 8px;
+	/* Rounded corners */
+	overflow: hidden;
+	/* Ensure content stays inside the card */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	/* Soft shadow for depth */
+	transition: transform 0.2s;
+	/* Add smooth scaling on hover */
+	border: 2px solid var(--link-color);
+	/* Add border to the cards */
+	box-sizing: border-box;
 }
 
 .card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    /* Ensure the image covers the entire area without distortion */
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	/* Ensure the image covers the entire area without distortion */
 }
 
 .card-content {
-    padding: 15px;
-    /* Padding inside the card content area */
-    color: var(--text-color);
-    /* Default text color */
+	padding: 15px;
+	/* Padding inside the card content area */
+	color: var(--text-color);
+	/* Default text color */
 }
 
 .card-content h3 {
-    font-family: var(--font-header);
-    /* Header font */
-    font-size: 1.5rem;
-    /* Slightly larger for titles */
-    margin-bottom: 10px;
-    /* Space below the title */
+	font-family: var(--font-header);
+	/* Header font */
+	font-size: 1.5rem;
+	/* Slightly larger for titles */
+	margin-bottom: 10px;
+	/* Space below the title */
 }
 
 .card-content p {
-    font-family: var(--font-body);
-    /* Body font */
-    font-size: 1rem;
-    /* Regular size */
-    margin-bottom: 5px;
-    /* Small space below the description */
+	font-family: var(--font-body);
+	/* Body font */
+	font-size: 1rem;
+	/* Regular size */
+	margin-bottom: 5px;
+	/* Small space below the description */
 }
 
 /* Button Styles */
 .see-more-button {
-    display: block;
-    box-sizing: border-box;
-    width: 30%;
-    /* Same width as the card */
-    margin-right: 3%;
-    /* Same margin as the card */
-    margin-bottom: 20px;
-    /* Space below the button */
-    padding: 10px;
-    background-color: var(--background-color);
-    /* Button background */
-    color: var(--text-color);
-    /* Button text color */
-    border-radius: 8px;
-    /* Rounded corners */
-    text-decoration: none;
-    /* Remove underline from the link */
-    font-family: var(--font-header);
-    /* Font matching headers */
-    font-size: 1rem;
-    font-weight: bold;
-    border: 2px solid var(--link-color);
-    transition: background-color 0.2s, transform 0.2s;
+	display: block;
+	box-sizing: border-box;
+	width: 30%;
+	/* Same width as the card */
+	margin-right: 3%;
+	/* Same margin as the card */
+	margin-bottom: 20px;
+	/* Space below the button */
+	padding: 10px;
+	background-color: var(--background-color);
+	/* Button background */
+	color: var(--text-color);
+	/* Button text color */
+	border-radius: 8px;
+	/* Rounded corners */
+	text-decoration: none;
+	/* Remove underline from the link */
+	font-family: var(--font-header);
+	/* Font matching headers */
+	font-size: 1rem;
+	font-weight: bold;
+	border: 2px solid var(--link-color);
+	transition: background-color 0.2s, transform 0.2s;
 }
 
 .see-more-button:hover {
-    background-color: var(--title-color);
-    /* Change background color on hover */
-    color: var(--background-color);
-    /* Change text color on hover */
-    transform: scale(1.02);
-    /* Slight scaling effect on hover */
+	background-color: var(--title-color);
+	/* Change background color on hover */
+	color: var(--background-color);
+	/* Change text color on hover */
+	transform: scale(1.02);
+	/* Slight scaling effect on hover */
 }
 
 /* Hover Effects */
 .card:hover {
-    transform: scale(1.02);
-    /* Slight scaling effect on hover */
+	transform: scale(1.02);
+	/* Slight scaling effect on hover */
 }
 
 /* About Section */
 #about {
-    border-radius: 8px;
-    /* Rounded corners for the About section */
+	border-radius: 8px;
+	/* Rounded corners for the About section */
 }
 
 #about p {
-    line-height: 1.6;
-    /* Improved readability with line height */
-    margin-bottom: 20px;
-    /* Space below each paragraph */
-    font-size: 20px;
+	line-height: 1.6;
+	/* Improved readability with line height */
+	margin-bottom: 20px;
+	/* Space below each paragraph */
+	font-size: 20px;
 }
 
 #about a {
-    color: var(--link-color);
-    /* Link color */
-    font-weight: bold;
-    /* Bold links */
+	color: var(--link-color);
+	/* Link color */
+	font-weight: bold;
+	/* Bold links */
 }
 
 #about a:hover {
-    text-decoration: underline;
-    /* Underline on hover */
-    color: var(--title-color);
-    /* Change color on hover */
+	text-decoration: underline;
+	/* Underline on hover */
+	color: var(--title-color);
+	/* Change color on hover */
 }
 
 #about .resume-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: var(--title-color);
-    color: var(--background-color);
-    border-radius: 5px;
-    font-family: var(--font-header);
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	background-color: var(--title-color);
+	color: var(--background-color);
+	border-radius: 5px;
+	font-family: var(--font-header);
 }
 
 #about .resume-link:hover {
-    background-color: var(--link-color);
+	background-color: var(--link-color);
 }
 
 /* Footer */
 footer {
-    background-color: var(--title-color);
-    color: var(--background-color);
-    text-align: center;
-    padding: 20px;
-    font-family: var(--font-body);
-    font-size: 20px;
-    border-top: 3px solid var(--link-color);
+	background-color: var(--title-color);
+	color: var(--background-color);
+	text-align: center;
+	padding: 20px;
+	font-family: var(--font-body);
+	font-size: 20px;
+	border-top: 3px solid var(--link-color);
 }
 
 footer p {
-    margin: 0;
+	margin: 0;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .card {
-        width: 100%;
-        margin-right: 0;
-    }
+	.card {
+		width: 100%;
+		margin-right: 0;
+	}
 
-    #dynamic-text {
-        font-size: 1.5rem;
-        /* Adjust dynamic text size for smaller screens */
-    }
+	#dynamic-text {
+		font-size: 1.5rem;
+		/* Adjust dynamic text size for smaller screens */
+	}
 
-    header h1 {
-        font-size: 2.5rem;
-        /* Adjust header size for smaller screens */
-    }
+	header h1 {
+		font-size: 2.5rem;
+		/* Adjust header size for smaller screens */
+	}
 
-    .section h2 {
-        font-size: 1.75rem;
-        /* Adjust section title size for smaller screens */
-    }
+	.section h2 {
+		font-size: 1.75rem;
+		/* Adjust section title size for smaller screens */
+	}
 }

@@ -1,99 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Eddie Yang's personal portfolio</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eddie Yang's personal portfolio</title>
+		<link rel="stylesheet" href="css/theme.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="css/buttonStyles.css" />
 
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/buttonStyles.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	</head>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
+	<body>
+		<header id="home" class="container">
+			<h1>I'm Eddie Yang, <span id="dynamic-text"></span><span id="cursor">|</span></h1>
+			<p>
+				I use a diverse set of skills to solve complex challenges, captivate audiences, and build innovative products.
+			</p>
+			<div>
+				<a href="/projects/everduskSector.html"
+					><img src="images/everduskSector/everduskSectorCover.png" alt="gallery1"
+				/></a>
+				<a href="#gallery"><img src="images/cuttingBoard/finishedBoard.jpg" alt="gallery2" /></a>
+				<a href="#gallery"><img src="images/hysteriaReverie.jpg" alt="gallery3" /></a>
+			</div>
+		</header>
 
-<body>
-    <header id="home" class="container">
-        <h1>I'm Eddie Yang, <span id="dynamic-text"></span><span id="cursor">|</span></h1>
-        <p>I use a diverse set of skills to solve complex challenges, captivate audiences, and build innovative
-            products.</p>
-        <div>
-            <a href="/projects/everduskSector.html"><img src="images/everduskSector/everduskSectorCover.png"
-                    alt="gallery1"></a>
-            <a href="#gallery"><img src="images/cuttingBoard/finishedBoard.jpg" alt="gallery2"></a>
-            <a href="#gallery"><img src="images/hysteriaReverie.jpg" alt="gallery3"></a>
-        </div>
-    </header>
+		<section id="about" class="section container">
+			<h2>About</h2>
+			<p>
+				I'm a student at UNC Chapel Hill studying Computer Science with an intended double major in Business. Outside of
+				class, catch me at the gym, streaming, brainstorming a new business, or practicing the guitar (among many other
+				things!) This site holds my proudest <a href="projects/projects.html">projects</a> and
+				<a href="skills/skills.html">skills</a>. See more on my
+				<a href="extras/Edward_Yang_resume.pdf" target="_blank">resume</a> or contact me at
+				<a href="mailto:edwardyang609@gmail.com">edwardyang609@gmail.com</a>
+			</p>
+		</section>
 
-    <section id="about" class="section container">
-        <h2>About</h2>
-        <p>I'm a student at UNC Chapel Hill studying Computer Science with an intended double major in Business.
-            Outside of class, catch me at the gym, streaming, brainstorming a new business,
-            or practicing the guitar (among many other things!) This site holds my proudest <a
-                href="projects/projects.html">projects</a> and <a href="skills/skills.html">skills</a>.
-            See more on my <a href="extras/Edward_Yang_resume.pdf" target="_blank">resume</a> or contact me at
-            <a href="mailto:edwardyang609@gmail.com">edwardyang609@gmail.com</a>
-        </p>
-    </section>
+		<section id="projects" class="section container projects">
+			<a href="projects/projects.html">
+				<h2>Projects</h2>
+			</a>
+			<a href="projects/cuttingBoard.html" class="card">
+				<img src="images/cuttingBoard/finishedBoard.jpg" alt="Project 1" />
+				<div class="card-content">
+					<h3>Custom Cutting Board</h3>
+					<p>Engraved with the Shaper Origin</p>
+				</div>
+			</a>
+			<a href="project2.html" class="card">
+				<img src="fasdf" alt="Project 2" />
+				<div class="card-content">
+					<h3>Hyperdash</h3>
+					<p>A podcast by 2 friends</p>
+				</div>
+			</a>
+			<a href="projects/wormBin.html" class="card">
+				<img src="images/wormBin/wigglers.jpg" alt="" />
+				<div class="card-content">
+					<h3>Worm Bin</h3>
+					<p>Sustainability by vermicomposting</p>
+				</div>
+			</a>
+			<a href="projects/projects.html" class="see-more-button">See more projects</a>
+		</section>
 
-    <section id="projects" class="section container projects">
-        <a href="projects/projects.html">
-            <h2>Projects</h2>
-        </a>
-        <a href="projects/cuttingBoard.html" class="card">
-            <img src="images/cuttingBoard/finishedBoard.jpg" alt="Project 1">
-            <div class="card-content">
-                <h3>Custom Cutting Board</h3>
-                <p>Engraved with the Shaper Origin</p>
-            </div>
-        </a>
-        <a href="project2.html" class="card">
-            <img src="fasdf" alt="Project 2">
-            <div class="card-content">
-                <h3>Hyperdash</h3>
-                <p>A podcast by 2 friends</p>
-            </div>
-        </a>
-        <a href="projects/wormBin.html" class="card">
-            <img src="images/wormBin/wigglers.jpg" alt="">
-            <div class="card-content">
-                <h3>Worm Bin</h3>
-                <p>Sustainability by vermicomposting</p>
-            </div>
-        </a>
-        <a href="projects/projects.html" class="see-more-button">See more projects</a>
-    </section>
+		<section id="skills" class="section container skills">
+			<a href="skills/skills.html">
+				<h2>Skills</h2>
+			</a>
+			<a href="skills/weightlifting.html" class="card">
+				<img src="images/weightlifting.jpg" alt="Skill 1" />
+				<div class="card-content">
+					<h3>Weightlifting</h3>
+					<p>Blowing off steam in the gym</p>
+				</div>
+			</a>
+			<a href="skills/photography.html" class="card">
+				<img src="images/photography/cheetah and zebra.jpg" alt="Skill 2" />
+				<div class="card-content">
+					<h3>Photography</h3>
+					<p>Using cameras to tell a story</p>
+				</div>
+			</a>
+			<a href="skills/reviewing.html" class="card">
+				<img src="skill3.jpg" alt="Skill 3" />
+				<div class="card-content">
+					<h3>Reviewing</h3>
+					<p>Evaluating what I consume</p>
+				</div>
+			</a>
+			<a href="skills/skills.html" class="see-more-button">See more skills</a>
+		</section>
 
-    <section id="skills" class="section container skills">
-        <a href="skills/skills.html">
-            <h2>Skills</h2>
-        </a>
-        <a href="skills/weightlifting.html" class="card">
-            <img src="images/weightlifting.jpg" alt="Skill 1">
-            <div class="card-content">
-                <h3>Weightlifting</h3>
-                <p>Blowing off steam in the gym</p>
-            </div>
-        </a>
-        <a href="skills/photography.html" class="card">
-            <img src="images/photography/cheetah and zebra.jpg" alt="Skill 2">
-            <div class="card-content">
-                <h3>Photography</h3>
-                <p>Using cameras to tell a story</p>
-            </div>
-        </a>
-        <a href="skills/reviewing.html" class="card">
-            <img src="skill3.jpg" alt="Skill 3">
-            <div class="card-content">
-                <h3>Reviewing</h3>
-                <p>Evaluating what I consume</p>
-            </div>
-        </a>
-        <a href="skills/skills.html" class="see-more-button">See more skills</a>
-    </section>
-
-    <!-- <section id="writing" class="section container writing">
+		<!-- <section id="writing" class="section container writing">
         <a href="writing/writing.html">
             <h2>Writing</h2>
         </a>
@@ -107,46 +109,60 @@
         <a href="writing/writing.html" class="see-more-button">See more writing</a>
     </section> -->
 
-    <section id="blog" class="section container blog">
-        <a href="https://eddiereviewseverything.wordpress.com" target="_blank">
-            <h2>What I'm exploring: my favorite books and games</h2>
-        </a>
-        <a href="https://eddiereviewseverything.wordpress.com/2025/01/01/alan-wake-game-review/" target="_blank" class="card">
-            <img src="images/whatImReading/alan_wake_cover.jpg" alt="">
-            <div class="card-content">
-                <h3>Alan Wake</h3>
-                <p>A visual stunning and thrilling action-adventure game</p>
-            </div>
-        </a>
-        <a href="https://eddiereviewseverything.wordpress.com/2025/01/01/malice-by-keigo-higashino-book-review/" target="_blank" class="card">
-            <img src="images/whatImReading/malice_cover.jpg" alt="">
-            <div class="card-content">
-                <h3>Malice</h3>
-                <p>A mind-bending mystery that subverts the genre</p>
-            </div>
-        </a>
-        <a href="https://eddiereviewseverything.wordpress.com/2025/01/01/illuminae-by-amie-kaufman-and-jay-kristoff-book-review/" target="_blank" class="card">
-            <img src="images/whatImReading/illuminae_cover.jpg" alt="">
-            <div class="card-content">
-                <h3>Illuminae</h3>
-                <p>A thrilling sci-fi about spaceships, AI, and more</p>
-            </div>
-        </a>
-        <a href="https://eddiereviewseverything.wordpress.com" target="_blank" class="see-more-button">See more reviews</a>
-    </section>
+		<section id="blog" class="section container blog">
+			<a href="https://eddiereviewseverything.wordpress.com" target="_blank">
+				<h2>What I'm exploring: my favorite books and games</h2>
+			</a>
+			<a
+				href="https://eddiereviewseverything.wordpress.com/2025/01/01/alan-wake-game-review/"
+				target="_blank"
+				class="card"
+			>
+				<img src="images/whatImReading/alan_wake_cover.jpg" alt="" />
+				<div class="card-content">
+					<h3>Alan Wake</h3>
+					<p>A visual stunning and thrilling action-adventure game</p>
+				</div>
+			</a>
+			<a
+				href="https://eddiereviewseverything.wordpress.com/2025/01/01/malice-by-keigo-higashino-book-review/"
+				target="_blank"
+				class="card"
+			>
+				<img src="images/whatImReading/malice_cover.jpg" alt="" />
+				<div class="card-content">
+					<h3>Malice</h3>
+					<p>A mind-bending mystery that subverts the genre</p>
+				</div>
+			</a>
+			<a
+				href="https://eddiereviewseverything.wordpress.com/2025/01/01/illuminae-by-amie-kaufman-and-jay-kristoff-book-review/"
+				target="_blank"
+				class="card"
+			>
+				<img src="images/whatImReading/illuminae_cover.jpg" alt="" />
+				<div class="card-content">
+					<h3>Illuminae</h3>
+					<p>A thrilling sci-fi about spaceships, AI, and more</p>
+				</div>
+			</a>
+			<a href="https://eddiereviewseverything.wordpress.com" target="_blank" class="see-more-button"
+				>See more reviews</a
+			>
+		</section>
 
-    <footer>
-        <p><span class="material-icons">copyright</span>
-            <span class="copyrightMessage"></span>
-        </p>
-    </footer>
+		<footer>
+			<p>
+				<span class="material-icons">copyright</span>
+				<span class="copyrightMessage"></span>
+			</p>
+		</footer>
 
-    <a href="#top" id="back-to-top">Back to Top</a>
+		<a href="#top" id="back-to-top">Back to Top</a>
 
-    <!-- Link to the external JavaScript file -->
-    <script src="js/globalScript.js"></script>
-    <script src="script.js"></script>
-    <script src="js/buttonScript.js"></script>
-</body>
-
+		<!-- Link to the external JavaScript file -->
+		<script src="js/globalScript.js"></script>
+		<script src="script.js"></script>
+		<script src="js/buttonScript.js"></script>
+	</body>
 </html>
