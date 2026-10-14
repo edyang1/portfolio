@@ -1,178 +1,438 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Eddie Yang's personal portfolio</title>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VTTVJNS9Q"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-4VTTVJNS9Q");
-		</script>
-
-		<link rel="stylesheet" href="css/theme.css" />
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="stylesheet" href="css/buttonStyles.css" />
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Eddie Yang · Maker, storyteller, CS + Business at UNC</title>
+		<meta name="description" content="Eddie Yang's portfolio: games, podcasts, small businesses, woodworking, wildlife photography and short fiction from a CS + Business student at UNC Chapel Hill." />
+		<meta name="author" content="Eddie Yang" />
+		<meta name="theme-color" content="#0a0b10" />
+		<link rel="canonical" href="https://edyang1.github.io/portfolio/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Eddie Yang" />
+		<meta property="og:title" content="Eddie Yang" />
+		<meta property="og:description" content="Eddie Yang's portfolio: games, podcasts, small businesses, woodworking, wildlife photography and short fiction from a CS + Business student at UNC Chapel Hill." />
+		<meta property="og:url" content="https://edyang1.github.io/portfolio/" />
+		<meta property="og:image" content="https://edyang1.github.io/portfolio/images/og/home.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";var d=document.documentElement;d.dataset.theme=t;d.classList.add("js")})();</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;display=swap" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/analytics.js" defer></script>
+		<script src="js/site.js" defer></script>
+		<script src="js/home.js" defer></script>
 	</head>
-
-	<body>
-		<header id="home" class="container">
-			<h1>I'm Eddie Yang, <span id="dynamic-text"></span><span id="cursor">|</span></h1>
-			<p>
-				I use a diverse set of skills to solve complex challenges, captivate audiences, and build innovative products.
-			</p>
-			<div>
-				<a href="projects/everduskSector.html"><img src="images/everduskSector/everduskSectorCover.png" alt="" /></a>
-				<a href="projects/reverie.html"><img src="images/reverie/hysteriaReverie.jpg" alt="" /></a>
-				<a href="projects/mantra.html"><img src="images/mantra/sleepingFox.jpg" alt="" /></a>
+	<body data-root="">
+		<a class="skip-link" href="#main">Skip to content</a>
+		<header class="site-nav" data-nav>
+			<div class="container nav-inner">
+				<a class="brand" href="index.html" aria-label="Eddie Yang, home">
+					<span class="brand-mark" aria-hidden="true">ey</span>
+					<span class="brand-name">Eddie Yang</span>
+				</a>
+				<nav class="nav-links" aria-label="Primary">
+					<a href="projects/projects.html">Projects</a>
+					<a href="skills/skills.html">Skills</a>
+					<a href="writing/writing.html">Writing</a>
+					<a href="https://eddiereviewseverything.wordpress.com" target="_blank" rel="noopener">Reviews <svg class="icon i-arrow-up-right icon-xs" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></a>
+				</nav>
+				<div class="nav-actions">
+					<button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+						<svg class="icon i-sun" aria-hidden="true"><use href="images/icons.svg#sun" /></svg>
+						<svg class="icon i-moon" aria-hidden="true"><use href="images/icons.svg#moon" /></svg>
+					</button>
+					<a class="btn btn--sm btn--primary nav-resume" href="extras/Edward_Yang_resume.pdf" target="_blank" rel="noopener">
+						Résumé <svg class="icon i-arrow-up-right icon-sm" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg>
+					</a>
+					<button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">
+						<span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+					</button>
+				</div>
 			</div>
 		</header>
+		<main id="main">
+			<section class="hero" aria-labelledby="hero-title">
+				<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+				<div class="grid-lines" aria-hidden="true"></div>
+				<div class="container hero-inner">
+					<p class="status hero-intro" style="--d: 0"><span class="status-dot" aria-hidden="true"></span>CS + Business @ UNC Chapel Hill · Class of 2027</p>
+					<h1 class="hero-title" id="hero-title">
+						<span class="line"><span class="line-inner" style="--d: 80">I'm Eddie Yang,</span></span>
+						<span class="line"><span class="line-inner" style="--d: 200"><span class="rotator" title="Click me"><span class="rotator-text" id="dynamic-text">a maker.</span><span class="caret" aria-hidden="true"></span></span></span></span>
+					</h1>
+					<div class="hero-bottom">
+						<div class="hero-intro" style="--d: 360">
+							<p class="hero-lede">I use a diverse set of skills to solve complex challenges, captivate audiences, and build innovative products.</p>
+							<div class="hero-ctas">
+								<a class="btn btn--grad btn--lg" href="#work">See my work <svg class="icon i-arrow-down" aria-hidden="true"><use href="images/icons.svg#arrow-down" /></svg></a>
+								<a class="btn btn--ghost btn--lg" href="extras/Edward_Yang_resume.pdf" target="_blank" rel="noopener">Résumé <svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></a>
+							</div>
+							<div class="social-row">
+								<a href="mailto:edwardyang609@gmail.com" aria-label="Email"><svg class="icon i-mail" aria-hidden="true"><use href="images/icons.svg#mail" /></svg></a>
+								<a href="https://github.com/edyang1" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon i-github" aria-hidden="true"><use href="images/icons.svg#github" /></svg></a>
+								<a href="https://www.linkedin.com/in/edward-yang-nc/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon i-linkedin" aria-hidden="true"><use href="images/icons.svg#linkedin" /></svg></a>
+								<a href="https://www.youtube.com/@mantra_hd" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon i-youtube" aria-hidden="true"><use href="images/icons.svg#youtube" /></svg></a>
+								<a href="https://twitch.tv/mantrahd" target="_blank" rel="noopener" aria-label="Twitch"><svg class="icon i-twitch" aria-hidden="true"><use href="images/icons.svg#twitch" /></svg></a>
+							</div>
+						</div>
+						<div class="hero-stack hero-intro" style="--d: 480">
+							<div class="stack-inner">
+								<a class="stack-card" href="projects/reverie.html">
+									<img src="images/reverie/hysteria-light-800.webp" srcset="images/reverie/hysteria-light-800.webp 800w, images/reverie/hysteria-light-1600.webp 1600w" sizes="(max-width: 960px) 50vw, 28vw" width="1600" height="1200" alt="A blue-lit acrylic LED light engraved with a Spotify song card" decoding="async" />
+									<span class="stack-label"><span><small>Small business</small>Reverie Engravings</span><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span>
+								</a>
+								<a class="stack-card" href="projects/everduskSector.html">
+									<img src="images/everdusk/cover-800.webp" srcset="images/everdusk/cover-800.webp 800w, images/everdusk/cover-1260.webp 1260w" sizes="(max-width: 960px) 50vw, 28vw" width="1260" height="1000" alt="Everdusk Sector cover art: a pixel-art cottage on one side and a neon city street on the other" fetchpriority="high" decoding="async" />
+									<span class="stack-label"><span><small>Visual novel</small>Everdusk Sector</span><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span>
+								</a>
+								<a class="stack-card" href="projects/mantra.html">
+									<img src="images/mantra/sleeping-fox-800.webp" srcset="images/mantra/sleeping-fox-800.webp 800w, images/mantra/sleeping-fox-1600.webp 1600w" sizes="(max-width: 960px) 50vw, 28vw" width="1600" height="900" alt="A fox sleeping in a cozy Minecraft cabin, Mantra's profile picture" decoding="async" />
+									<span class="stack-label"><span><small>Content creation</small>Mantra</span><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="scroll-cue" href="#about" aria-label="Scroll to About">Scroll</a>
+			</section>
 
-		<section id="about" class="section container">
-			<h2>About</h2>
-			<p>
-				I'm a student at UNC Chapel Hill studying Computer Science with an intended double major in Business. Outside of
-				class, catch me at the gym, streaming, brainstorming a new business, or practicing the guitar (among many other
-				things!) This site holds my proudest <a href="projects/projects.html">projects</a> and
-				<a href="skills/skills.html">skills</a>. See more on my
-				<a href="extras/Edward_Yang_resume.pdf" target="_blank">resume</a> or contact me at
-				<a href="mailto:edwardyang609@gmail.com">edwardyang609@gmail.com</a>
-			</p>
-		</section>
+			<div class="marquee" aria-hidden="true">
+				<div class="marquee-track"><span>Doer</span><span>Maker</span><span>Entrepreneur</span><span>Banana bandit</span><span>Podcaster</span><span>YouTuber</span><span>Streamer</span><span>Content creator</span><span>Gamer</span><span>Designer</span><span>Programmer</span><span>Weightlifter</span><span>Guitarist</span><span>Musician</span><span>Student</span><span>Problem solver</span><span>Dreamer</span><span>Doer</span><span>Maker</span><span>Entrepreneur</span><span>Banana bandit</span><span>Podcaster</span><span>YouTuber</span><span>Streamer</span><span>Content creator</span><span>Gamer</span><span>Designer</span><span>Programmer</span><span>Weightlifter</span><span>Guitarist</span><span>Musician</span><span>Student</span><span>Problem solver</span><span>Dreamer</span></div>
+			</div>
 
-		<section id="projects" class="section container projects">
-			<a href="projects/projects.html">
-				<h2>Projects</h2>
-			</a>
-			<a href="projects/cuttingBoard.html" class="card">
-				<img src="images/cuttingBoard/finishedBoard.jpg" alt="Project 1" />
-				<div class="card-content">
-					<h3>Custom Cutting Board</h3>
-					<p>Engraved with the Shaper Origin</p>
-				</div>
-			</a>
-			<a href="projects/hyperdash.html" class="card">
-				<img src="images/hyperdash/hyperdashLogo.png" alt="Project 2" />
-				<div class="card-content">
-					<h3>Hyperdash</h3>
-					<p>A podcast by 2 friends</p>
-				</div>
-			</a>
-			<a href="projects/wormBin.html" class="card">
-				<img src="images/wormBin/wigglers.jpg" alt="" />
-				<div class="card-content">
-					<h3>Worm Bin</h3>
-					<p>Sustainability by vermicomposting</p>
-				</div>
-			</a>
-			<a href="projects/projects.html" class="see-more-button">See more projects</a>
-		</section>
+			<section class="section" id="about" aria-labelledby="about-title">
+				<div class="container">
+					<div class="about-grid">
+						<div data-reveal>
+							<h2 class="eyebrow" id="about-title">About me</h2>
+							<blockquote class="pull-quote">
+								I've always wanted to create things. To tell a story.
+								<cite class="pull-quote-cite">From <a href="projects/everduskSector.html">Everdusk Sector</a></cite>
+							</blockquote>
+						</div>
+						<div class="about-copy" data-reveal style="--i: 1">
+							<p>
+								I'm a student at UNC Chapel Hill studying Computer Science with an intended double major in Business. Outside of
+								class, catch me at the gym, streaming, brainstorming a new business, or practicing the guitar (among many other
+								things!) This site holds my proudest <a href="projects/projects.html">projects</a> and
+								<a href="skills/skills.html">skills</a>. See more on my
+								<a href="extras/Edward_Yang_resume.pdf" target="_blank" rel="noopener">resume</a> or contact me at
+								<a href="mailto:edwardyang609@gmail.com">edwardyang609@gmail.com</a>
+							</p>
+							<div class="hero-ctas">
+								<a class="btn btn--primary" href="#contact">Say hello <svg class="icon i-arrow-right" aria-hidden="true"><use href="images/icons.svg#arrow-right" /></svg></a>
+								<a class="btn btn--ghost" href="https://www.linkedin.com/in/edward-yang-nc/" target="_blank" rel="noopener"><svg class="icon i-linkedin" aria-hidden="true"><use href="images/icons.svg#linkedin" /></svg> LinkedIn</a>
+							</div>
+						</div>
+					</div>
 
-		<section id="skills" class="section container skills">
-			<a href="skills/skills.html">
-				<h2>Skills</h2>
-			</a>
-			<a href="skills/weightlifting.html" class="card">
-				<img src="images/weightlifting.jpg" alt="Skill 1" />
-				<div class="card-content">
-					<h3>Weightlifting</h3>
-					<p>Blowing off steam in the gym</p>
-				</div>
-			</a>
-			<a href="skills/photography.html" class="card">
-				<img src="images/photography/cheetah and zebra.jpg" alt="Skill 2" />
-				<div class="card-content">
-					<h3>Photography</h3>
-					<p>Using cameras to tell a story</p>
-				</div>
-			</a>
-			<a href="skills/reviewing.html" class="card">
-				<img src="images/reviewing.png" alt="" />
-				<div class="card-content">
-					<h3>Reviewing</h3>
-					<p>Evaluating what I consume</p>
-				</div>
-			</a>
-			<a href="skills/skills.html" class="see-more-button">See more skills</a>
-		</section>
+					<div class="stats" data-reveal>
+						<div class="stat">
+							<span class="stat-value"><span class="unit">Top </span>25<span class="unit">%</span></span>
+							<span class="stat-label">of 1,500 entries in my first game jam</span>
+						</div>
+						<div class="stat">
+							<span class="stat-value"><span data-count="583">583</span><span class="unit">%</span></span>
+							<span class="stat-label">year-over-year growth in YouTube watch hours</span>
+						</div>
+						<div class="stat">
+							<span class="stat-value"><span data-count="104">104</span></span>
+							<span class="stat-label">Git commits during a one-week game jam</span>
+						</div>
+						<div class="stat">
+							<span class="stat-value"><span data-count="60">60</span></span>
+							<span class="stat-label">worms saved from becoming lizard food</span>
+						</div>
+					</div>
 
-		<section id="writing" class="section container writing">
-			<a href="writing/writing.html">
-				<h2>Writing</h2>
-			</a>
-			<a href="writing/runningTeardrops.html" class="card">
-				<!-- <img src="" alt="Writing 1" /> -->
-				<div class="card-content">
-					<h3>Running out of Teardrops</h3>
-					<p>A supernatural mystery short story</p>
+					<div class="toolbox" data-stagger>
+						<div class="toolbox-group">
+							<h3><svg class="icon i-code" aria-hidden="true"><use href="images/icons.svg#code" /></svg> Code</h3>
+							<div class="chip-row"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">C#</span><span class="chip">JavaScript</span><span class="chip">HTML &amp; CSS</span><span class="chip">Unity</span><span class="chip">Ren'Py</span><span class="chip">Ink</span><span class="chip">Git</span></div>
+						</div>
+						<div class="toolbox-group">
+							<h3><svg class="icon i-palette" aria-hidden="true"><use href="images/icons.svg#palette" /></svg> Create</h3>
+							<div class="chip-row"><span class="chip">Photoshop</span><span class="chip">Illustrator</span><span class="chip">DaVinci Resolve</span><span class="chip">Adobe Audition</span><span class="chip">OBS Studio</span></div>
+						</div>
+						<div class="toolbox-group">
+							<h3><svg class="icon i-hammer" aria-hidden="true"><use href="images/icons.svg#hammer" /></svg> Make</h3>
+							<div class="chip-row"><span class="chip">Shaper Origin</span><span class="chip">Laser cutting</span><span class="chip">Woodworking</span><span class="chip">3D printing</span></div>
+						</div>
+					</div>
 				</div>
-			</a>
-			<a href="writing/writing.html" class="see-more-button">See more writing</a>
-		</section>
+			</section>
 
-		<section id="blog" class="section container blog">
-			<a href="https://eddiereviewseverything.wordpress.com" target="_blank">
-				<h2>What I'm exploring: my favorite books and games</h2>
-			</a>
-			<a
-				href="https://eddiereviewseverything.wordpress.com/2025/01/01/alan-wake-game-review/"
-				target="_blank"
-				class="card"
-			>
-				<img src="images/whatImReading/alan_wake_cover.jpg" alt="" />
-				<div class="card-content">
-					<h3>Alan Wake</h3>
-					<p>A visual stunning and thrilling action-adventure game</p>
+			<section class="section" id="work" aria-labelledby="work-title">
+				<div class="container">
+					<div class="section-head" data-reveal>
+						<div>
+							<p class="eyebrow">Selected work</p>
+							<h2 class="section-title" id="work-title">Things I've <em>built</em></h2>
+						</div>
+						<div>
+							<p class="section-sub">Things I've built, launched, recorded, and composted.</p>
+							<a class="link-arrow" href="projects/projects.html" style="margin-top: 1rem">All projects <svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></a>
+						</div>
+					</div>
+					<div class="bento" data-stagger>
+						<a class="card card--feature" href="projects/everduskSector.html">
+							<span class="badge">Featured</span>
+							<div class="card-media">
+								<img src="images/everdusk/cover-800.webp" srcset="images/everdusk/cover-800.webp 800w, images/everdusk/cover-1260.webp 1260w" sizes="(max-width: 960px) 100vw, 690px" width="1260" height="1000" alt="Everdusk Sector cover art: a pixel-art cottage on one side and a neon city street on the other" loading="lazy" decoding="async" />
+							</div>
+							<div class="card-body">
+								<div class="card-tags"><span class="tag">Game jam</span><span class="tag">Ren'Py</span><span class="tag">Team lead</span></div>
+								<h3 class="card-title">Everdusk Sector</h3>
+								<p class="card-desc">The most grueling project I've ever done: A week to create a visual novel from scratch.</p>
+								<div class="card-meta">
+									<span>2024</span>
+									<span><svg class="icon i-clock" aria-hidden="true"><use href="images/icons.svg#clock" /></svg> 5 min read</span>
+									<span class="card-arrow"><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span>
+								</div>
+							</div>
+						</a>
+						<a class="card" href="projects/reverie.html">
+							<div class="card-media">
+								<img src="images/reverie/hysteria-light-800.webp" srcset="images/reverie/hysteria-light-800.webp 800w, images/reverie/hysteria-light-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 34vw" width="1600" height="1200" alt="A blue-lit acrylic LED light engraved with a Spotify song card" loading="lazy" decoding="async" />
+							</div>
+							<div class="card-body">
+								<div class="card-tags"><span class="tag">Small business</span><span class="tag">Laser cutting</span></div>
+								<h3 class="card-title">Reverie Engravings</h3>
+								<p class="card-desc">A small business engraving acrylic lights</p>
+								<div class="card-meta">
+									<span>2023</span>
+									<span><svg class="icon i-clock" aria-hidden="true"><use href="images/icons.svg#clock" /></svg> 3 min read</span>
+									<span class="card-arrow"><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span>
+								</div>
+							</div>
+						</a>
+						<a class="card" href="projects/hyperdash.html">
+							<div class="card-media">
+								<img src="images/hyperdash/logo-800.webp" srcset="images/hyperdash/logo-800.webp 800w, images/hyperdash/logo-1000.webp 1000w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 34vw" width="1000" height="1000" alt="Hyperdash logo: the show name on pink and navy stripes surrounded by pixel-art game icons" loading="lazy" decoding="async" />
+							</div>
+							<div class="card-body">
+								<div class="card-tags"><span class="tag">Podcast</span><span class="tag">Audio editing</span></div>
+								<h3 class="card-title">Hyperdash</h3>
+								<p class="card-desc">A podcast by 2 friends</p>
+								<div class="card-meta">
+									<span>2023</span>
+									<span><svg class="icon i-clock" aria-hidden="true"><use href="images/icons.svg#clock" /></svg> 9 min read</span>
+									<span class="card-arrow"><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span>
+								</div>
+							</div>
+						</a>
+						<a class="card" href="projects/mantra.html">
+							<div class="card-media">
+								<img src="images/mantra/sleeping-fox-800.webp" srcset="images/mantra/sleeping-fox-800.webp 800w, images/mantra/sleeping-fox-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 34vw" width="1600" height="900" alt="A fox sleeping in a cozy Minecraft cabin, Mantra's profile picture" loading="lazy" decoding="async" />
+							</div>
+							<div class="card-body">
+								<div class="card-tags"><span class="tag">YouTube</span><span class="tag">Twitch</span></div>
+								<h3 class="card-title">Mantra</h3>
+								<p class="card-desc">Creating content I'm passionate about</p>
+								<div class="card-meta">
+									<span>2025</span>
+									<span><svg class="icon i-clock" aria-hidden="true"><use href="images/icons.svg#clock" /></svg> 3 min read</span>
+									<span class="card-arrow"><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span>
+								</div>
+							</div>
+						</a>
+						<a class="card" href="projects/wormBin.html">
+							<div class="card-media">
+								<img src="images/worm-bin/wigglers-800.webp" srcset="images/worm-bin/wigglers-800.webp 800w, images/worm-bin/wigglers-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 34vw" width="1600" height="1421" alt="A handful of red wigglers in rich, dark soil" loading="lazy" decoding="async" />
+							</div>
+							<div class="card-body">
+								<div class="card-tags"><span class="tag">Sustainability</span><span class="tag">Dorm life</span></div>
+								<h3 class="card-title">Worm Bin</h3>
+								<p class="card-desc">What if I kept worms... in my dorm?</p>
+								<div class="card-meta">
+									<span>2024</span>
+									<span><svg class="icon i-clock" aria-hidden="true"><use href="images/icons.svg#clock" /></svg> 7 min read</span>
+									<span class="card-arrow"><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span>
+								</div>
+							</div>
+						</a>
+						<a class="card" href="projects/cuttingBoard.html">
+							<div class="card-media">
+								<img src="images/cutting-board/finished-board-800.webp" srcset="images/cutting-board/finished-board-800.webp 800w, images/cutting-board/finished-board-1600.webp 1600w" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 34vw" width="1600" height="1200" alt="The finished engraved cutting board with sliced cucumbers on it" loading="lazy" decoding="async" />
+							</div>
+							<div class="card-body">
+								<div class="card-tags"><span class="tag">Woodworking</span><span class="tag">CNC</span></div>
+								<h3 class="card-title">Custom Cutting Board</h3>
+								<p class="card-desc">I didn't have a cutting board. So I made my own...</p>
+								<div class="card-meta">
+									<span>2024</span>
+									<span><svg class="icon i-clock" aria-hidden="true"><use href="images/icons.svg#clock" /></svg> 4 min read</span>
+									<span class="card-arrow"><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
-			</a>
-			<a
-				href="https://eddiereviewseverything.wordpress.com/2025/01/01/malice-by-keigo-higashino-book-review/"
-				target="_blank"
-				class="card"
-			>
-				<img src="images/whatImReading/malice_cover.jpg" alt="" />
-				<div class="card-content">
-					<h3>Malice</h3>
-					<p>A mind-bending mystery that subverts the genre</p>
-				</div>
-			</a>
-			<a
-				href="https://eddiereviewseverything.wordpress.com/2025/01/01/illuminae-by-amie-kaufman-and-jay-kristoff-book-review/"
-				target="_blank"
-				class="card"
-			>
-				<img src="images/whatImReading/illuminae_cover.jpg" alt="" />
-				<div class="card-content">
-					<h3>Illuminae</h3>
-					<p>A thrilling sci-fi about spaceships, AI, and more</p>
-				</div>
-			</a>
-			<a href="https://eddiereviewseverything.wordpress.com" target="_blank" class="see-more-button"
-				>See more reviews</a
-			>
-		</section>
+			</section>
 
-		<footer>
-			<p>
-				<span class="material-icons">copyright</span>
-				<span class="copyrightMessage"></span>
-			</p>
+			<section class="section" id="skills" aria-labelledby="skills-title">
+				<div class="container">
+					<div class="section-head" data-reveal>
+						<div>
+							<p class="eyebrow">Skills</p>
+							<h2 class="section-title" id="skills-title">Things I <em>practice</em></h2>
+						</div>
+						<div>
+							<p class="section-sub">The hobbies I keep leveling up, and what they've taught me.</p>
+							<a class="link-arrow" href="skills/skills.html" style="margin-top: 1rem">All skills <svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></a>
+						</div>
+					</div>
+					<div class="skill-cards" data-stagger>
+						<a class="skill-card" href="skills/weightlifting.html">
+							<img src="images/weightlifting/gym-800.webp" srcset="images/weightlifting/gym-800.webp 800w, images/weightlifting/gym-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 34vw" width="1600" height="1020" alt="Black-and-white photo of Eddie and friends at the gym, one taking a mirror selfie" loading="lazy" decoding="async" />
+							<span class="skill-num">01</span>
+							<div class="skill-body">
+								<h3>Weightlifting</h3>
+								<p>Blowing off steam in the gym</p>
+								<span class="skill-go">Read the story <svg class="icon i-arrow-right" aria-hidden="true"><use href="images/icons.svg#arrow-right" /></svg></span>
+							</div>
+						</a>
+						<a class="skill-card" href="skills/photography.html">
+							<img src="images/photography/cheetah-and-zebra-800.webp" srcset="images/photography/cheetah-and-zebra-800.webp 800w, images/photography/cheetah-and-zebra-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 34vw" width="1600" height="900" alt="A cheetah sprinting after a zebra across dry grass" loading="lazy" decoding="async" style="object-position: 58% 50%" />
+							<span class="skill-num">02</span>
+							<div class="skill-body">
+								<h3>Photography</h3>
+								<p>Using cameras to tell a story</p>
+								<span class="skill-go">Read the story <svg class="icon i-arrow-right" aria-hidden="true"><use href="images/icons.svg#arrow-right" /></svg></span>
+							</div>
+						</a>
+						<a class="skill-card" href="skills/reviewing.html">
+							<img src="images/reviewing/blog-800.webp" srcset="images/reviewing/blog-800.webp 800w, images/reviewing/blog-1511.webp 1511w" sizes="(max-width: 960px) 100vw, 34vw" width="1511" height="912" alt="The eddie reviews everything blog, showing its What I'm reading carousel" loading="lazy" decoding="async" style="object-position: 22% 60%" />
+							<span class="skill-num">03</span>
+							<div class="skill-body">
+								<h3>Reviewing</h3>
+								<p>Paying attention to what I consume</p>
+								<span class="skill-go">Read the story <svg class="icon i-arrow-right" aria-hidden="true"><use href="images/icons.svg#arrow-right" /></svg></span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="writing" aria-labelledby="writing-title">
+				<div class="container">
+					<div class="section-head" data-reveal>
+						<div>
+							<p class="eyebrow">Writing</p>
+							<h2 class="section-title" id="writing-title">Stories I <em>tell</em></h2>
+						</div>
+						<a class="link-arrow" href="writing/writing.html">All writing <svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></a>
+					</div>
+					<div class="writing-feature" data-reveal>
+						<a class="book" href="writing/runningTeardrops.html" aria-label="Read Running out of Teardrops">
+							<div class="book-3d">
+								<div class="book-pages"></div>
+								<div class="book-cover">
+									<div class="book-rain"></div>
+									<div class="book-moon"></div>
+									<span class="book-sign">Twilight Falls Motel</span>
+									<div class="book-titles">
+										<p class="book-kicker">A short story</p>
+										<p class="book-title">Running out of Teardrops</p>
+										<svg class="book-drop" aria-hidden="true"><use href="images/icons.svg#drop" /></svg>
+									</div>
+									<p class="book-author">Eddie Yang</p>
+								</div>
+							</div>
+						</a>
+						<div class="writing-copy">
+							<p class="eyebrow eyebrow--plain">Short story · 2024</p>
+							<h3>Running out of Teardrops</h3>
+							<p>A short story drawing inspiration from my favorite video games, books, movies, and TV shows about a Detective searching for answers about the mysterious and deadly Twilight Falls motel. Written for my Introduction to Fiction class.</p>
+							<div class="chip-row"><span class="chip">Supernatural mystery</span><span class="chip">20–40 min read</span></div>
+							<div class="hero-ctas">
+								<a class="btn btn--grad" href="writing/runningTeardrops.html">Read the story <svg class="icon i-arrow-right" aria-hidden="true"><use href="images/icons.svg#arrow-right" /></svg></a>
+								<a class="btn btn--ghost" href="extras/Running_out_of_Teardrops_by_Eddie_Yang.pdf" download><svg class="icon i-download" aria-hidden="true"><use href="images/icons.svg#download" /></svg> PDF</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="reviews" aria-labelledby="reviews-title">
+				<div class="container">
+					<div class="section-head" data-reveal>
+						<div>
+							<p class="eyebrow">What I'm exploring</p>
+							<h2 class="section-title" id="reviews-title">Reading <em>&amp;</em> playing</h2>
+						</div>
+						<div>
+							<p class="section-sub">My favorite books and games, reviewed on my blog.</p>
+							<a class="link-arrow" href="https://eddiereviewseverything.wordpress.com" target="_blank" rel="noopener" style="margin-top: 1rem">See more reviews <svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></a>
+						</div>
+					</div>
+					<div class="shelf" data-stagger>
+						<a class="shelf-item" href="https://eddiereviewseverything.wordpress.com/2025/01/01/alan-wake-game-review/" target="_blank" rel="noopener">
+							<div class="shelf-cover">
+								<img src="images/reading/alan-wake-460.webp" width="460" height="215" alt="" class="backdrop" loading="lazy" decoding="async" aria-hidden="true" />
+								<img src="images/reading/alan-wake-460.webp" width="460" height="215" alt="Alan Wake key art: the writer aiming a flashlight and revolver" class="front" loading="lazy" decoding="async" />
+							</div>
+							<div>
+								<div class="shelf-meta"><span class="tag">Game review</span><span class="card-arrow"><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span></div>
+								<h3>Alan Wake</h3>
+								<p>A visually stunning and thrilling action-adventure game</p>
+							</div>
+						</a>
+						<a class="shelf-item" href="https://eddiereviewseverything.wordpress.com/2025/01/01/malice-by-keigo-higashino-book-review/" target="_blank" rel="noopener">
+							<div class="shelf-cover">
+								<img src="images/reading/malice-636.webp" width="636" height="1000" alt="" class="backdrop" loading="lazy" decoding="async" aria-hidden="true" />
+								<img src="images/reading/malice-636.webp" width="636" height="1000" alt="Cover of Malice by Keigo Higashino" class="front" loading="lazy" decoding="async" />
+							</div>
+							<div>
+								<div class="shelf-meta"><span class="tag">Book review</span><span class="card-arrow"><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span></div>
+								<h3>Malice</h3>
+								<p>A mind-bending mystery that subverts the genre</p>
+							</div>
+						</a>
+						<a class="shelf-item" href="https://eddiereviewseverything.wordpress.com/2025/01/01/illuminae-by-amie-kaufman-and-jay-kristoff-book-review/" target="_blank" rel="noopener">
+							<div class="shelf-cover">
+								<img src="images/reading/illuminae-662.webp" width="662" height="1000" alt="" class="backdrop" loading="lazy" decoding="async" aria-hidden="true" />
+								<img src="images/reading/illuminae-662.webp" width="662" height="1000" alt="Cover of Illuminae by Amie Kaufman and Jay Kristoff" class="front" loading="lazy" decoding="async" />
+							</div>
+							<div>
+								<div class="shelf-meta"><span class="tag">Book review</span><span class="card-arrow"><svg class="icon i-arrow-up-right" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></span></div>
+								<h3>Illuminae</h3>
+								<p>A thrilling sci-fi about spaceships, AI, and more</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact" id="contact" aria-labelledby="contact-title">
+				<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+				<div class="container" data-reveal>
+					<p class="eyebrow eyebrow--plain">Get in touch</p>
+					<h2 class="contact-title" id="contact-title">Let's make something <em class="grad-text">cool</em>.</h2>
+					<p class="contact-sub">A project, an opportunity, or a game I should play next: my inbox is open.</p>
+					<div class="email-pill">
+						<a href="mailto:edwardyang609@gmail.com"><svg class="icon i-mail" aria-hidden="true"><use href="images/icons.svg#mail" /></svg> edwardyang609@gmail.com</a>
+						<button class="copy-btn" type="button" data-copy="edwardyang609@gmail.com" data-copy-message="Email copied. Talk soon!">
+							<svg class="icon i-copy" aria-hidden="true"><use href="images/icons.svg#copy" /></svg><svg class="icon i-check" aria-hidden="true"><use href="images/icons.svg#check" /></svg> Copy
+						</button>
+					</div>
+					<div class="social-row">
+						<a href="mailto:edwardyang609@gmail.com" aria-label="Email"><svg class="icon i-mail" aria-hidden="true"><use href="images/icons.svg#mail" /></svg></a>
+						<a href="https://github.com/edyang1" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon i-github" aria-hidden="true"><use href="images/icons.svg#github" /></svg></a>
+						<a href="https://www.linkedin.com/in/edward-yang-nc/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon i-linkedin" aria-hidden="true"><use href="images/icons.svg#linkedin" /></svg></a>
+						<a href="https://www.youtube.com/@mantra_hd" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon i-youtube" aria-hidden="true"><use href="images/icons.svg#youtube" /></svg></a>
+						<a href="https://twitch.tv/mantrahd" target="_blank" rel="noopener" aria-label="Twitch"><svg class="icon i-twitch" aria-hidden="true"><use href="images/icons.svg#twitch" /></svg></a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Eddie Yang","alternateName":"Edward Yang","url":"https://edyang1.github.io/portfolio/","email":"mailto:edwardyang609@gmail.com","affiliation":{"@type":"CollegeOrUniversity","name":"University of North Carolina at Chapel Hill"},"sameAs":["https://github.com/edyang1","https://www.linkedin.com/in/edward-yang-nc/","https://www.youtube.com/@mantra_hd","https://twitch.tv/mantrahd","https://eddiereviewseverything.wordpress.com"]}</script>
+		<footer class="site-footer" data-footer>
+			<noscript><div class="container footer-bottom">© Eddie Yang. All rights reserved.</div></noscript>
 		</footer>
-
-		<a href="#top" id="back-to-top">Back to Top</a>
-
-		<!-- Link to the external JavaScript file -->
-		<script src="js/globalScript.js"></script>
-		<script src="script.js"></script>
-		<script src="js/buttonScript.js"></script>
 	</body>
 </html>

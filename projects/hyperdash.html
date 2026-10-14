@@ -1,420 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hyperdash</title>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VTTVJNS9Q"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-4VTTVJNS9Q");
-		</script>
-
-		<link rel="stylesheet" href="../css/theme.css" />
-		<link rel="stylesheet" href="../css/articleStyles.css" />
-		<link rel="stylesheet" href="../css/buttonStyles.css" />
-		<!-- import styles for josh's font -->
-		<link rel="stylesheet" href="../css/articleStylesExtra.css" />
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Hyperdash · Eddie Yang</title>
+		<meta name="description" content="During long car rides, Eddie found inspiration from podcasts like Ear Biscuits and Distractible, leading to the creation of Hyperdash, a podcast centered around video games. Co-hosted with Josh,…" />
+		<meta name="author" content="Eddie Yang" />
+		<meta name="theme-color" content="#0a0b10" />
+		<link rel="canonical" href="https://edyang1.github.io/portfolio/projects/hyperdash.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:site_name" content="Eddie Yang" />
+		<meta property="og:title" content="Hyperdash" />
+		<meta property="og:description" content="During long car rides, Eddie found inspiration from podcasts like Ear Biscuits and Distractible, leading to the creation of Hyperdash, a podcast centered around video games. Co-hosted with Josh,…" />
+		<meta property="og:url" content="https://edyang1.github.io/portfolio/projects/hyperdash.html" />
+		<meta property="og:image" content="https://edyang1.github.io/portfolio/images/og/hyperdash.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+		<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";var d=document.documentElement;d.dataset.theme=t;d.classList.add("js")})();</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;display=swap" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&amp;display=swap" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="../js/analytics.js" defer></script>
+		<script src="../js/site.js" defer></script>
+		<script src="../js/article.js" defer></script>
 	</head>
-
-	<body>
-		<div class="container content">
-			<!-- Article content -->
-			<div class="article">
-				<!-- Back button -->
-				<div class="back-button">
-					<a href="../projects/projects.html"><span class="material-icons">arrow_back</span> Project feed</a>
-				</div>
-				<h1 id="top">Hyperdash</h1>
-				<!-- Author, Date, and Reading time -->
-				<div class="article-meta">
-					<span class="author">Eddie Yang, Josh Dimapilis</span> |
-					<span class="reading-time"><span class="material-icons">schedule</span> 7-8 minutes</span>
-				</div>
-
-				<!-- TL;DR Section -->
-				<div class="tidbit-container reveal">
-					<h3 id="Section 1">TL;DR</h3>
-					<p class="reveal-tldr">
-						During long car rides, Eddie found inspiration from podcasts like Ear Biscuits and Distractible, leading to
-						the creation of Hyperdash, a podcast centered around video games. Co-hosted with Josh, they navigated the
-						challenges of recording, editing, and producing weekly episodes using budget-friendly equipment and a mix of
-						software like Audacity, Adobe Audition, and Da Vinci Resolve. While creative approaches like
-						Minecraft-inspired visuals added a unique flair, the workload eventually became overwhelming, leading to the
-						podcast's hiatus. Despite a small but engaged audience on platforms like Amazon Music, Hyperdash left
-						lasting memories and sparked an interest in exploring podcasting again someday. Eddie's experience in an
-						English podcasting class further reinforced the creative joy behind such projects.
-					</p>
-				</div>
-
-				<h2 id="Section 2">The Vision</h2>
-				<p>
-					During long car rides I'd get lost in podcasts like Ear Biscuits, Dear Hank and John, Watchtime, and
-					Distractible. I'd listen to these funny and charismatic people ramble on for hours on end, but eventually I
-					wondered whether I could start my own podcast. I could talk about whatever I was interested in, which probably
-					ended up being videogames, and Hyperdash was born.
-				</p>
-
-				<div class="tidbit-container reveal">
-					<h3>What's in a name</h3>
-					<p>
-						Hyperdash was named after a move from the speedrunning community of a popular indie platformer game,
-						Celeste.
-					</p>
-				</div>
-
-				<a href="https://open.spotify.com/show/1FjcmCZymM4oqawIBfDaGe?si=6ea449ce20674460" target="_blank">Spotify</a>
-				<br />
-				<a href="https://podcasts.apple.com/us/podcast/hyperdash/id1638627733" target="_blank">Apple Podcasts</a>
-				<br />
-				<a href="https://music.amazon.com/podcasts/b7f13f88-7e04-4093-b657-ad49bae6b58f/hyperdash" target="_blank"
-					>Amazon Podcasts
+	<body data-root="../">
+		<a class="skip-link" href="#main">Skip to content</a>
+		<header class="site-nav" data-nav>
+			<div class="container nav-inner">
+				<a class="brand" href="../index.html" aria-label="Eddie Yang, home">
+					<span class="brand-mark" aria-hidden="true">ey</span>
+					<span class="brand-name">Eddie Yang</span>
 				</a>
-				<br />
-				<a href="https://www.youtube.com/@hyperdashpodcast" target="_blank">YouTube</a>
-
-				<p>
-					Josh, my co-host for the later part of Hyperdash's run, was kind enough to join me and talk about Hyperdash.
-					Hey Josh!
-				</p>
-
-				<p class="josh">hallo eddie!</p>
-
-				<p>So Josh's font will look like that and my font will look like this.</p>
-
-				<p>
-					We needed a new logo, and since the podcast was about video games, I just put the name on a simple pattern in
-					Photoshop and put the logos of our favorite games on there.
-				</p>
-
-				<img src="../images/hyperdash/hyperdashLogo.png" alt="Hyperdash logo" class="article-image reveal" />
-
-				<h2 id="Section 3">Studio</h2>
-				<p>
-					There's not a lot of equipment you need to podcast - it's pretty much exactly what you expect. A microphone,
-					audio editing software, and some way to upload your podcasts.
-				</p>
-
-				<p>
-					The microphone I use was the same one I use to stream and record YouTube videos (read more about those
-					adventures here). It's the <a href="https://amzn.to/4fJUCuM" target="_blank">Fifine K669</a> and I've got it
-					on a <a href="https://amzn.to/3DOJwrd" target="_blank">budget mic stand</a>.
-				</p>
-
-				<p>
-					Those are affiliate links, by the way. I may get a small commission with no extra cost to you. The rest of the
-					amazon links on this page are all also affiliate links.
-				</p>
-
-				<img src="../images/hyperdash/beacnMic.jpg" alt="Beacn Mic" class="article-image reveal" />
-
-				<div class="tidbit-container reveal">
-					<h3>Upgrades</h3>
-					<p>
-						I've since upgraded to the <a href="https://amzn.to/42pgbxV" target="_blank">Beacn mic</a>, pictured above,
-						but they look mostly the same, except the Beacn mic is about twice the size of the Fifine K669. Also, my
-						Fifine K669 happened to be a disgusting color only describable as dark pink—because, of course, the black
-						one was more expensive.
-					</p>
+				<nav class="nav-links" aria-label="Primary">
+					<a href="../projects/projects.html" aria-current="true">Projects</a>
+					<a href="../skills/skills.html">Skills</a>
+					<a href="../writing/writing.html">Writing</a>
+					<a href="https://eddiereviewseverything.wordpress.com" target="_blank" rel="noopener">Reviews <svg class="icon i-arrow-up-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg></a>
+				</nav>
+				<div class="nav-actions">
+					<button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+						<svg class="icon i-sun" aria-hidden="true"><use href="../images/icons.svg#sun" /></svg>
+						<svg class="icon i-moon" aria-hidden="true"><use href="../images/icons.svg#moon" /></svg>
+					</button>
+					<a class="btn btn--sm btn--primary nav-resume" href="../extras/Edward_Yang_resume.pdf" target="_blank" rel="noopener">
+						Résumé <svg class="icon i-arrow-up-right icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg>
+					</a>
+					<button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">
+						<span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+					</button>
 				</div>
-
-				<p>
-					Anyways, the mic and the mic stand are both pretty cheap, but they get the job done. Since I use Adobe
-					Audition and its audio effects and filters for processing the audio, I can make it sound a lot better than the
-					price tag indicates.
-				</p>
-
-				<div class="tidbit-container reveal">
-					<h3>Decorations</h3>
-					<p>I added those decorations later: a small D.Va backpack hanger and a Princess Celestia figurine.</p>
+			</div>
+		</header>
+		<div class="read-progress" aria-hidden="true"></div>
+		<main id="main">
+			<article>
+				<header class="article-hero">
+					<div class="hero-glow" aria-hidden="true"><img src="../images/hyperdash/logo-800.webp" width="1000" height="1000" alt="" decoding="async" /></div>
+					<div class="article-shell">
+						<div>
+							<a class="back-link" href="projects.html"><svg class="icon i-arrow-left icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> All projects</a>
+							<p class="article-kicker"><span class="accent">Project</span><span>2023</span></p>
+							<h1 class="article-title">Hyperdash</h1>
+							<p class="article-dek">A podcast by 2 friends</p>
+							<div class="article-meta">
+								<span><span class="avatars"><span class="avatar">EY</span><span class="avatar">JD</span></span>Eddie Yang &amp; Josh Dimapilis</span>
+								<span><svg class="icon i-clock" aria-hidden="true"><use href="../images/icons.svg#clock" /></svg> 9 min read</span>
+								<div class="chip-row"><span class="chip">Podcast</span><span class="chip">Audio editing</span></div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="article-shell article-body">
+					<div class="article-main">
+						<details class="toc-mobile">
+							<summary><span data-toc-current>On this page</span><svg class="icon i-chevron-down" aria-hidden="true"><use href="../images/icons.svg#chevron-down" /></svg></summary>
+							<ol class="toc-list" data-toc></ol>
+						</details>
+						<div class="prose">
+							<div class="tldr">
+								<p class="tldr-label"><svg class="icon i-sparkle icon-xs" aria-hidden="true"><use href="../images/icons.svg#sparkle" /></svg> TL;DR</p>
+								<p>During long car rides, Eddie found inspiration from podcasts like Ear Biscuits and Distractible, leading to the creation of Hyperdash, a podcast centered around video games. Co-hosted with Josh, they navigated the challenges of recording, editing, and producing weekly episodes using budget-friendly equipment and a mix of software like Audacity, Adobe Audition, and Da Vinci Resolve. While creative approaches like Minecraft-inspired visuals added a unique flair, the workload eventually became overwhelming, leading to the podcast's hiatus. Despite a small but engaged audience on platforms like Amazon Music, Hyperdash left lasting memories and sparked an interest in exploring podcasting again someday. Eddie's experience in an English podcasting class further reinforced the creative joy behind such projects.</p>
+							</div>
+							<h2 id="the-vision">The Vision</h2>
+							<p>During long car rides I'd get lost in podcasts like Ear Biscuits, Dear Hank and John, Watchtime, and
+								Distractible. I'd listen to these funny and charismatic people ramble on for hours on end, but eventually I
+								wondered whether I could start my own podcast. I could talk about whatever I was interested in, which probably
+								ended up being videogames, and Hyperdash was born.</p>
+							<aside class="callout">
+								<p class="callout-title">What's in a name</p>
+								<p>Hyperdash was named after a move from the speedrunning community of a popular indie platformer game,
+									Celeste.</p>
+							</aside>
+							<div class="listen">
+								<a href="https://open.spotify.com/show/1FjcmCZymM4oqawIBfDaGe?si=6ea449ce20674460" target="_blank" rel="noopener"><svg class="icon i-spotify" aria-hidden="true"><use href="../images/icons.svg#spotify" /></svg> Spotify</a>
+								<a href="https://podcasts.apple.com/us/podcast/hyperdash/id1638627733" target="_blank" rel="noopener"><svg class="icon i-mic" aria-hidden="true"><use href="../images/icons.svg#mic" /></svg> Apple Podcasts</a>
+								<a href="https://music.amazon.com/podcasts/b7f13f88-7e04-4093-b657-ad49bae6b58f/hyperdash" target="_blank" rel="noopener"><svg class="icon i-music" aria-hidden="true"><use href="../images/icons.svg#music" /></svg> Amazon Podcasts</a>
+								<a href="https://www.youtube.com/@hyperdashpodcast" target="_blank" rel="noopener"><svg class="icon i-youtube" aria-hidden="true"><use href="../images/icons.svg#youtube" /></svg> YouTube</a>
+							</div>
+							<p>Josh, my co-host for the later part of Hyperdash's run, was kind enough to join me and talk about Hyperdash.
+								Hey Josh!</p>
+							<p class="josh">hallo eddie!</p>
+							<p>So Josh's font will look like that and my font will look like this.</p>
+							<p>We needed a new logo, and since the podcast was about video games, I just put the name on a simple pattern in
+								Photoshop and put the logos of our favorite games on there.</p>
+							<figure class="figure figure--square">
+								<img src="../images/hyperdash/logo-800.webp" srcset="../images/hyperdash/logo-800.webp 800w, ../images/hyperdash/logo-1000.webp 1000w" sizes="(min-width: 800px) 560px, 100vw" width="1000" height="1000" alt="Hyperdash logo: the show name on pink and navy stripes surrounded by pixel-art game icons" loading="lazy" decoding="async" />
+							</figure>
+							<h2 id="studio">Studio</h2>
+							<p>There's not a lot of equipment you need to podcast - it's pretty much exactly what you expect. A microphone,
+								audio editing software, and some way to upload your podcasts.</p>
+							<p>The microphone I use was the same one I use to stream and record YouTube videos (read more about those
+								adventures <a href="mantra.html">here</a>). It's the <a href="https://amzn.to/4fJUCuM" target="_blank"
+								rel="sponsored noopener">Fifine K669</a> and I've got it on a <a href="https://amzn.to/3DOJwrd" target="_blank"
+								rel="sponsored noopener">budget mic stand</a>.</p>
+							<p class="fine-print">Those are affiliate links, by the way. I may get a small commission with no extra cost to
+								you. The rest of the amazon links on this page are all also affiliate links.</p>
+							<figure class="figure figure--portrait">
+								<img src="../images/hyperdash/beacn-mic-800.webp" srcset="../images/hyperdash/beacn-mic-800.webp 800w, ../images/hyperdash/beacn-mic-1600.webp 1600w" sizes="(min-width: 800px) 430px, 100vw" width="1600" height="2133" alt="The Beacn microphone on a boom arm, decorated with a D.Va charm and a Princess Celestia figurine" loading="lazy" decoding="async" />
+							</figure>
+							<aside class="callout">
+								<p class="callout-title">Upgrades</p>
+								<p>I've since upgraded to the <a href="https://amzn.to/42pgbxV" target="_blank" rel="sponsored noopener">Beacn
+									mic</a>, pictured above, but they look mostly the same, except the Beacn mic is about twice the size of the
+									Fifine K669. Also, my Fifine K669 happened to be a disgusting color only describable as dark pink—because, of
+									course, the black one was more expensive.</p>
+							</aside>
+							<p>Anyways, the mic and the mic stand are both pretty cheap, but they get the job done. Since I use Adobe
+								Audition and its audio effects and filters for processing the audio, I can make it sound a lot better than the
+								price tag indicates.</p>
+							<aside class="callout">
+								<p class="callout-title">Decorations</p>
+								<p>I added those decorations later: a small D.Va backpack hanger and a Princess Celestia figurine.</p>
+							</aside>
+							<p class="josh">my mic setup for Hyperdash wasn't anything too special. but to give a bit of backstory, before
+								covid hit, my dad purchased a Blue Blackout Spark SL to potentially record some of his music with a couple of
+								his friends.</p>
+							<figure class="figure figure--portrait">
+								<img src="../images/hyperdash/josh-peep-800.webp" srcset="../images/hyperdash/josh-peep-800.webp 800w, ../images/hyperdash/josh-peep-1600.webp 1600w" sizes="(min-width: 800px) 430px, 100vw" width="1600" height="2133" alt="Josh's face reflected in the chrome body of his Blue Blackout Spark SL microphone" loading="lazy" decoding="async" />
+							</figure>
+							<p class="josh">but alas, covid changed the entire world—and my potential microphone. fast forward two years and
+								as i was searching for an upgrade from my Razer Kraken X headset, i remembered a microphone in a cabinet that
+								never got the chance to be used.</p>
+							<figure class="figure">
+								<img src="../images/hyperdash/josh-old-mic-arm-800.webp" srcset="../images/hyperdash/josh-old-mic-arm-800.webp 800w, ../images/hyperdash/josh-old-mic-arm-1600.webp 1600w" sizes="(min-width: 800px) 720px, 100vw" width="1600" height="1200" alt="Josh's 2023 desk setup with the microphone on a budget mic stand" loading="lazy" decoding="async" />
+							</figure>
+							<p class="josh">ever since then, i've used this mic for more than Hyperdash: calls, recordings for eddie's
+								YouTube channel (<a href="https://www.youtube.com/watch?v=x2okKzouxrI" target="_blank" rel="noopener">this</a>
+								one was my favorite, but <a href="mantra.html">he can tell you more about that</a>), and your typical microphone
+								uses as well.</p>
+							<p class="josh">back then, i had my mic mounted on some cheap amazon mic stand, but i've since upgraded to the
+								Wave Mic Arm LP from Elgato; definitely more sturdy than my old one.</p>
+							<figure class="figure">
+								<img src="../images/hyperdash/josh-new-mic-arm-800.webp" srcset="../images/hyperdash/josh-new-mic-arm-800.webp 800w, ../images/hyperdash/josh-new-mic-arm-1600.webp 1600w" sizes="(min-width: 800px) 720px, 100vw" width="1600" height="1200" alt="Josh's upgraded setup with the microphone on an Elgato Wave Mic Arm LP" loading="lazy" decoding="async" />
+							</figure>
+							<p>For processing, we split up the work to match our skills: I handled editing audio and Josh handled editing
+								the videos and thumbnails.</p>
+							<p>As for the software we used, fasten your harness. In total I used 3 programs: Audacity, Adobe Audition, and
+								Da Vinci Resolve. I used Audacity to record, Adobe Audition to apply filters to the audio, and Da Vinci Resolve
+								to cut and add music and sound effects to the audio. Realistically, I only needed one: Adobe Audition.
+								Thankfully the university provides the Adobe suite to its students so I could access this industry leading
+								software for “free”. I'm not sure why I used Audacity to record. I know Josh doesn't have access to Adobe
+								Audition so I showed him how to use Audacity, but I could have just recorded in Audition. And I consciously
+								chose to use DaVinci Resolve to cut and add effects to the audio. I was far more used to editing in DaVinci
+								Resolve and was too lazy to learn new key bindings and shortcuts in Audition.</p>
+							<p>Josh, over to you. What did you use to edit the videos and thumbnails?</p>
+							<p class="josh">i used Filmora, a not-so-known editing software, but one that i had used for almost 3 years on
+								personal projects at the time of Hyperdash's inception. we wanted Hyperdash to have its own unique flair, but
+								still took inspiration & formats from other podcasts we listened to. when planning the podcast, eddie and i both
+								knew how we couldn't use our actual faces; not only that we didn't want to, but we just didn't have the
+								equipment at the time to do so. so, we opted to use Minecraft (yes, the “block game”) as a way of putting a
+								“face” on the voices that you, the viewer, would be hearing. we focused on accomplishing this goal on YouTube,
+								one of the different platforms we ended up utilizing, but the only platform where we could make videos &
+								thumbnails.</p>
+							<p class="josh">editing the videos was BY FAR the most tedious part of this whole process. from building sets
+								in-game, to get the lighting just right, and then to use a community-made mod (<a
+								href="https://www.replaymod.com/" target="_blank" rel="noopener">Replay Mod</a> by CrushedPixel and johni0702)
+								to record all of the footage. like any other major podcast with a youtube channel, we recreated the whole “feel”
+								of a two-person (albeit, with <a href="https://youtu.be/t0r9rBBqJhc?t=1406" target="_blank" rel="noopener">one
+								exception</a>) podcast quite successfully in my eyes.</p>
+							<p class="josh">then came the thumbnails, unlike eddie, i didn't have educational access to Adobe's Creative
+								Cloud programs, notably Premiere Pro, Photoshop, and After Effects. i ended up using a web-based, free version
+								of Adobe's Photoshop called Photopea, which is where all of the episodes' thumbnails were made. for every
+								thumbnail, i wanted to make sure that at least one of the characters' faces were included, keeping that “putting
+								a face on the voice” mantra in mind. out of all of the thumbnails that were posted onto the Hyperdash channel,
+								my favorite out of all of them would have to be the thumbnail for <a
+								href="https://www.youtube.com/watch?v=fzMBePbIuwo" target="_blank" rel="noopener">The Chocolate Connoisseur</a>
+								or Episode 13.</p>
+							<div class="embed embed--video">
+								<iframe src="https://www.youtube.com/embed/fzMBePbIuwo?si=CGmFi0OKp8-UGakm" title="Hyperdash Episode 13: The Chocolate Connoisseur" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							</div>
+							<p>For uploading the podcasts, we just used Spotify for Creators, which was previously named Anker. It was the
+								best free option out there, and let us get our podcast directly onto big platforms like Spotify, Amazon music,
+								Apple podcasts, and many more.</p>
+							<h2 id="process">Process</h2>
+							<p>After making a few episodes, Josh and I got into a rhythm. The basic plan was simple: we planned out our
+								episodes, recorded them, edited them, and uploaded them. Throughout the week Josh and I would note down anything
+								interesting that happened during our weeks or any news we want to discuss. Our plans ended up looking like
+								this:</p>
+							<figure class="figure figure--square">
+								<img src="../images/hyperdash/episode-plan-800.webp" srcset="../images/hyperdash/episode-plan-800.webp 800w, ../images/hyperdash/episode-plan-1076.webp 1076w" sizes="(min-width: 800px) 560px, 100vw" width="1076" height="1099" alt="Notes outlining Hyperdash Episode 19: title, description, timestamps and talking points" loading="lazy" decoding="async" />
+							</figure>
+							<p>When it came to recording, we just set it up, and … talked. Considering the lack of planning we did (we
+								loosely followed the outline and yapped) it's a miracle our episodes were remotely coherent.</p>
+							<div class="embed embed--audio">
+								<iframe src="https://open.spotify.com/embed/episode/12lgQUJ9ebNC9g6etBgbY0?utm_source=generator" title="Hyperdash podcast episode on Spotify" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</div>
+							<p>Every good podcast has a recognizable intro. I don't know how it started, but starting in episode 10 (Devious
+								Ways to Serve Breakfast), we always began with:</p>
+							<p>Welcome back to the Hyperdash Podcast, where two friends hang out, tell stories, and talk about video games.
+								I'm Eddie.</p>
+							<p class="josh">And I'm Josh.</p>
+							<p>This week, ...</p>
+							<p>We'd always start off by asking each other “would you rather” questions. I think our best one was “would you
+								rather eat a baby goat or a matter baby”.</p>
+							<div class="embed embed--audio">
+								<iframe src="https://open.spotify.com/embed/episode/31BYZlMO6qbSRRQwZ7V15f?utm_source=generator&amp;t=23652" title="Hyperdash podcast episode on Spotify" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</div>
+							<h2 id="our-favorite-moments">Our favorite moments</h2>
+							<p>Probably one of my favorite moments is when I talked about becoming the “Banana Bandit” at my university.</p>
+							<div class="embed embed--audio">
+								<iframe src="https://open.spotify.com/embed/episode/78YBdQSfz7E04ja5hFScYl?utm_source=generator&amp;t=677191" title="Hyperdash episode on Spotify: the Banana Bandit story" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</div>
+							<p>I'll spare the full story but it's about how I got posted on my school's social media page as the “banana
+								bandit” after being caught red-handed taking too many bananas out of the dining hall.</p>
+							<p class="josh">i have two very fond memories from Hyperdash: firstly, the “Metro Fire” bit from Devious Ways to
+								Eat Breakfast or Episode 10. or, our collective discovery of the “Djungelskog” and other IKEA names in
+								Djungelskog and the Return of the Chocolate Connoisseur or Episode 15, starting from the 22:15 timestamp on
+								Spotify.</p>
+							<div class="embed embed--video">
+								<iframe src="https://www.youtube.com/embed/t0r9rBBqJhc?si=MkHaZPzQPjXKgCNs" title="Hyperdash Episode 15: Djungelskog and the Return of the Chocolate Connoisseur" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							</div>
+							<div class="embed embed--audio">
+								<iframe src="https://open.spotify.com/embed/episode/17kN7lXFgTOpAL32DBbaMX?utm_source=generator&amp;t=1335380" title="Hyperdash Episode 15 on Spotify" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</div>
+							<h2 id="farewell-for-now">Farewell (for now)</h2>
+							<p>But making a new episode every week stretched us too thin. After all, it was planning, recording, editing
+								audio, and editing video every single week. We decided to cut back and stop making episodes. It was too much to
+								keep up with.</p>
+							<p>There was this tool that I saw and considered buying called AutoPod that would have greatly simplified Josh's
+								process for editing the videos, but we didn't end up getting it.</p>
+							<p>In retrospect, buying (or pirating) AutoPod would have been worth it, especially because I had the money to
+								spare and it would have simplified the process of editing the video a ton. Investing in hobbies (in moderation)
+								is worth it for personal enjoyment.</p>
+							<p>Incidentally, I was streaming modded Minecraft one day when I had a chatter come in and ask me why we stopped
+								uploading. I didn't think we had too many engaged listeners from the metrics, but this person said they were
+								from Amazon Music (which also offers podcasts). After the stream I logged into my analytics page for Amazon
+								Podcasts and was surprised to see several consistently engaged listeners, and then I felt guilty for
+								disappearing, especially without saying anything.</p>
+							<p>I hadn't even realized that we had built a small audience on Amazon Music: I was so focused on metrics for
+								Spotify and YouTube that I completely ignored looking at the numbers for other platforms.</p>
+							<h2 id="engl-384">ENGL 384</h2>
+							<p>Though my focus is on computer science and business, I want to take classes in English if my schedule allows
+								it because reading and writing interest me. I also find that a lot of my hobbies involve a creative writing
+								aspect, and of course writing is a skill you'll use for the rest of your life. But I digress.</p>
+							<p>Signing up for classes in my 1st year spring semester, I came across a class called ENGL 384 - Podcasting,
+								and figured I could learn something new from it. My professor was fantastic and I ended up making an episode
+								about a personal narrative and one in which I interviewed my sister's girlfriend about her time in her tech
+								career. Generally I've found English professors to be wonderful and chill people, and that class was pretty fun.
+								Despite hyperdash's rather short stint, I'll keep my options open to running a podcast again some day.<span
+								class="end-mark" aria-hidden="true"></span></p>
+						</div>
+						<footer class="article-end">
+							<nav class="pager" aria-label="More projects">
+								<a class="pager-link pager-link--prev" href="reverie.html">
+									<img src="../images/reverie/hysteria-light-800.webp" width="1600" height="1200" alt="" loading="lazy" decoding="async" />
+									<span class="pager-text">
+										<span class="pager-dir"><svg class="icon i-arrow-left icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> Previous</span>
+										<span class="pager-title">Reverie Engravings</span>
+									</span>
+								</a>
+								<a class="pager-link pager-link--next" href="mantra.html">
+									<img src="../images/mantra/sleeping-fox-800.webp" width="1600" height="900" alt="" loading="lazy" decoding="async" />
+									<span class="pager-text">
+										<span class="pager-dir">Next <svg class="icon i-arrow-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-right" /></svg></span>
+										<span class="pager-title">Mantra</span>
+									</span>
+								</a>
+							</nav>
+						</footer>
+					</div>
+					<aside class="toc" aria-label="Table of contents">
+						<div class="toc-inner">
+							<p class="toc-title"><span>On this page</span><span class="toc-percent" data-toc-percent>0%</span></p>
+							<ol class="toc-list" data-toc></ol>
+							<div class="toc-actions">
+								<button type="button" data-copy="" data-copy-message="Link copied"><svg class="icon i-link" aria-hidden="true"><use href="../images/icons.svg#link" /></svg> Copy link</button>
+								<a href="#main"><svg class="icon i-arrow-up" aria-hidden="true"><use href="../images/icons.svg#arrow-up" /></svg> Back to top</a>
+							</div>
+						</div>
+					</aside>
 				</div>
-
-				<p class="josh">
-					my mic setup for Hyperdash wasn't anything too special. but to give a bit of backstory, before covid hit, my
-					dad purchased a Blue Blackout Spark SL to potentially record some of his music with a couple of his friends.
-				</p>
-
-				<img src="../images/hyperdash/joshPeep.jpg" alt="Josh peeping the mic" class="article-image reveal" />
-
-				<p class="josh">
-					but alas, covid changed the entire world—and my potential microphone. fast forward two years and as i was
-					searching for an upgrade from my Razer Kraken X headset, i remembered a microphone in a cabinet that never got
-					the chance to be used.
-				</p>
-
-				<img src="../images/hyperdash/joshOldMicArm.jpg" alt="Josh's setup from 2023" class="article-image reveal" />
-
-				<p class="josh">
-					ever since then, i've used this mic for more than Hyperdash: calls, recordings for eddie's YouTube channel (<a
-						href="https://www.youtube.com/watch?v=x2okKzouxrI"
-						target="_blank"
-						>this</a
-					>
-					one was my favorite, but
-					<a href="../projects/mantra.html" target="_blank">he can tell you more about that</a>), and your typical
-					microphone uses as well.
-				</p>
-				<p class="josh">
-					back then, i had my mic mounted on some cheap amazon mic stand, but i've since upgraded to the Wave Mic Arm LP
-					from Elgato; definitely more sturdy than my old one.
-				</p>
-
-				<img src="../images/hyperdash/joshNewMicArm.jpg" alt="New mic stand" class="article-image reveal" />
-
-				<p>
-					For processing, we split up the work to match our skills: I handled editing audio and Josh handled editing the
-					videos and thumbnails.
-				</p>
-
-				<p>
-					As for the software we used, fasten your harness. In total I used 3 programs: Audacity, Adobe Audition, and Da
-					Vinci Resolve. I used Audacity to record, Adobe Audition to apply filters to the audio, and Da Vinci Resolve
-					to cut and add music and sound effects to the audio. Realistically, I only needed one: Adobe Audition.
-					Thankfully the university provides the Adobe suite to its students so I could access this industry leading
-					software for “free”. I'm not sure why I used Audacity to record. I know Josh doesn't have access to Adobe
-					Audition so I showed him how to use Audacity, but I could have just recorded in Audition. And I consciously
-					chose to use DaVinci Resolve to cut and add effects to the audio. I was far more used to editing in DaVinci
-					Resolve and was too lazy to learn new key bindings and shortcuts in Audition.
-				</p>
-
-				<p>Josh, over to you. What did you use to edit the videos and thumbnails?</p>
-
-				<p class="josh">
-					i used Filmora, a not-so-known editing software, but one that i had used for almost 3 years on personal
-					projects at the time of Hyperdash's inception. we wanted Hyperdash to have its own unique flair, but still
-					took inspiration & formats from other podcasts we listened to. when planning the podcast, eddie and i both
-					knew how we couldn't use our actual faces; not only that we didn't want to, but we just didn't have the
-					equipment at the time to do so. so, we opted to use Minecraft (yes, the “block game”) as a way of putting a
-					“face” on the voices that you, the viewer, would be hearing. we focused on accomplishing this goal on YouTube,
-					one of the different platforms we ended up utilizing, but the only platform where we could make videos &
-					thumbnails.
-				</p>
-				<p class="josh">
-					editing the videos was BY FAR the most tedious part of this whole process. from building sets in-game, to get
-					the lighting just right, and then to use a community-made mod (<a
-						href="https://www.replaymod.com/"
-						target="_blank"
-						>Replay Mod</a
-					>
-					by CrushedPixel and johni0702) to record all of the footage. like any other major podcast with a youtube
-					channel, we recreated the whole “feel” of a two-person (albeit, with
-					<a href="https://youtu.be/t0r9rBBqJhc?t=1406" target="_blank">one exception</a>) podcast quite successfully in
-					my eyes.
-				</p>
-				<p class="josh">
-					then came the thumbnails, unlike eddie, i didn't have educational access to Adobe's Creative Cloud programs,
-					notably Premiere Pro, Photoshop, and After Effects. i ended up using a web-based, free version of Adobe's
-					Photoshop called Photopea, which is where all of the episodes' thumbnails were made. for every thumbnail, i
-					wanted to make sure that at least one of the characters' faces were included, keeping that “putting a face on
-					the voice” mantra in mind. out of all of the thumbnails that were posted onto the Hyperdash channel, my
-					favorite out of all of them would have to be the thumbnail for
-					<a href="https://www.youtube.com/watch?v=fzMBePbIuwo" target="_blank">The Chocolate Connoisseur</a> or Episode
-					13.
-				</p>
-
-				<iframe
-					width="100%"
-					height="500"
-					src="https://www.youtube.com/embed/fzMBePbIuwo?si=CGmFi0OKp8-UGakm"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen
-				></iframe>
-
-				<p>
-					For uploading the podcasts, we just used Spotify for Creators, which was previously named Anker. It was the
-					best free option out there, and let us get our podcast directly onto big platforms like Spotify, Amazon music,
-					Apple podcasts, and many more.
-				</p>
-
-				<h2 id="Section 4">Process</h2>
-
-				<p>
-					After making a few episodes, Josh and I got into a rhythm. The basic plan was simple: we planned out our
-					episodes, recorded them, edited them, and uploaded them. Throughout the week Josh and I would note down
-					anything interesting that happened during our weeks or any news we want to discuss. Our plans ended up looking
-					like this:
-				</p>
-
-				<img src="../images/hyperdash/hyperdashPlan.png" alt="Hyperdash Plan" class="article-image reveal" />
-
-				<p>
-					When it came to recording, we just set it up, and … talked. Considering the lack of planning we did (we
-					loosely followed the outline and yapped) it's a miracle our episodes were remotely coherent.
-				</p>
-
-				<iframe
-					style="border-radius: 12px"
-					src="https://open.spotify.com/embed/episode/12lgQUJ9ebNC9g6etBgbY0?utm_source=generator"
-					width="100%"
-					height="152"
-					frameborder="0"
-					allowfullscreen=""
-					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-					loading="lazy"
-				></iframe>
-
-				<p>
-					Every good podcast has a recognizable intro. I don't know how it started, but starting in episode 10 (Devious
-					Ways to Serve Breakfast), we always began with:
-				</p>
-
-				<p>
-					Welcome back to the Hyperdash Podcast, where two friends hang out, tell stories, and talk about video games.
-					I'm Eddie.
-				</p>
-
-				<p class="josh">And I'm Josh.</p>
-
-				<p>This week, ...</p>
-
-				<p>
-					We'd always start off by asking each other “would you rather” questions. I think our best one was “would you
-					rather eat a baby goat or a matter baby”.
-				</p>
-
-				<iframe
-					style="border-radius: 12px"
-					src="https://open.spotify.com/embed/episode/31BYZlMO6qbSRRQwZ7V15f?utm_source=generator&t=23652"
-					width="100%"
-					height="152"
-					frameborder="0"
-					allowfullscreen=""
-					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-					loading="lazy"
-				></iframe>
-
-				<h2 id="Section 5">Our favorite moments</h2>
-
-				Probably one of my favorite moments is when I talked about becoming the “Banana Bandit” at my university.
-
-				<iframe
-					style="border-radius: 12px"
-					src="https://open.spotify.com/embed/episode/78YBdQSfz7E04ja5hFScYl?utm_source=generator&t=677191"
-					width="100%"
-					height="152"
-					frameborder="0"
-					allowfullscreen=""
-					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-					loading="lazy"
-				></iframe>
-
-				<p>
-					I'll spare the full story but it's about how I got posted on my school's social media page as the “banana
-					bandit” after being caught red-handed taking too many bananas out of the dining hall.
-				</p>
-
-				<p class="josh">
-					i have two very fond memories from Hyperdash: firstly, the “Metro Fire” bit from Devious Ways to Eat Breakfast
-					or Episode 10. or, our collective discovery of the “Djungelskog” and other IKEA names in Djungelskog and the
-					Return of the Chocolate Connoisseur or Episode 15, starting from the 22:15 timestamp on Spotify.
-				</p>
-				<iframe
-					width="100%"
-					height="500"
-					src="https://www.youtube.com/embed/t0r9rBBqJhc?si=MkHaZPzQPjXKgCNs"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen
-				></iframe>
-
-				<iframe
-					style="border-radius: 12px"
-					src="https://open.spotify.com/embed/episode/17kN7lXFgTOpAL32DBbaMX?utm_source=generator&t=1335380"
-					width="100%"
-					height="152"
-					frameborder="0"
-					allowfullscreen=""
-					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-					loading="lazy"
-				></iframe>
-
-				<p class="josh"></p>
-				<p class="josh"></p>
-				<p class="josh"></p>
-				<p class="josh"></p>
-				<h2 id="Section 6">Farewell (for now)</h2>
-
-				<p>
-					But making a new episode every week stretched us too thin. After all, it was planning, recording, editing
-					audio, and editing video every single week. We decided to cut back and stop making episodes. It was too much
-					to keep up with.
-				</p>
-
-				<p>
-					There was this tool that I saw and considered buying called AutoPod that would have greatly simplified Josh's
-					process for editing the videos, but we didn't end up getting it.
-				</p>
-
-				<p>
-					In retrospect, buying (or pirating) AutoPod would have been worth it, especially because I had the money to
-					spare and it would have simplified the process of editing the video a ton. Investing in hobbies (in
-					moderation) is worth it for personal enjoyment.
-				</p>
-
-				<p>
-					Incidentally, I was streaming modded Minecraft one day when I had a chatter come in and ask me why we stopped
-					uploading. I didn't think we had too many engaged listeners from the metrics, but this person said they were
-					from Amazon Music (which also offers podcasts). After the stream I logged into my analytics page for Amazon
-					Podcasts and was surprised to see several consistently engaged listeners, and then I felt guilty for
-					disappearing, especially without saying anything.
-				</p>
-
-				<p>
-					I hadn't even realized that we had built a small audience on Amazon Music: I was so focused on metrics for
-					Spotify and YouTube that I completely ignored looking at the numbers for other platforms.
-				</p>
-
-				<h2 id="Section 7">ENGL 384</h2>
-				<p>
-					Though my focus is on computer science and business, I want to take classes in English if my schedule allows
-					it because reading and writing interest me. I also find that a lot of my hobbies involve a creative writing
-					aspect, and of course writing is a skill you'll use for the rest of your life. But I digress.
-				</p>
-
-				<p>
-					Signing up for classes in my 1st year spring semester, I came across a class called ENGL 384 - Podcasting, and
-					figured I could learn something new from it. My professor was fantastic and I ended up making an episode about
-					a personal narrative and one in which I interviewed my sister's girlfriend about her time in her tech career.
-					Generally I've found English professors to be wonderful and chill people, and that class was pretty fun.
-					Despite hyperdash's rather short stint, I'll keep my options open to running a podcast again some day.■
-				</p>
-			</div>
-
-			<!-- Table of contents -->
-			<div class="toc">
-				<h3>On this page</h3>
-				<ul id="toc-list"></ul>
-			</div>
-		</div>
-
-		<!-- Footer -->
-		<footer>
-			<p>
-				<span class="material-icons">copyright</span>
-				<span class="copyrightMessage"></span>
-			</p>
+			</article>
+		</main>
+		<footer class="site-footer" data-footer>
+			<noscript><div class="container footer-bottom">© Eddie Yang. All rights reserved.</div></noscript>
 		</footer>
-
-		<!-- Back to Top button -->
-		<a href="#top" id="back-to-top">Back to Top</a>
-
-		<!-- Link to the external JavaScript file -->
-		<script src="../js/globalScript.js"></script>
-		<script src="../js/articleScript.js"></script>
-		<script src="../js/buttonScript.js"></script>
 	</body>
 </html>

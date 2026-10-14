@@ -1,102 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+	NEW ARTICLE TEMPLATE
+	1. Copy this file into projects/, skills/ or writing/ and rename it (e.g. projects/myProject.html).
+	2. Replace every {{ placeholder }}. Delete any block you don't need (TL;DR, tidbits, figures, embeds).
+	3. Images: save them in images/<folder>/ as WebP about 1600px wide (plus an 800px copy for srcset).
+	   Phone photos carry GPS location in their metadata: strip it before committing (and double-check).
+	4. The table of contents builds itself from every <h2> inside .prose. Give each <h2> a short id.
+	5. Link the new page from its hub (projects/projects.html etc.), the home page if it's a highlight,
+	   and update the Previous/Next pager links on its neighbours.
+-->
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>{{ Article Title }}</title>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VTTVJNS9Q"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-4VTTVJNS9Q");
-		</script>
-
-		<link rel="stylesheet" href="../css/theme.css" />
-		<link rel="stylesheet" href="../css/articleStyles.css" />
-		<link rel="stylesheet" href="../css/buttonStyles.css" />
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{{ Article Title }} · Eddie Yang</title>
+		<meta name="description" content="{{ One or two sentence summary for search and link previews }}" />
+		<meta name="author" content="Eddie Yang" />
+		<meta name="theme-color" content="#0a0b10" />
+		<link rel="canonical" href="https://edyang1.github.io/portfolio/projects/{{ file }}.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:site_name" content="Eddie Yang" />
+		<meta property="og:title" content="{{ Article Title }}" />
+		<meta property="og:description" content="{{ One or two sentence summary for search and link previews }}" />
+		<meta property="og:url" content="https://edyang1.github.io/portfolio/projects/{{ file }}.html" />
+		<meta property="og:image" content="https://edyang1.github.io/portfolio/images/og/home.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+		<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";var d=document.documentElement;d.dataset.theme=t;d.classList.add("js")})();</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;display=swap" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="../js/analytics.js" defer></script>
+		<script src="../js/site.js" defer></script>
+		<script src="../js/article.js" defer></script>
 	</head>
-
-	<body>
-		<div class="container content">
-			<!-- Article content -->
-			<div class="article">
-				<!-- Back button -->
-				<div class="back-button">
-					<a href="../projects/projects.html"><span class="material-icons">arrow_back</span> Project feed</a>
+	<body data-root="../">
+		<a class="skip-link" href="#main">Skip to content</a>
+		<header class="site-nav" data-nav>
+			<div class="container nav-inner">
+				<a class="brand" href="../index.html" aria-label="Eddie Yang, home">
+					<span class="brand-mark" aria-hidden="true">ey</span>
+					<span class="brand-name">Eddie Yang</span>
+				</a>
+				<nav class="nav-links" aria-label="Primary">
+					<a href="../projects/projects.html" aria-current="true">Projects</a>
+					<a href="../skills/skills.html">Skills</a>
+					<a href="../writing/writing.html">Writing</a>
+					<a href="https://eddiereviewseverything.wordpress.com" target="_blank" rel="noopener">Reviews <svg class="icon i-arrow-up-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg></a>
+				</nav>
+				<div class="nav-actions">
+					<button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+						<svg class="icon i-sun" aria-hidden="true"><use href="../images/icons.svg#sun" /></svg>
+						<svg class="icon i-moon" aria-hidden="true"><use href="../images/icons.svg#moon" /></svg>
+					</button>
+					<a class="btn btn--sm btn--primary nav-resume" href="../extras/Edward_Yang_resume.pdf" target="_blank" rel="noopener">
+						Résumé <svg class="icon i-arrow-up-right icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg>
+					</a>
+					<button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">
+						<span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+					</button>
 				</div>
-				<h1 id="top">{{ Article Title }}</h1>
-				<!-- Author, Date, and Reading time -->
-				<div class="article-meta">
-					<span class="author">Eddie Yang</span> |
-					<span class="reading-time"><span class="material-icons">schedule</span> {{ Reading Time }}</span>
-				</div>
-
-				<!-- TL;DR Section -->
-				<div class="tidbit-container reveal">
-					<h3 id="Section 1">TL;DR</h3>
-					<p class="reveal-tldr">{{ TLDR Summary }}</p>
-				</div>
-
-				<!-- Introduction Section -->
-				<h2 id="Section 2">{{ Introduction Title }}</h2>
-				<p>{{ Introduction Paragraph 1 }}</p>
-				<p>{{ Introduction Paragraph 2 }}</p>
-				<p>{{ Introduction Paragraph 3 }}</p>
-
-				<!-- Process Section -->
-				<h2 id="Section 3">{{ Process Title }}</h2>
-				<p>{{ Process Paragraph 1 }}</p>
-				<p>{{ Process Paragraph 2 }}</p>
-				<div class="tidbit-container reveal">
-					<h3>{{ Tidbit Title }}</h3>
-					<p>{{ Tidbit Content }}</p>
-				</div>
-				<p>{{ Process Paragraph 3 }}</p>
-
-				<img src="{{ Image 1 Source }}" alt="{{ Image 1 Alt Text }}" class="article-image reveal" />
-				<p>{{ Process Paragraph 4 }}</p>
-
-				<img src="{{ Image 2 Source }}" alt="{{ Image 2 Alt Text }}" class="article-image reveal" />
-				<p>{{ Process Paragraph 5 }}</p>
-
-				<img src="{{ Image 3 Source }}" alt="{{ Image 3 Alt Text }}" class="article-image reveal" />
-				<p>{{ Process Paragraph 6 }}</p>
-
-				<img src="{{ Image 4 Source }}" alt="{{ Image 4 Alt Text }}" class="article-image reveal" />
-				<p>{{ Process Paragraph 7 }}</p>
-
-				<h3>Skills leveled up: {{ Skill 1 }}, {{ Skill 2 }}</h3>
 			</div>
-
-			<!-- Table of contents -->
-			<div class="toc">
-				<h3>On this page</h3>
-				<ul id="toc-list"></ul>
-			</div>
-		</div>
-
-		<!-- Footer -->
-		<footer>
-			<p>
-				<span class="material-icons">copyright</span>
-				<span class="copyrightMessage"></span>
-			</p>
+		</header>
+		<div class="read-progress" aria-hidden="true"></div>
+		<main id="main">
+			<article>
+				<header class="article-hero">
+					<div class="hero-glow" aria-hidden="true"><img src="../images/{{ folder }}/{{ cover }}-800.webp" alt="" /></div>
+					<div class="article-shell">
+						<div>
+							<a class="back-link" href="projects.html"><svg class="icon i-arrow-left icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> All projects</a>
+							<p class="article-kicker"><span class="accent">Project</span><span>{{ Year }}</span></p>
+							<h1 class="article-title">{{ Article Title }}</h1>
+							<p class="article-dek">{{ One-line summary, also used on the card }}</p>
+							<div class="article-meta">
+								<span><span class="avatars"><span class="avatar">EY</span></span>Eddie Yang</span>
+								<span><svg class="icon i-clock" aria-hidden="true"><use href="../images/icons.svg#clock" /></svg> {{ N }} min read</span>
+								<div class="chip-row"><span class="chip">{{ Tag }}</span><span class="chip">{{ Tag }}</span></div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="article-shell article-body">
+					<div class="article-main">
+						<details class="toc-mobile">
+							<summary><span data-toc-current>On this page</span><svg class="icon i-chevron-down" aria-hidden="true"><use href="../images/icons.svg#chevron-down" /></svg></summary>
+							<ol class="toc-list" data-toc></ol>
+						</details>
+						<div class="prose">
+							<div class="tldr">
+								<p class="tldr-label"><svg class="icon i-sparkle icon-xs" aria-hidden="true"><use href="../images/icons.svg#sparkle" /></svg> TL;DR</p>
+								<p>{{ TL;DR summary }}</p>
+							</div>
+							<h2 id="{{ intro }}">{{ Introduction Title }}</h2>
+							<p>{{ Paragraph }}</p>
+							<aside class="callout">
+								<p class="callout-title">{{ Tidbit title }}</p>
+								<p>{{ Tidbit content }}</p>
+							</aside>
+							<h2 id="{{ process }}">{{ Process Title }}</h2>
+							<p>{{ Paragraph }}</p>
+							<!-- Landscape image. For portrait photos add figure--portrait; for two side by side use figure--pair with two <img>s -->
+							<figure class="figure">
+								<img src="../images/{{ folder }}/{{ name }}-800.webp" srcset="../images/{{ folder }}/{{ name }}-800.webp 800w, ../images/{{ folder }}/{{ name }}-1600.webp 1600w" sizes="(min-width: 800px) 720px, 100vw" width="1600" height="1200" alt="{{ Describe what the photo shows }}" loading="lazy" decoding="async" />
+								<figcaption>{{ Optional caption }}</figcaption>
+							</figure>
+							<!-- Spotify embed (use embed--video with a YouTube /embed/ URL for videos) -->
+							<div class="embed embed--audio">
+								<iframe src="{{ Spotify embed URL }}" title="{{ What is playing }}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</div>
+							<p>{{ Final paragraph }}<span class="end-mark" aria-hidden="true"></span></p>
+						</div>
+						<footer class="article-end">
+							<div class="skills-earned"><span class="tag"><svg class="icon i-trophy" aria-hidden="true"><use href="../images/icons.svg#trophy" /></svg> Skills leveled up</span><span class="chip">{{ Skill }}</span><span class="chip">{{ Skill }}</span></div>
+							<nav class="pager" aria-label="More projects">
+								<a class="pager-link pager-link--prev" href="{{ previous }}.html">
+									<img src="../images/{{ folder }}/{{ cover }}-800.webp" alt="" loading="lazy" />
+									<span class="pager-text"><span class="pager-dir"><svg class="icon i-arrow-left icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> Previous</span><span class="pager-title">{{ Previous title }}</span></span>
+								</a>
+								<a class="pager-link pager-link--next" href="{{ next }}.html">
+									<img src="../images/{{ folder }}/{{ cover }}-800.webp" alt="" loading="lazy" />
+									<span class="pager-text"><span class="pager-dir">Next <svg class="icon i-arrow-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-right" /></svg></span><span class="pager-title">{{ Next title }}</span></span>
+								</a>
+							</nav>
+						</footer>
+					</div>
+					<aside class="toc" aria-label="Table of contents">
+						<div class="toc-inner">
+							<p class="toc-title"><span>On this page</span><span class="toc-percent" data-toc-percent>0%</span></p>
+							<ol class="toc-list" data-toc></ol>
+							<div class="toc-actions">
+								<button type="button" data-copy="" data-copy-message="Link copied"><svg class="icon i-link" aria-hidden="true"><use href="../images/icons.svg#link" /></svg> Copy link</button>
+								<a href="#main"><svg class="icon i-arrow-up" aria-hidden="true"><use href="../images/icons.svg#arrow-up" /></svg> Back to top</a>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</article>
+		</main>
+		<footer class="site-footer" data-footer>
+			<noscript><div class="container footer-bottom">© Eddie Yang. All rights reserved.</div></noscript>
 		</footer>
-
-		<!-- Back to Top button -->
-		<a href="#top" id="back-to-top">Back to Top</a>
-
-		<!-- Link to the external JavaScript file -->
-		<script src="../js/globalScript.js"></script>
-		<script src="../js/articleScript.js"></script>
-		<script src="../js/buttonScript.js"></script>
 	</body>
 </html>

@@ -1,180 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Custom Engraved Cutting Board</title>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VTTVJNS9Q"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-4VTTVJNS9Q");
-		</script>
-
-		<link rel="stylesheet" href="../css/theme.css" />
-		<link rel="stylesheet" href="../css/articleStyles.css" />
-		<link rel="stylesheet" href="../css/buttonStyles.css" />
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Custom Engraved Cutting Board · Eddie Yang</title>
+		<meta name="description" content="During the summer of 2024 at UNC, I found myself stuck on campus with a desire to cook and no cutting board. Instead of buying one like a normal person, I decided to make my own using a piece of…" />
+		<meta name="author" content="Eddie Yang" />
+		<meta name="theme-color" content="#0a0b10" />
+		<link rel="canonical" href="https://edyang1.github.io/portfolio/projects/cuttingBoard.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:site_name" content="Eddie Yang" />
+		<meta property="og:title" content="Custom Engraved Cutting Board" />
+		<meta property="og:description" content="During the summer of 2024 at UNC, I found myself stuck on campus with a desire to cook and no cutting board. Instead of buying one like a normal person, I decided to make my own using a piece of…" />
+		<meta property="og:url" content="https://edyang1.github.io/portfolio/projects/cuttingBoard.html" />
+		<meta property="og:image" content="https://edyang1.github.io/portfolio/images/og/cuttingBoard.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+		<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";var d=document.documentElement;d.dataset.theme=t;d.classList.add("js")})();</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;display=swap" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="../js/analytics.js" defer></script>
+		<script src="../js/site.js" defer></script>
+		<script src="../js/article.js" defer></script>
 	</head>
-
-	<body>
-		<div class="container content">
-			<!-- Article content -->
-			<div class="article">
-				<!-- Back button -->
-				<div class="back-button">
-					<a href="../projects/projects.html"><span class="material-icons">arrow_back</span> Project feed</a>
+	<body data-root="../">
+		<a class="skip-link" href="#main">Skip to content</a>
+		<header class="site-nav" data-nav>
+			<div class="container nav-inner">
+				<a class="brand" href="../index.html" aria-label="Eddie Yang, home">
+					<span class="brand-mark" aria-hidden="true">ey</span>
+					<span class="brand-name">Eddie Yang</span>
+				</a>
+				<nav class="nav-links" aria-label="Primary">
+					<a href="../projects/projects.html" aria-current="true">Projects</a>
+					<a href="../skills/skills.html">Skills</a>
+					<a href="../writing/writing.html">Writing</a>
+					<a href="https://eddiereviewseverything.wordpress.com" target="_blank" rel="noopener">Reviews <svg class="icon i-arrow-up-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg></a>
+				</nav>
+				<div class="nav-actions">
+					<button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+						<svg class="icon i-sun" aria-hidden="true"><use href="../images/icons.svg#sun" /></svg>
+						<svg class="icon i-moon" aria-hidden="true"><use href="../images/icons.svg#moon" /></svg>
+					</button>
+					<a class="btn btn--sm btn--primary nav-resume" href="../extras/Edward_Yang_resume.pdf" target="_blank" rel="noopener">
+						Résumé <svg class="icon i-arrow-up-right icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg>
+					</a>
+					<button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">
+						<span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+					</button>
 				</div>
-				<h1 id="top">Custom Engraved Cutting Board</h1>
-				<!-- Author, Date, and Reading time -->
-				<div class="article-meta">
-					<span class="author">Eddie Yang</span> |
-					<span class="reading-time"><span class="material-icons">schedule</span> 3-4 minutes</span>
-				</div>
-
-				<!-- TL;DR Section -->
-				<div class="tidbit-container reveal">
-					<h3 id="Section 1">TL;DR</h3>
-					<p class="reveal-tldr">
-						During the summer of 2024 at UNC, I found myself stuck on campus with a desire to cook and no cutting board.
-						Instead of buying one like a normal person, I decided to make my own using a piece of plywood and the Shaper
-						Origin handheld CNC machine. The process was full of trial and error, from designing the board in Adobe
-						Illustrator to dealing with SVG file issues, but in the end, I created a custom engraved cutting board.
-						Sure, it might have taken five hours and could've been easier to buy one, but now I have a unique, handmade
-						piece.
-					</p>
-				</div>
-
-				<!-- Introduction Section -->
-				<h2 id="Section 2">Summer, 2024:</h2>
-				<p>
-					Spending your summer on campus at UNC is about as boring as it gets: most of your friends aren't on campus and
-					all you do is grind out your classes, play video games, and hit the gym (at least, if you're me). Also, I had
-					a lot of free time to cook. Unfortunately, I didn't have a cutting board. Of course, that didn't stop me.
-					Conveniently, I had a lot of plastic bins, and the lids served as fantastic temporary cutting boards.
-				</p>
-
-				<img src="../images/cuttingBoard/cuttingboardShrug.jpg" alt="" class="article-image reveal" />
-
-				<p>
-					Bad idea. Every time I wielded the chef's knife with grace and skill (naturally) the blade left deep grooves
-					in the plastic.
-				</p>
-
-				<img src="../images/cuttingBoard/plasticScratches.jpg" alt="" class="article-image reveal" />
-
-				<p>
-					That summer, I probably consumed several grams of microplastics. Alas, water under the bridge. A normal person
-					might have bought a cutting board, but fortunately for you, dear reader, I'm anything but normal.
-				</p>
-
-				<!-- Process Section -->
-				<h2 id="Section 3">Process</h2>
-				<p>
-					I got to work making my own. My idea was that I would use a 1/2 inch thick piece of plywood and cut out a
-					cutting board using the Shaper Origin, a handheld CNC machine.
-				</p>
-
-				<p>
-					First, I had to design what I wanted. I knew I wanted a fun engraving. I was worried that food might get stuck
-					on the edges of the engraving and it would be hard to clean, but that was a problem for future me.
-				</p>
-
-				<p>
-					Time to open Adobe Illustrator. The Shaper Origin uses SVG files, so I needed vectors for both the cutting
-					board outline and the engraving. Shaper had a default design for the board, which I edited to add my own
-					flair: “Top 500” cooking with some icons.
-				</p>
-
-				<div class="tidbit-container reveal">
-					<h3>What is “Top 500 cooking”?</h3>
-					<p>
-						One of my favorite games is Overwatch, where competitive players are ranked based on their skill and placed
-						on a leaderboard of the Top 500 in their region. Being in the Top 500 is a brag-worthy achievement, so I
-						decided to declare myself Top 500 at cooking.
-					</p>
-				</div>
-
-				<p>
-					I gathered my materials and PPE, prepared the Shaper Origin, but ran into an issue—the SVG file wasn't being
-					read properly. It took about an hour to fix, and honestly, I've forgotten what exactly I did, but I do
-					remember making at least nine test versions and tweaking the SVG's HTML. That was annoying.
-				</p>
-
-				<p>
-					Finally, I started engraving. In hindsight, I wish I had made the design larger because some of the letters
-					didn't turn out clear due to the size of the router bit, which was too large for the tiny symbols.
-				</p>
-
-				<img src="../images/cuttingBoard/shaperOrigin.jpg" alt="" class="article-image reveal" />
-
-				<p>
-					After engraving, I cut out the board. It wasn't perfect—very unsanded and splintery—but it was a cutting
-					board.
-				</p>
-
-				<img src="../images/cuttingBoard/unsanded.jpg" alt="" class="article-image reveal" />
-
-				<p>
-					Next, I used a hand router to smooth the edges, giving the board a nice curved edge all around. Usually people
-					don't hand route such a weird shape: hand routing is much easier when doing it in a straight line. Thankfully,
-					although the hand router was unwieldy, I still have all my fingers. Then came the sanding: I used a belt
-					sander and a disc sander to smooth the edge and the face of the board.
-				</p>
-
-				<img src="../images/cuttingBoard/routingBits.jpg" alt="" class="article-image reveal" />
-
-				<p>
-					After that I applied <a href="https://amzn.to/4cJYrP4" target="_blank">food-safe mineral oil</a> 3 times,
-					letting the board dry for about 20 minutes between applications. I didn't have anything to apply it with, so I
-					stole a piece of scrap fabric from the textiles lab and used that as a cloth. My hands were pretty oily by the
-					end of it.
-				</p>
-
-				<img src="../images/cuttingBoard/holdingBoard.jpg" alt="" class="article-image reveal" />
-
-				<p>That's an affiliate link, by the way. I get revenue if you use it to check out on Amazon.</p>
-
-				<p>
-					I entered the makerspace at about noon and left at about 5. For my first time making a cutting board, 5 hours
-					is pretty good. Would it have been easier, more cost effective, and more time effective to have bought a
-					cutting board? Absolutely. But now I have a really cool cutting board. And I can finally stop making my
-					chicken breast strips on a plastic bin lid.■
-				</p>
-
-				<img src="../images/cuttingBoard/finishedBoard.jpg" alt="" class="article-image reveal" />
-
-				<h3>Skills leveled up: Woodworking, Adobe Illustrator</h3>
 			</div>
-
-			<!-- Table of contents -->
-			<div class="toc">
-				<h3>On this page</h3>
-				<ul id="toc-list"></ul>
-			</div>
-		</div>
-
-		<!-- Footer -->
-		<footer>
-			<p>
-				<span class="material-icons">copyright</span>
-				<span class="copyrightMessage"></span>
-			</p>
+		</header>
+		<div class="read-progress" aria-hidden="true"></div>
+		<main id="main">
+			<article>
+				<header class="article-hero">
+					<div class="hero-glow" aria-hidden="true"><img src="../images/cutting-board/finished-board-800.webp" width="1600" height="1200" alt="" decoding="async" /></div>
+					<div class="article-shell">
+						<div>
+							<a class="back-link" href="projects.html"><svg class="icon i-arrow-left icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> All projects</a>
+							<p class="article-kicker"><span class="accent">Project</span><span>2024</span></p>
+							<h1 class="article-title">Custom Engraved Cutting Board</h1>
+							<p class="article-dek">I didn't have a cutting board. So I made my own...</p>
+							<div class="article-meta">
+								<span><span class="avatars"><span class="avatar">EY</span></span>Eddie Yang</span>
+								<span><svg class="icon i-clock" aria-hidden="true"><use href="../images/icons.svg#clock" /></svg> 4 min read</span>
+								<div class="chip-row"><span class="chip">Woodworking</span><span class="chip">CNC</span></div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="article-shell article-body">
+					<div class="article-main">
+						<details class="toc-mobile">
+							<summary><span data-toc-current>On this page</span><svg class="icon i-chevron-down" aria-hidden="true"><use href="../images/icons.svg#chevron-down" /></svg></summary>
+							<ol class="toc-list" data-toc></ol>
+						</details>
+						<div class="prose">
+							<div class="tldr">
+								<p class="tldr-label"><svg class="icon i-sparkle icon-xs" aria-hidden="true"><use href="../images/icons.svg#sparkle" /></svg> TL;DR</p>
+								<p>During the summer of 2024 at UNC, I found myself stuck on campus with a desire to cook and no cutting board. Instead of buying one like a normal person, I decided to make my own using a piece of plywood and the Shaper Origin handheld CNC machine. The process was full of trial and error, from designing the board in Adobe Illustrator to dealing with SVG file issues, but in the end, I created a custom engraved cutting board. Sure, it might have taken five hours and could've been easier to buy one, but now I have a unique, handmade piece.</p>
+							</div>
+							<h2 id="summer-2024">Summer, 2024:</h2>
+							<p>Spending your summer on campus at UNC is about as boring as it gets: most of your friends aren't on campus
+								and all you do is grind out your classes, play video games, and hit the gym (at least, if you're me). Also, I
+								had a lot of free time to cook. Unfortunately, I didn't have a cutting board. Of course, that didn't stop me.
+								Conveniently, I had a lot of plastic bins, and the lids served as fantastic temporary cutting boards.</p>
+							<figure class="figure figure--square">
+								<img src="../images/cutting-board/shrug-800.webp" srcset="../images/cutting-board/shrug-800.webp 800w, ../images/cutting-board/shrug-1600.webp 1600w" sizes="(min-width: 800px) 560px, 100vw" width="1600" height="1378" alt="Eddie shrugging with a chef's knife beside the plastic bin lid he used as a cutting board" loading="lazy" decoding="async" />
+							</figure>
+							<p>Bad idea. Every time I wielded the chef's knife with grace and skill (naturally) the blade left deep grooves
+								in the plastic.</p>
+							<figure class="figure">
+								<img src="../images/cutting-board/plastic-scratches-800.webp" srcset="../images/cutting-board/plastic-scratches-800.webp 800w, ../images/cutting-board/plastic-scratches-1600.webp 1600w" sizes="(min-width: 800px) 720px, 100vw" width="1600" height="1200" alt="Close-up of deep knife grooves scratched into the clear plastic bin lid" loading="lazy" decoding="async" />
+							</figure>
+							<p>That summer, I probably consumed several grams of microplastics. Alas, water under the bridge. A normal
+								person might have bought a cutting board, but fortunately for you, dear reader, I'm anything but normal.</p>
+							<h2 id="process">Process</h2>
+							<p>I got to work making my own. My idea was that I would use a 1/2 inch thick piece of plywood and cut out a
+								cutting board using the Shaper Origin, a handheld CNC machine.</p>
+							<p>First, I had to design what I wanted. I knew I wanted a fun engraving. I was worried that food might get
+								stuck on the edges of the engraving and it would be hard to clean, but that was a problem for future me.</p>
+							<p>Time to open Adobe Illustrator. The Shaper Origin uses SVG files, so I needed vectors for both the cutting
+								board outline and the engraving. Shaper had a default design for the board, which I edited to add my own flair:
+								“Top 500” cooking with some icons.</p>
+							<aside class="callout">
+								<p class="callout-title">What is “Top 500 cooking”?</p>
+								<p>One of my favorite games is Overwatch, where competitive players are ranked based on their skill and placed
+									on a leaderboard of the Top 500 in their region. Being in the Top 500 is a brag-worthy achievement, so I decided
+									to declare myself Top 500 at cooking.</p>
+							</aside>
+							<p>I gathered my materials and PPE, prepared the Shaper Origin, but ran into an issue—the SVG file wasn't being
+								read properly. It took about an hour to fix, and honestly, I've forgotten what exactly I did, but I do remember
+								making at least nine test versions and tweaking the SVG's HTML. That was annoying.</p>
+							<p>Finally, I started engraving. In hindsight, I wish I had made the design larger because some of the letters
+								didn't turn out clear due to the size of the router bit, which was too large for the tiny symbols.</p>
+							<figure class="figure">
+								<img src="../images/cutting-board/shaper-origin-800.webp" srcset="../images/cutting-board/shaper-origin-800.webp 800w, ../images/cutting-board/shaper-origin-1600.webp 1600w" sizes="(min-width: 800px) 720px, 100vw" width="1600" height="1200" alt="The Shaper Origin handheld CNC router positioned over a sheet of plywood" loading="lazy" decoding="async" />
+							</figure>
+							<p>After engraving, I cut out the board. It wasn't perfect—very unsanded and splintery—but it was a cutting
+								board.</p>
+							<figure class="figure">
+								<img src="../images/cutting-board/unsanded-800.webp" srcset="../images/cutting-board/unsanded-800.webp 800w, ../images/cutting-board/unsanded-1600.webp 1600w" sizes="(min-width: 800px) 720px, 100vw" width="1600" height="1200" alt="The freshly cut plywood board, still rough and splintery, with its Top 500 cooking engraving" loading="lazy" decoding="async" />
+							</figure>
+							<p>Next, I used a hand router to smooth the edges, giving the board a nice curved edge all around. Usually
+								people don't hand route such a weird shape: hand routing is much easier when doing it in a straight line.
+								Thankfully, although the hand router was unwieldy, I still have all my fingers. Then came the sanding: I used a
+								belt sander and a disc sander to smooth the edge and the face of the board.</p>
+							<figure class="figure figure--portrait">
+								<img src="../images/cutting-board/routing-bits-800.webp" srcset="../images/cutting-board/routing-bits-800.webp 800w, ../images/cutting-board/routing-bits-1600.webp 1600w" sizes="(min-width: 800px) 430px, 100vw" width="1600" height="2133" alt="An open case of router bits on the workbench" loading="lazy" decoding="async" />
+							</figure>
+							<p>After that I applied <a href="https://amzn.to/4cJYrP4" target="_blank" rel="sponsored noopener">food-safe
+								mineral oil</a> 3 times, letting the board dry for about 20 minutes between applications. I didn't have anything
+								to apply it with, so I stole a piece of scrap fabric from the textiles lab and used that as a cloth. My hands
+								were pretty oily by the end of it.</p>
+							<figure class="figure figure--portrait">
+								<img src="../images/cutting-board/holding-board-800.webp" srcset="../images/cutting-board/holding-board-800.webp 800w, ../images/cutting-board/holding-board-1600.webp 1600w" sizes="(min-width: 800px) 430px, 100vw" width="1600" height="2133" alt="Holding the oiled cutting board by its handle" loading="lazy" decoding="async" />
+							</figure>
+							<p class="fine-print">That's an affiliate link, by the way. I get revenue if you use it to check out on
+								Amazon.</p>
+							<p>I entered the makerspace at about noon and left at about 5. For my first time making a cutting board, 5 hours
+								is pretty good. Would it have been easier, more cost effective, and more time effective to have bought a cutting
+								board? Absolutely. But now I have a really cool cutting board. And I can finally stop making my chicken breast
+								strips on a plastic bin lid.<span class="end-mark" aria-hidden="true"></span></p>
+							<figure class="figure">
+								<img src="../images/cutting-board/finished-board-800.webp" srcset="../images/cutting-board/finished-board-800.webp 800w, ../images/cutting-board/finished-board-1600.webp 1600w" sizes="(min-width: 800px) 720px, 100vw" width="1600" height="1200" alt="The finished engraved cutting board with sliced cucumbers on it" loading="lazy" decoding="async" />
+							</figure>
+						</div>
+						<footer class="article-end">
+							<div class="skills-earned"><span class="tag"><svg class="icon i-trophy" aria-hidden="true"><use href="../images/icons.svg#trophy" /></svg> Skills leveled up</span><span class="chip">Woodworking</span><span class="chip">Adobe Illustrator</span></div>
+							<nav class="pager" aria-label="More projects">
+								<a class="pager-link pager-link--prev" href="wormBin.html">
+									<img src="../images/worm-bin/wigglers-800.webp" width="1600" height="1421" alt="" loading="lazy" decoding="async" />
+									<span class="pager-text">
+										<span class="pager-dir"><svg class="icon i-arrow-left icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> Previous</span>
+										<span class="pager-title">Worm Bin</span>
+									</span>
+								</a>
+								<a class="pager-link pager-link--next" href="everduskSector.html">
+									<img src="../images/everdusk/cover-800.webp" width="1260" height="1000" alt="" loading="lazy" decoding="async" />
+									<span class="pager-text">
+										<span class="pager-dir">Next <svg class="icon i-arrow-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-right" /></svg></span>
+										<span class="pager-title">Everdusk Sector</span>
+									</span>
+								</a>
+							</nav>
+						</footer>
+					</div>
+					<aside class="toc" aria-label="Table of contents">
+						<div class="toc-inner">
+							<p class="toc-title"><span>On this page</span><span class="toc-percent" data-toc-percent>0%</span></p>
+							<ol class="toc-list" data-toc></ol>
+							<div class="toc-actions">
+								<button type="button" data-copy="" data-copy-message="Link copied"><svg class="icon i-link" aria-hidden="true"><use href="../images/icons.svg#link" /></svg> Copy link</button>
+								<a href="#main"><svg class="icon i-arrow-up" aria-hidden="true"><use href="../images/icons.svg#arrow-up" /></svg> Back to top</a>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</article>
+		</main>
+		<footer class="site-footer" data-footer>
+			<noscript><div class="container footer-bottom">© Eddie Yang. All rights reserved.</div></noscript>
 		</footer>
-
-		<!-- Back to Top button -->
-		<a href="#top" id="back-to-top">Back to Top</a>
-
-		<!-- Link to the external JavaScript file -->
-		<script src="../js/globalScript.js"></script>
-		<script src="../js/articleScript.js"></script>
-		<script src="../js/buttonScript.js"></script>
 	</body>
 </html>

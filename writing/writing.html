@@ -1,77 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Project Portfolio</title>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VTTVJNS9Q"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-4VTTVJNS9Q");
-		</script>
-
-		<link rel="stylesheet" href="../css/theme.css" />
-		<link rel="stylesheet" href="../css/landingPageStyles.css" />
-		<link rel="stylesheet" href="../css/buttonStyles.css" />
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Writing · Eddie Yang</title>
+		<meta name="description" content="Fiction by Eddie Yang, including Running out of Teardrops, a supernatural mystery short story." />
+		<meta name="author" content="Eddie Yang" />
+		<meta name="theme-color" content="#0a0b10" />
+		<link rel="canonical" href="https://edyang1.github.io/portfolio/writing/writing.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Eddie Yang" />
+		<meta property="og:title" content="Writing · Eddie Yang" />
+		<meta property="og:description" content="Fiction by Eddie Yang, including Running out of Teardrops, a supernatural mystery short story." />
+		<meta property="og:url" content="https://edyang1.github.io/portfolio/writing/writing.html" />
+		<meta property="og:image" content="https://edyang1.github.io/portfolio/images/og/home.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+		<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";var d=document.documentElement;d.dataset.theme=t;d.classList.add("js")})();</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;display=swap" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="../js/analytics.js" defer></script>
+		<script src="../js/site.js" defer></script>
 	</head>
-
-	<body>
-		<!-- Header -->
-		<header>
-			<div class="container header-content">
-				<!-- Back button directly above the title -->
-				<div class="back-button">
-					<a href="../index.html"><span class="material-icons">arrow_back</span> back to home</a>
+	<body data-root="../">
+		<a class="skip-link" href="#main">Skip to content</a>
+		<header class="site-nav" data-nav>
+			<div class="container nav-inner">
+				<a class="brand" href="../index.html" aria-label="Eddie Yang, home">
+					<span class="brand-mark" aria-hidden="true">ey</span>
+					<span class="brand-name">Eddie Yang</span>
+				</a>
+				<nav class="nav-links" aria-label="Primary">
+					<a href="../projects/projects.html">Projects</a>
+					<a href="../skills/skills.html">Skills</a>
+					<a href="../writing/writing.html" aria-current="page">Writing</a>
+					<a href="https://eddiereviewseverything.wordpress.com" target="_blank" rel="noopener">Reviews <svg class="icon i-arrow-up-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg></a>
+				</nav>
+				<div class="nav-actions">
+					<button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+						<svg class="icon i-sun" aria-hidden="true"><use href="../images/icons.svg#sun" /></svg>
+						<svg class="icon i-moon" aria-hidden="true"><use href="../images/icons.svg#moon" /></svg>
+					</button>
+					<a class="btn btn--sm btn--primary nav-resume" href="../extras/Edward_Yang_resume.pdf" target="_blank" rel="noopener">
+						Résumé <svg class="icon i-arrow-up-right icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg>
+					</a>
+					<button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">
+						<span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+					</button>
 				</div>
-				<h1>Writing Portfolio</h1>
 			</div>
 		</header>
-
-		<div class="container content">
-			<section class="projects">
-				<h3>
-					All works showcased in this portfolio are my original creations. While many remain unpublished, they are
-					protected under U.S. copyright law from the moment of creation. Unauthorized use, reproduction, or
-					distribution of these materials constitutes plagiarism and copyright infringement. Proof of authorship and
-					ownership can be provided upon request. Thank you for respecting intellectual property rights. Happy reading!
-				</h3>
-
-				<h2>All Writing</h2>
-				<a href="runningTeardrops.html" class="card-link">
-					<div class="card-item">
-						<!-- <img src="../images/cuttingBoard/finishedBoard.jpg" alt="" /> -->
-						<div class="card-details">
-							<h3>Running out of teardrops</h3>
-							<p>A supernatural mystery short story</p>
-							<p class="year-duration">2024 | <span class="material-icons">schedule</span> 20-40 minutes</p>
+		<main id="main">
+				<header class="page-hero">
+					<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+					<div class="grid-lines" aria-hidden="true"></div>
+					<div class="container">
+						<nav class="crumbs hero-intro" aria-label="Breadcrumb"><a href="../index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Writing</span></nav>
+						<h1 class="page-title hero-intro" style="--d: 80">Writing<span class="dot">.</span></h1>
+						<div class="page-hero-foot hero-intro" style="--d: 200">
+							<p class="page-intro">Fiction and other words I've strung together.</p>
+							<p class="page-count">01 story</p>
 						</div>
 					</div>
-				</a>
+				</header>
+			<section class="section section--flush-top" aria-label="All writing">
+				<div class="container">
+					<div class="writing-feature" data-reveal>
+						<a class="book" href="runningTeardrops.html" aria-label="Read Running out of Teardrops">
+							<div class="book-3d">
+								<div class="book-pages"></div>
+								<div class="book-cover">
+									<div class="book-rain"></div>
+									<div class="book-moon"></div>
+									<span class="book-sign">Twilight Falls Motel</span>
+									<div class="book-titles">
+										<p class="book-kicker">A short story</p>
+										<p class="book-title">Running out of Teardrops</p>
+										<svg class="book-drop" aria-hidden="true"><use href="../images/icons.svg#drop" /></svg>
+									</div>
+									<p class="book-author">Eddie Yang</p>
+								</div>
+							</div>
+						</a>
+						<div class="writing-copy">
+							<p class="eyebrow eyebrow--plain">Short story · 2024</p>
+							<h2 class="writing-title">Running out of Teardrops</h2>
+							<p>A short story drawing inspiration from my favorite video games, books, movies, and TV shows about a Detective searching for answers about the mysterious and deadly Twilight Falls motel. Written for my Introduction to Fiction class.</p>
+							<div class="chip-row"><span class="chip">Supernatural mystery</span><span class="chip">20–40 min read</span></div>
+							<div class="hero-ctas">
+								<a class="btn btn--grad" href="runningTeardrops.html">Read the story <svg class="icon i-arrow-right" aria-hidden="true"><use href="../images/icons.svg#arrow-right" /></svg></a>
+								<a class="btn btn--ghost" href="../extras/Running_out_of_Teardrops_by_Eddie_Yang.pdf" download><svg class="icon i-download" aria-hidden="true"><use href="../images/icons.svg#download" /></svg> PDF</a>
+							</div>
+						</div>
+					</div>
+					<p class="notice">
+						<svg class="icon i-info" aria-hidden="true"><use href="../images/icons.svg#info" /></svg>
+						<span>All works showcased in this portfolio are my original creations. While many remain unpublished, they are
+						protected under U.S. copyright law from the moment of creation. Unauthorized use, reproduction, or
+						distribution of these materials constitutes plagiarism and copyright infringement. Proof of authorship and
+						ownership can be provided upon request. Thank you for respecting intellectual property rights. Happy reading!</span>
+					</p>
+				</div>
 			</section>
-		</div>
-
-		<!-- Footer -->
-		<footer>
-			<p>
-				<span class="material-icons">copyright</span>
-				<span class="copyrightMessage"></span>
-			</p>
+		</main>
+		<footer class="site-footer" data-footer>
+			<noscript><div class="container footer-bottom">© Eddie Yang. All rights reserved.</div></noscript>
 		</footer>
-
-		<!-- Back to Top button -->
-		<a href="#top" id="back-to-top">Back to Top</a>
-
-		<!-- Link to the external JavaScript file -->
-		<script src="../js/globalScript.js"></script>
-		<script src="../js/buttonScript.js"></script>
 	</body>
 </html>

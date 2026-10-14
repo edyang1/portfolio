@@ -1,308 +1,276 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Creating a Worm Bin in My Dorm: A Composting Experiment</title>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VTTVJNS9Q"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-4VTTVJNS9Q");
-		</script>
-
-		<link rel="stylesheet" href="../css/theme.css" />
-		<link rel="stylesheet" href="../css/articleStyles.css" />
-		<link rel="stylesheet" href="../css/buttonStyles.css" />
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Worm Bin · Eddie Yang</title>
+		<meta name="description" content="On a rainy day, I felt guilty for leaving an earthworm stranded, which led me to research and create a worm bin in my dorm. A worm bin is a simple, closed-loop system where worms (ideally red…" />
+		<meta name="author" content="Eddie Yang" />
+		<meta name="theme-color" content="#0a0b10" />
+		<link rel="canonical" href="https://edyang1.github.io/portfolio/projects/wormBin.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:site_name" content="Eddie Yang" />
+		<meta property="og:title" content="Worm Bin" />
+		<meta property="og:description" content="On a rainy day, I felt guilty for leaving an earthworm stranded, which led me to research and create a worm bin in my dorm. A worm bin is a simple, closed-loop system where worms (ideally red…" />
+		<meta property="og:url" content="https://edyang1.github.io/portfolio/projects/wormBin.html" />
+		<meta property="og:image" content="https://edyang1.github.io/portfolio/images/og/wormBin.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+		<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";var d=document.documentElement;d.dataset.theme=t;d.classList.add("js")})();</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;display=swap" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="../js/analytics.js" defer></script>
+		<script src="../js/site.js" defer></script>
+		<script src="../js/article.js" defer></script>
 	</head>
-
-	<body>
-		<div class="container content">
-			<!-- Article content -->
-			<div class="article">
-				<!-- Back button -->
-				<div class="back-button">
-					<a href="../projects/projects.html"><span class="material-icons">arrow_back</span> Project feed</a>
+	<body data-root="../">
+		<a class="skip-link" href="#main">Skip to content</a>
+		<header class="site-nav" data-nav>
+			<div class="container nav-inner">
+				<a class="brand" href="../index.html" aria-label="Eddie Yang, home">
+					<span class="brand-mark" aria-hidden="true">ey</span>
+					<span class="brand-name">Eddie Yang</span>
+				</a>
+				<nav class="nav-links" aria-label="Primary">
+					<a href="../projects/projects.html" aria-current="true">Projects</a>
+					<a href="../skills/skills.html">Skills</a>
+					<a href="../writing/writing.html">Writing</a>
+					<a href="https://eddiereviewseverything.wordpress.com" target="_blank" rel="noopener">Reviews <svg class="icon i-arrow-up-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg></a>
+				</nav>
+				<div class="nav-actions">
+					<button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+						<svg class="icon i-sun" aria-hidden="true"><use href="../images/icons.svg#sun" /></svg>
+						<svg class="icon i-moon" aria-hidden="true"><use href="../images/icons.svg#moon" /></svg>
+					</button>
+					<a class="btn btn--sm btn--primary nav-resume" href="../extras/Edward_Yang_resume.pdf" target="_blank" rel="noopener">
+						Résumé <svg class="icon i-arrow-up-right icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg>
+					</a>
+					<button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">
+						<span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+					</button>
 				</div>
-				<h1 id="top">Worm Bin</h1>
-				<!-- Author, Date, and Reading time -->
-				<div class="article-meta">
-					<span class="author">Eddie Yang</span> |
-					<span class="reading-time"><span class="material-icons">schedule</span> 7-8 minutes</span>
-				</div>
-
-				<!-- TL;DR Section -->
-				<div class="tidbit-container reveal">
-					<h3 id="Section 1">TL;DR</h3>
-					<p class="reveal-tldr">
-						On a rainy day, I felt guilty for leaving an earthworm stranded, which led me to research and create a worm
-						bin in my dorm. A worm bin is a simple, closed-loop system where worms (ideally red wigglers) break down
-						compostable materials like kitchen scraps and paper into nutrient-rich castings. I initially bought European
-						nightcrawlers by mistake, but eventually got red wigglers, which proved more efficient in processing food.
-						Setting up a basic worm bin involves a plastic container, bedding of shredded paper or cardboard, food
-						scraps, and moisture, with optional drainage holes for excess liquid. The goal is to maintain a balanced
-						environment by controlling moisture, temperature, and the carbon-to-nitrogen ratio, eventually harvesting
-						the nutrient-dense castings after a few months. In the end, I not only optimized a small indoor composting
-						setup but also saved 60 worms from becoming pet food.
-					</p>
-				</div>
-
-				<!-- Introduction Section -->
-				<h2 id="Section 2">Intro</h2>
-				<p>
-					One rainy day, as I walked to class, I noticed an earthworm stranded on the sidewalk. It took me about ten
-					yards before it occurred to me that I should've put it back in the dirt; but by then, I was too lazy to turn
-					around, so I kept going. The guilt of leaving the poor worm to dry out or get stepped on weighed on me
-					throughout my Systems Fundamentals class. Naturally, I found myself researching how to keep worms in my dorm.
-				</p>
-				<p>
-					A worm bin is essentially a closed-loop system that mimics nature's decomposition process. Worms consume
-					compostable materials like brown paper and food scraps, turning them into nutrient-rich worm castings (worm
-					poop) and worm tea (worm casting juice). This process, called vermicomposting, comes from the Latin word
-					vermis (meaning worm) combined with composting.
-				</p>
-
-				<div class="tidbit-container reveal">
-					<h3 id="Section 1.1">Etymology</h3>
-					<p>
-						Composting also comes from Latin (compōnō, compōnere) meaning to arrange or make up (among many other
-						things).
-					</p>
-				</div>
-
-				<!-- Process Section -->
-				<h2 id="Section 3">Process</h2>
-				<p>
-					You barely need a guide to get started—it's exactly how you think it works. Get a bin, put the worms in it,
-					add food, and place it somewhere cool and dark. But there are a few things you can do to optimize the process.
-				</p>
-				<p>
-					First of all, I didn't know this before, but different species of worms are better suited for breaking down
-					compost. Red wigglers (Eisenia fetida) and European nightcrawlers (Dendrobaena hortensis) are the two most
-					common species. Red wigglers reproduce faster and process food more efficiently, while nightcrawlers are a bit
-					better at handling colder temperatures. For my small, indoor setup, red wigglers are the best choice due to
-					their quicker reproduction and ability to break down food faster.
-				</p>
-				<p>
-					So, I began my preparations: first, I needed a bin for the worms and then some food. Worms thrive on a mix of
-					nitrogen and carbon at about a 1:3-4 ratio—nitrogen coming from kitchen scraps, and carbon from things like
-					paper or cardboard. I went dumpster diving around my dorm, hoping to find a discarded bin, but only managed to
-					find some suitable paper scraps and a small protein powder tin. I ripped those up and stored them as bedding
-					for the worms.
-				</p>
-
-				<img src="../images/wormBin/materials.jpg" alt="" class="article-image reveal" />
-
-				<p>
-					Next, I headed to Home Depot, hoping to find red wigglers in the gardening section, but they didn't carry them
-					in-store. So, I made my way to PetSmart, thinking they might sell worms as food for reptilian and amphibian
-					pets. I got lucky and grabbed two packages of 30 red worms. Even though I said earlier that red wigglers were
-					the best choice for my setup, I realized when I got back to my dorm that I had mistakenly purchased
-					nightcrawlers. Oops. The packaging had the word "red" on the side. I'd call that false advertising, but I'm
-					sure I can still make do with nightcrawlers, even if they aren't the ideal fit for an indoor bin.
-				</p>
-
-				<img src="../images/wormBin/nightcrawlers.jpg" alt="" class="article-image reveal" />
-
-				<p>
-					I realized that the bin I had wasn't ready: usually you're supposed to drill holes at the bottom to allow for
-					drainage of any excess moisture. I needed a temporary home for the worms until I could get my hands on an
-					electric drill at the university's makerspace, so I settled on the protein powder container I had from
-					dumpster diving. I put some of the shredded paper at the bottom, then dumped the worms in. They kind of just
-					arrive in... a ball. It's cool, weird, and gross at the same time.
-				</p>
-
-				<img src="../images/wormBin/proteinCase.jpg" alt="" class="article-image reveal" />
-
-				<p>
-					After that, I gently mixed them into the bedding and covered them with a bit more paper. I used a pocket knife
-					to poke a hole in the lid for ventilation. It wasn't perfect, but it would do for now.
-				</p>
-
-				<img src="../images/wormBin/v1.jpg" alt="" class="article-image reveal" />
-
-				<div class="tidbit-container reveal">
-					<h3 id="Section 2.1">“It wasn't perfect, but it would do for now.”</h3>
-					<p>
-						I've noticed I say that a lot when working on projects. In a dorm setting, where all you have are your two
-						hands and whatever happens to be lying around (which is usually not much), you often have to make things up
-						as you go. There's a certain excitement in figuring things out on the fly and adapting to whatever resources
-						you have at hand.
-					</p>
-				</div>
-
-				<h2 id="Section 3.1">Upgrades</h2>
-
-				<p>
-					After a few days I moved the worms to a larger bin. I had an urge to optimize when I realized that I had
-					European Nightcrawlers, an urge that could only be satiated by buying Red Wigglers from a local worm farm.
-				</p>
-
-				<img src="../images/wormBin/v2.jpg" alt="" class="article-image reveal" />
-
-				<p>These also arrived in a big ball, which I held this time.</p>
-
-				<img src="../images/wormBin/sack.jpg" alt="" class="article-image reveal" />
-				<img src="../images/wormBin/wigglers.jpg" alt="" class="article-image reveal" />
-
-				<p>
-					I prepared a separate bin with a banana peel and some strawberries which had fermented. I decided not to drill
-					any holes because I realized that drilling holes meant that smelly worm juice would be curdling somewhere in
-					my dorm, so I'd rather have a more active hand in managing the moisture levels.
-				</p>
-
-				<img src="../images/wormBin/v3.jpg" alt="" class="article-image reveal" />
-
-				<p>
-					Now, I just have to wait a few months for my first harvest of those fertilizing nutrient-dense worm castings!
-				</p>
-
-				<!-- Guide Section -->
-				<h2 id="Section 4">Guide</h2>
-				<p>
-					I've compiled my findings into a simple guide you can follow to create a bare-bones worm bin at home. If
-					you're looking to invest more time and effort, you can definitely do much better—this is just the basics to
-					get you started. For more advanced setups, I recommend checking out a YouTube video for additional details.
-				</p>
-
-				<h3>Materials:</h3>
-				<ul>
-					<li>
-						<strong>Worm Bin:</strong> Any container that can serve as a bin—plastic bins work best. You can find these
-						at a local hardware store or even upcycle something you already have (an old storage container, etc.).
-					</li>
-					<li>
-						<strong>Worms:</strong> Red wigglers (<em>Eisenia fetida</em>) are the preferred choice for composting. You
-						can find them at gardening stores, online, or pet shops (though be careful to check the species).
-					</li>
-					<li>
-						<strong>Bedding Material:</strong> Shredded paper, cardboard, dry leaves, or coconut coir. These provide
-						carbon for the worms and help balance moisture.
-					</li>
-					<li>
-						<strong>Kitchen Scraps:</strong> Vegetable peels, fruit scraps (like banana peels and apple cores), and
-						coffee grounds for nitrogen.
-					</li>
-					<li>
-						<strong>Moisture Source:</strong> Water to keep the bedding moist. Use a spray bottle on the mist setting.
-					</li>
-				</ul>
-
-				<h3>Steps:</h3>
-				<h4>1. Prepare the Bin:</h4>
-				<ul>
-					<li>
-						Select a bin that is appropriate for the number of worms you have. For a small indoor setup, a bin with a
-						capacity of around 5-10 gallons will do.
-					</li>
-					<li>
-						If using a plastic bin, drill a few small holes in the sides and lid to allow for ventilation. For drainage,
-						you can drill holes in the bottom and place a tray beneath the bin to catch any excess liquid (optional,
-						depending on your comfort with worm tea). Or not, if you don't want that excess liquid stinking up the
-						place.
-					</li>
-				</ul>
-
-				<h4>2. Add Bedding:</h4>
-				<ul>
-					<li>
-						Place shredded paper, cardboard, or any other carbon source in the bin. The bedding should be about 3-4
-						inches deep, enough for the worms to burrow in and feel comfortable.
-					</li>
-					<li>Moisten the bedding. It should feel like a wrung-out sponge.</li>
-				</ul>
-
-				<h4>3. Introduce the Worms:</h4>
-				<ul>
-					<li>
-						Gently place the worms on top of the bedding. They will naturally burrow down into the material away from
-						the light.
-					</li>
-				</ul>
-
-				<h4>4. Feed the Worms:</h4>
-				<ul>
-					<li>
-						Start small: add a handful of kitchen scraps like banana peels, apple cores, or coffee grounds. Make sure to
-						bury the scraps under the bedding to prevent fruit flies and odors.
-					</li>
-					<li>
-						Avoid feeding the worms any dairy, meat, citrus, or overly spicy foods as these can create unsuitable
-						conditions.
-					</li>
-				</ul>
-
-				<h4>5. Maintain the Environment:</h4>
-				<ul>
-					<li>
-						<strong>Moisture:</strong> Keep the bedding damp, but not soaking wet. If it's too dry, spray a bit of
-						water. If too wet, add some dry bedding like shredded paper or cardboard.
-					</li>
-					<li>
-						<strong>Temperature:</strong> Worms do best at room temperature (around 55-77°F or 13-25°C). Avoid extreme
-						cold or heat.
-					</li>
-					<li>
-						<strong>Food Balance:</strong> Aim for a ratio of 1 part nitrogen-rich food scraps to 3-4 parts carbon-rich
-						bedding.
-					</li>
-				</ul>
-
-				<h4>6. Harvesting Worm Castings:</h4>
-				<ul>
-					<li>
-						After about 2-3 months, you will start to see dark, crumbly worm castings forming. This is a sign that the
-						worms have broken down the food and bedding.
-					</li>
-					<li>
-						To harvest, push the contents of the bin to one side and add fresh bedding and food to the empty side. The
-						worms will migrate over in a week or two, allowing you to scoop out the castings from the old side.
-					</li>
-				</ul>
-
-				<h4>7. Managing Moisture Without Drainage Holes (Optional):</h4>
-				<ul>
-					<li>
-						Instead of drilling holes for drainage, you can control moisture manually by adjusting how much bedding you
-						add. If the bin becomes too wet, add more dry bedding. Keep an eye on the bin and be proactive in
-						maintaining a balance.
-					</li>
-				</ul>
-
-				<p>In any case, I saved 60 worms from a certain fate of being food for some lizard or bird.■</p>
-
-				<img src="../images/wormBin/wormInspect.jpg" alt="" class="article-image reveal" />
 			</div>
-
-			<!-- Table of contents -->
-			<div class="toc">
-				<h3>On this page</h3>
-				<ul id="toc-list"></ul>
-			</div>
-		</div>
-
-		<!-- Footer -->
-		<footer>
-			<p>
-				<span class="material-icons">copyright</span>
-				<span class="copyrightMessage"></span>
-			</p>
+		</header>
+		<div class="read-progress" aria-hidden="true"></div>
+		<main id="main">
+			<article>
+				<header class="article-hero">
+					<div class="hero-glow" aria-hidden="true"><img src="../images/worm-bin/wigglers-800.webp" width="1600" height="1421" alt="" decoding="async" /></div>
+					<div class="article-shell">
+						<div>
+							<a class="back-link" href="projects.html"><svg class="icon i-arrow-left icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> All projects</a>
+							<p class="article-kicker"><span class="accent">Project</span><span>2024</span></p>
+							<h1 class="article-title">Worm Bin</h1>
+							<p class="article-dek">What if I kept worms... in my dorm?</p>
+							<div class="article-meta">
+								<span><span class="avatars"><span class="avatar">EY</span></span>Eddie Yang</span>
+								<span><svg class="icon i-clock" aria-hidden="true"><use href="../images/icons.svg#clock" /></svg> 7 min read</span>
+								<div class="chip-row"><span class="chip">Sustainability</span><span class="chip">Dorm life</span></div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="article-shell article-body">
+					<div class="article-main">
+						<details class="toc-mobile">
+							<summary><span data-toc-current>On this page</span><svg class="icon i-chevron-down" aria-hidden="true"><use href="../images/icons.svg#chevron-down" /></svg></summary>
+							<ol class="toc-list" data-toc></ol>
+						</details>
+						<div class="prose">
+							<div class="tldr">
+								<p class="tldr-label"><svg class="icon i-sparkle icon-xs" aria-hidden="true"><use href="../images/icons.svg#sparkle" /></svg> TL;DR</p>
+								<p>On a rainy day, I felt guilty for leaving an earthworm stranded, which led me to research and create a worm bin in my dorm. A worm bin is a simple, closed-loop system where worms (ideally red wigglers) break down compostable materials like kitchen scraps and paper into nutrient-rich castings. I initially bought European nightcrawlers by mistake, but eventually got red wigglers, which proved more efficient in processing food. Setting up a basic worm bin involves a plastic container, bedding of shredded paper or cardboard, food scraps, and moisture, with optional drainage holes for excess liquid. The goal is to maintain a balanced environment by controlling moisture, temperature, and the carbon-to-nitrogen ratio, eventually harvesting the nutrient-dense castings after a few months. In the end, I not only optimized a small indoor composting setup but also saved 60 worms from becoming pet food.</p>
+							</div>
+							<h2 id="intro">Intro</h2>
+							<p>One rainy day, as I walked to class, I noticed an earthworm stranded on the sidewalk. It took me about ten
+								yards before it occurred to me that I should've put it back in the dirt; but by then, I was too lazy to turn
+								around, so I kept going. The guilt of leaving the poor worm to dry out or get stepped on weighed on me
+								throughout my Systems Fundamentals class. Naturally, I found myself researching how to keep worms in my
+								dorm.</p>
+							<p>A worm bin is essentially a closed-loop system that mimics nature's decomposition process. Worms consume
+								compostable materials like brown paper and food scraps, turning them into nutrient-rich worm castings (worm
+								poop) and worm tea (worm casting juice). This process, called vermicomposting, comes from the Latin word vermis
+								(meaning worm) combined with composting.</p>
+							<aside class="callout">
+								<p class="callout-title">Etymology</p>
+								<p>Composting also comes from Latin (compōnō, compōnere) meaning to arrange or make up (among many other
+									things).</p>
+							</aside>
+							<h2 id="process">Process</h2>
+							<p>You barely need a guide to get started—it's exactly how you think it works. Get a bin, put the worms in it,
+								add food, and place it somewhere cool and dark. But there are a few things you can do to optimize the
+								process.</p>
+							<p>First of all, I didn't know this before, but different species of worms are better suited for breaking down
+								compost. Red wigglers (Eisenia fetida) and European nightcrawlers (Dendrobaena hortensis) are the two most
+								common species. Red wigglers reproduce faster and process food more efficiently, while nightcrawlers are a bit
+								better at handling colder temperatures. For my small, indoor setup, red wigglers are the best choice due to
+								their quicker reproduction and ability to break down food faster.</p>
+							<p>So, I began my preparations: first, I needed a bin for the worms and then some food. Worms thrive on a mix of
+								nitrogen and carbon at about a 1:3-4 ratio—nitrogen coming from kitchen scraps, and carbon from things like
+								paper or cardboard. I went dumpster diving around my dorm, hoping to find a discarded bin, but only managed to
+								find some suitable paper scraps and a small protein powder tin. I ripped those up and stored them as bedding for
+								the worms.</p>
+							<figure class="figure">
+								<img src="../images/worm-bin/materials-800.webp" srcset="../images/worm-bin/materials-800.webp 800w, ../images/worm-bin/materials-1600.webp 1600w" sizes="(min-width: 800px) 720px, 100vw" width="1600" height="1200" alt="A bin of torn paper bedding next to a spray bottle and other supplies" loading="lazy" decoding="async" />
+							</figure>
+							<p>Next, I headed to Home Depot, hoping to find red wigglers in the gardening section, but they didn't carry
+								them in-store. So, I made my way to PetSmart, thinking they might sell worms as food for reptilian and amphibian
+								pets. I got lucky and grabbed two packages of 30 red worms. Even though I said earlier that red wigglers were
+								the best choice for my setup, I realized when I got back to my dorm that I had mistakenly purchased
+								nightcrawlers. Oops. The packaging had the word "red" on the side. I'd call that false advertising, but I'm sure
+								I can still make do with nightcrawlers, even if they aren't the ideal fit for an indoor bin.</p>
+							<figure class="figure figure--square">
+								<img src="../images/worm-bin/nightcrawlers-800.webp" srcset="../images/worm-bin/nightcrawlers-800.webp 800w, ../images/worm-bin/nightcrawlers-1600.webp 1600w" sizes="(min-width: 800px) 560px, 100vw" width="1600" height="1501" alt="A tub of European nightcrawlers in dark soil" loading="lazy" decoding="async" />
+							</figure>
+							<p>I realized that the bin I had wasn't ready: usually you're supposed to drill holes at the bottom to allow for
+								drainage of any excess moisture. I needed a temporary home for the worms until I could get my hands on an
+								electric drill at the university's makerspace, so I settled on the protein powder container I had from dumpster
+								diving. I put some of the shredded paper at the bottom, then dumped the worms in. They kind of just arrive in...
+								a ball. It's cool, weird, and gross at the same time.</p>
+							<figure class="figure figure--portrait">
+								<img src="../images/worm-bin/protein-case-800.webp" srcset="../images/worm-bin/protein-case-800.webp 800w, ../images/worm-bin/protein-case-1600.webp 1600w" sizes="(min-width: 800px) 430px, 100vw" width="1600" height="1946" alt="The repurposed protein powder tub that became the worms' temporary home" loading="lazy" decoding="async" />
+							</figure>
+							<p>After that, I gently mixed them into the bedding and covered them with a bit more paper. I used a pocket
+								knife to poke a hole in the lid for ventilation. It wasn't perfect, but it would do for now.</p>
+							<figure class="figure figure--portrait">
+								<img src="../images/worm-bin/v1-800.webp" srcset="../images/worm-bin/v1-800.webp 800w, ../images/worm-bin/v1-1600.webp 1600w" sizes="(min-width: 800px) 430px, 100vw" width="1600" height="2133" alt="Version one of the worm bin: paper bedding and a banana peel inside the protein tub" loading="lazy" decoding="async" />
+							</figure>
+							<aside class="callout">
+								<p class="callout-title">“It wasn't perfect, but it would do for now.”</p>
+								<p>I've noticed I say that a lot when working on projects. In a dorm setting, where all you have are your two
+									hands and whatever happens to be lying around (which is usually not much), you often have to make things up as
+									you go. There's a certain excitement in figuring things out on the fly and adapting to whatever resources you
+									have at hand.</p>
+							</aside>
+							<h2 id="upgrades">Upgrades</h2>
+							<p>After a few days I moved the worms to a larger bin. I had an urge to optimize when I realized that I had
+								European Nightcrawlers, an urge that could only be satiated by buying Red Wigglers from a local worm farm.</p>
+							<figure class="figure figure--square">
+								<img src="../images/worm-bin/v2-800.webp" srcset="../images/worm-bin/v2-800.webp 800w, ../images/worm-bin/v2-1600.webp 1600w" sizes="(min-width: 800px) 560px, 100vw" width="1600" height="1572" alt="Version two: a larger bin of shredded cardboard and dark castings" loading="lazy" decoding="async" />
+							</figure>
+							<p>These also arrived in a big ball, which I held this time.</p>
+							<figure class="figure figure--pair" style="--ar: 1.054">
+								<img src="../images/worm-bin/sack-800.webp" srcset="../images/worm-bin/sack-800.webp 800w, ../images/worm-bin/sack-1600.webp 1600w" sizes="(min-width: 800px) 360px, (min-width: 640px) 50vw, 100vw" width="1600" height="1629" alt="Holding the mesh sack of red wigglers above fresh bedding" loading="lazy" decoding="async" />
+								<img src="../images/worm-bin/wigglers-800.webp" srcset="../images/worm-bin/wigglers-800.webp 800w, ../images/worm-bin/wigglers-1600.webp 1600w" sizes="(min-width: 800px) 360px, (min-width: 640px) 50vw, 100vw" width="1600" height="1421" alt="A handful of red wigglers in rich, dark soil" loading="lazy" decoding="async" />
+							</figure>
+							<p>I prepared a separate bin with a banana peel and some strawberries which had fermented. I decided not to
+								drill any holes because I realized that drilling holes meant that smelly worm juice would be curdling somewhere
+								in my dorm, so I'd rather have a more active hand in managing the moisture levels.</p>
+							<figure class="figure figure--square">
+								<img src="../images/worm-bin/v3-800.webp" srcset="../images/worm-bin/v3-800.webp 800w, ../images/worm-bin/v3-1600.webp 1600w" sizes="(min-width: 800px) 560px, 100vw" width="1600" height="1425" alt="Version three: a banana peel and fermented strawberries tucked into paper bedding" loading="lazy" decoding="async" />
+							</figure>
+							<p>Now, I just have to wait a few months for my first harvest of those fertilizing nutrient-dense worm
+								castings!</p>
+							<h2 id="guide">Guide</h2>
+							<p>I've compiled my findings into a simple guide you can follow to create a bare-bones worm bin at home. If
+								you're looking to invest more time and effort, you can definitely do much better—this is just the basics to get
+								you started. For more advanced setups, I recommend checking out a YouTube video for additional details.</p>
+							<h3>Materials:</h3>
+							<ul>
+								<li><strong>Worm Bin:</strong> Any container that can serve as a bin—plastic bins work best. You can find these
+									at a local hardware store or even upcycle something you already have (an old storage container, etc.).</li>
+								<li><strong>Worms:</strong> Red wigglers (<em>Eisenia fetida</em>) are the preferred choice for composting. You
+									can find them at gardening stores, online, or pet shops (though be careful to check the species).</li>
+								<li><strong>Bedding Material:</strong> Shredded paper, cardboard, dry leaves, or coconut coir. These provide
+									carbon for the worms and help balance moisture.</li>
+								<li><strong>Kitchen Scraps:</strong> Vegetable peels, fruit scraps (like banana peels and apple cores), and
+									coffee grounds for nitrogen.</li>
+								<li><strong>Moisture Source:</strong> Water to keep the bedding moist. Use a spray bottle on the mist
+									setting.</li>
+							</ul>
+							<h3>Steps:</h3>
+							<h4>1. Prepare the Bin:</h4>
+							<ul>
+								<li>Select a bin that is appropriate for the number of worms you have. For a small indoor setup, a bin with a
+									capacity of around 5-10 gallons will do.</li>
+								<li>If using a plastic bin, drill a few small holes in the sides and lid to allow for ventilation. For drainage,
+									you can drill holes in the bottom and place a tray beneath the bin to catch any excess liquid (optional,
+									depending on your comfort with worm tea). Or not, if you don't want that excess liquid stinking up the
+									place.</li>
+							</ul>
+							<h4>2. Add Bedding:</h4>
+							<ul>
+								<li>Place shredded paper, cardboard, or any other carbon source in the bin. The bedding should be about 3-4
+									inches deep, enough for the worms to burrow in and feel comfortable.</li>
+								<li>Moisten the bedding. It should feel like a wrung-out sponge.</li>
+							</ul>
+							<h4>3. Introduce the Worms:</h4>
+							<ul>
+								<li>Gently place the worms on top of the bedding. They will naturally burrow down into the material away from
+									the light.</li>
+							</ul>
+							<h4>4. Feed the Worms:</h4>
+							<ul>
+								<li>Start small: add a handful of kitchen scraps like banana peels, apple cores, or coffee grounds. Make sure to
+									bury the scraps under the bedding to prevent fruit flies and odors.</li>
+								<li>Avoid feeding the worms any dairy, meat, citrus, or overly spicy foods as these can create unsuitable
+									conditions.</li>
+							</ul>
+							<h4>5. Maintain the Environment:</h4>
+							<ul>
+								<li><strong>Moisture:</strong> Keep the bedding damp, but not soaking wet. If it's too dry, spray a bit of
+									water. If too wet, add some dry bedding like shredded paper or cardboard.</li>
+								<li><strong>Temperature:</strong> Worms do best at room temperature (around 55-77°F or 13-25°C). Avoid extreme
+									cold or heat.</li>
+								<li><strong>Food Balance:</strong> Aim for a ratio of 1 part nitrogen-rich food scraps to 3-4 parts carbon-rich
+									bedding.</li>
+							</ul>
+							<h4>6. Harvesting Worm Castings:</h4>
+							<ul>
+								<li>After about 2-3 months, you will start to see dark, crumbly worm castings forming. This is a sign that the
+									worms have broken down the food and bedding.</li>
+								<li>To harvest, push the contents of the bin to one side and add fresh bedding and food to the empty side. The
+									worms will migrate over in a week or two, allowing you to scoop out the castings from the old side.</li>
+							</ul>
+							<h4>7. Managing Moisture Without Drainage Holes (Optional):</h4>
+							<ul>
+								<li>Instead of drilling holes for drainage, you can control moisture manually by adjusting how much bedding you
+									add. If the bin becomes too wet, add more dry bedding. Keep an eye on the bin and be proactive in maintaining a
+									balance.</li>
+							</ul>
+							<p>In any case, I saved 60 worms from a certain fate of being food for some lizard or bird.<span
+								class="end-mark" aria-hidden="true"></span></p>
+							<figure class="figure figure--square">
+								<img src="../images/worm-bin/worm-inspect-800.webp" srcset="../images/worm-bin/worm-inspect-800.webp 800w, ../images/worm-bin/worm-inspect-1600.webp 1600w" sizes="(min-width: 800px) 560px, 100vw" width="1600" height="1380" alt="Eddie crouching to inspect a worm in his palm" loading="lazy" decoding="async" />
+							</figure>
+						</div>
+						<footer class="article-end">
+							<nav class="pager" aria-label="More projects">
+								<a class="pager-link pager-link--prev" href="mantra.html">
+									<img src="../images/mantra/sleeping-fox-800.webp" width="1600" height="900" alt="" loading="lazy" decoding="async" />
+									<span class="pager-text">
+										<span class="pager-dir"><svg class="icon i-arrow-left icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> Previous</span>
+										<span class="pager-title">Mantra</span>
+									</span>
+								</a>
+								<a class="pager-link pager-link--next" href="cuttingBoard.html">
+									<img src="../images/cutting-board/finished-board-800.webp" width="1600" height="1200" alt="" loading="lazy" decoding="async" />
+									<span class="pager-text">
+										<span class="pager-dir">Next <svg class="icon i-arrow-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-right" /></svg></span>
+										<span class="pager-title">Custom Cutting Board</span>
+									</span>
+								</a>
+							</nav>
+						</footer>
+					</div>
+					<aside class="toc" aria-label="Table of contents">
+						<div class="toc-inner">
+							<p class="toc-title"><span>On this page</span><span class="toc-percent" data-toc-percent>0%</span></p>
+							<ol class="toc-list" data-toc></ol>
+							<div class="toc-actions">
+								<button type="button" data-copy="" data-copy-message="Link copied"><svg class="icon i-link" aria-hidden="true"><use href="../images/icons.svg#link" /></svg> Copy link</button>
+								<a href="#main"><svg class="icon i-arrow-up" aria-hidden="true"><use href="../images/icons.svg#arrow-up" /></svg> Back to top</a>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</article>
+		</main>
+		<footer class="site-footer" data-footer>
+			<noscript><div class="container footer-bottom">© Eddie Yang. All rights reserved.</div></noscript>
 		</footer>
-
-		<!-- Back to Top button -->
-		<a href="#top" id="back-to-top">Back to Top</a>
-
-		<!-- Link to the external JavaScript file -->
-		<script src="../js/globalScript.js"></script>
-		<script src="../js/articleScript.js"></script>
-		<script src="../js/buttonScript.js"></script>
 	</body>
 </html>

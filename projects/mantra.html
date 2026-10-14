@@ -1,169 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Content Creation</title>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VTTVJNS9Q"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-4VTTVJNS9Q");
-		</script>
-
-		<link rel="stylesheet" href="../css/theme.css" />
-		<link rel="stylesheet" href="../css/articleStyles.css" />
-		<link rel="stylesheet" href="../css/buttonStyles.css" />
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Mantra · Eddie Yang</title>
+		<meta name="description" content="I've been creating content for as long as I can remember—starting with cringey Fortnite streams on Instagram and evolving into building my first YouTube channel, Twitch streams, and funny…" />
+		<meta name="author" content="Eddie Yang" />
+		<meta name="theme-color" content="#0a0b10" />
+		<link rel="canonical" href="https://edyang1.github.io/portfolio/projects/mantra.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:site_name" content="Eddie Yang" />
+		<meta property="og:title" content="Mantra" />
+		<meta property="og:description" content="I've been creating content for as long as I can remember—starting with cringey Fortnite streams on Instagram and evolving into building my first YouTube channel, Twitch streams, and funny…" />
+		<meta property="og:url" content="https://edyang1.github.io/portfolio/projects/mantra.html" />
+		<meta property="og:image" content="https://edyang1.github.io/portfolio/images/og/mantra.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+		<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";var d=document.documentElement;d.dataset.theme=t;d.classList.add("js")})();</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;display=swap" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="../js/analytics.js" defer></script>
+		<script src="../js/site.js" defer></script>
+		<script src="../js/article.js" defer></script>
 	</head>
-
-	<body>
-		<div class="container content">
-			<!-- Article content -->
-			<div class="article">
-				<!-- Back button -->
-				<div class="back-button">
-					<a href="../projects/projects.html"><span class="material-icons">arrow_back</span> Project feed</a>
+	<body data-root="../">
+		<a class="skip-link" href="#main">Skip to content</a>
+		<header class="site-nav" data-nav>
+			<div class="container nav-inner">
+				<a class="brand" href="../index.html" aria-label="Eddie Yang, home">
+					<span class="brand-mark" aria-hidden="true">ey</span>
+					<span class="brand-name">Eddie Yang</span>
+				</a>
+				<nav class="nav-links" aria-label="Primary">
+					<a href="../projects/projects.html" aria-current="true">Projects</a>
+					<a href="../skills/skills.html">Skills</a>
+					<a href="../writing/writing.html">Writing</a>
+					<a href="https://eddiereviewseverything.wordpress.com" target="_blank" rel="noopener">Reviews <svg class="icon i-arrow-up-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg></a>
+				</nav>
+				<div class="nav-actions">
+					<button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+						<svg class="icon i-sun" aria-hidden="true"><use href="../images/icons.svg#sun" /></svg>
+						<svg class="icon i-moon" aria-hidden="true"><use href="../images/icons.svg#moon" /></svg>
+					</button>
+					<a class="btn btn--sm btn--primary nav-resume" href="../extras/Edward_Yang_resume.pdf" target="_blank" rel="noopener">
+						Résumé <svg class="icon i-arrow-up-right icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg>
+					</a>
+					<button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">
+						<span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+					</button>
 				</div>
-				<h1 id="top">Mantra</h1>
-				<!-- Author, Date, and Reading time -->
-				<div class="article-meta">
-					<span class="author">Eddie Yang</span> |
-					<span class="reading-time"><span class="material-icons">schedule</span> 2-3 minutes</span>
-				</div>
-
-				<!-- TL;DR Section -->
-				<div class="tidbit-container reveal">
-					<h3 id="Section 1">TL;DR</h3>
-					<p class="reveal-tldr">
-						I've been creating content for as long as I can remember—starting with cringey Fortnite streams on Instagram
-						and evolving into building my first YouTube channel, Twitch streams, and funny highlights. Along the way,
-						I've experimented with names like “Yangers” and “Subspace” before landing on “Mantra,” inspired by one of my
-						favorite songs. Content creation is my way of expressing myself, even though I'm still learning and growing.
-						It's been a challenging journey, but I'm passionate about improving, and I'm determined to keep going—this
-						time with a name that truly feels like me.
-					</p>
-				</div>
-
-				<!-- Introduction Section -->
-				<h2 id="Section 2">Inspiration</h2>
-				<p>
-					The first time I did anything for an audience was when I pointed my phone's camera at my lousy laptop's screen
-					and played Fortnite on Instagram live. Oh god, it was terrible, but we all start somewhere.
-				</p>
-
-				<p>Okay, I lied. It was probably actually some piano recital I had when I was 6, but you get the idea.</p>
-
-				<p>
-					I've always been drawn to creating content—mostly about video games. Growing up, I was inspired by gaming
-					YouTubers, and by middle school, I was uploading videos about anything and everything to anywhere I could. I
-					guess you could say I've always been fascinated by the idea of sharing experiences and entertaining people.
-				</p>
-
-				<p>
-					Things really kicked off when I built my first PC around 10th grade. It gave me the processing power I needed
-					to record gameplay, edit videos, and stream effectively. That's when I created my first
-					<a href="https://www.youtube.com/@mantra_hd" target="_blank">YouTube channel</a>, calling it Yangers.
-				</p>
-
-				<div class="tidbit-container reveal">
-					<h3>What's in a name?</h3>
-					<p>
-						I distinctly remember a friend helping me come up with that name in middle school band class. Obviously,
-						it's based on my last name Yang.
-					</p>
-				</div>
-
-				<p>
-					Those early videos? Let's just say they were a learning experience. I eventually took them down because I
-					couldn't stand to watch them. My equipment wasn't great, my voice was squeaky, and my editing skills were…
-					developing. Still, those years taught me a lot about content creation. I started streaming on
-					<a href="https://twitch.tv/mantrahd" target="_blank">Twitch</a> during the same time, experimenting with
-					turning stream highlights into (hopefully) funny YouTube videos.
-				</p>
-
-				<p>
-					A couple of years later, I decided the name “Yangers” no longer felt right. I wanted something that resonated
-					more with who I was, so I rebranded. Enter Subspace.
-				</p>
-
-				<div class="tidbit-container reveal">
-					<h3>What's in a name? II</h3>
-					<p>
-						At the time, I was studying linear algebra, and the concept of a subspace—something that fulfills certain
-						mathematical properties—at the time, I was an omega-nerd.
-					</p>
-				</div>
-
-				<p>
-					It wasn't more than a year later than when I realized I didn't like my online name again. Generally I know I
-					was struggling with my identity (honestly, I still am, and let's be real, aren't we all). Some people made
-					sexual jokes about being a “sub” and such, and so came name change 3.
-				</p>
-
-				<h2 id="Section 3">Mantra</h2>
-
-				<p>
-					The inspiration for this name came from one of my favorite songs by one of my favorite bands, Bring me the
-					Horizon. It's got a really catchy bass line.
-				</p>
-
-				<iframe
-					style="border-radius: 12px"
-					src="https://open.spotify.com/embed/track/060RNnzoMay3wKJek1faPc?utm_source=generator"
-					width="100%"
-					height="152"
-					frameborder="0"
-					allowfullscreen=""
-					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-					loading="lazy"
-				></iframe>
-
-				<p>And my new profile picture? A sleeping fox in Minecraft, because foxes are cute. And Minecraft is cool.</p>
-
-				<img src="../images/mantra/sleepingFox.jpg" alt="Fox sleeping in Minecraft" class="article-image reveal" />
-
-				<p>
-					And that's where we are now. Honestly, I still have no idea what I'm doing, I just make whatever I think is
-					cool or entertaining and go with it. I try to design funny variety streams and new ideas to make into YouTube
-					videos. Entertainment, comedy, it's all an art form, and I recognize I'm not good at it yet. If I were, my
-					stats would probably be better. But it's a slow process, and I'm a very stubborn person, and it's a skill that
-					I want to have. Of course I've felt like giving up at times and I've doubted myself more times than I can
-					count. But I know I'm passionate about it. Content creation for me is a way to express myself. And growing as
-					a creator and a person. And I feel like I've finally found something that has been so challenging for me that
-					if I can do this, I can do anything. So I'll keep going. And honestly, I really like this name. I actually
-					think I'll stick with it.■
-				</p>
 			</div>
-
-			<!-- Table of contents -->
-			<div class="toc">
-				<h3>On this page</h3>
-				<ul id="toc-list"></ul>
-			</div>
-		</div>
-
-		<!-- Footer -->
-		<footer>
-			<p>
-				<span class="material-icons">copyright</span>
-				<span class="copyrightMessage"></span>
-			</p>
+		</header>
+		<div class="read-progress" aria-hidden="true"></div>
+		<main id="main">
+			<article>
+				<header class="article-hero">
+					<div class="hero-glow" aria-hidden="true"><img src="../images/mantra/sleeping-fox-800.webp" width="1600" height="900" alt="" decoding="async" /></div>
+					<div class="article-shell">
+						<div>
+							<a class="back-link" href="projects.html"><svg class="icon i-arrow-left icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> All projects</a>
+							<p class="article-kicker"><span class="accent">Project</span><span>2025</span></p>
+							<h1 class="article-title">Mantra</h1>
+							<p class="article-dek">Creating content I'm passionate about</p>
+							<div class="article-meta">
+								<span><span class="avatars"><span class="avatar">EY</span></span>Eddie Yang</span>
+								<span><svg class="icon i-clock" aria-hidden="true"><use href="../images/icons.svg#clock" /></svg> 3 min read</span>
+								<div class="chip-row"><span class="chip">YouTube</span><span class="chip">Twitch</span></div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="article-shell article-body">
+					<div class="article-main">
+						<details class="toc-mobile">
+							<summary><span data-toc-current>On this page</span><svg class="icon i-chevron-down" aria-hidden="true"><use href="../images/icons.svg#chevron-down" /></svg></summary>
+							<ol class="toc-list" data-toc></ol>
+						</details>
+						<div class="prose">
+							<div class="tldr">
+								<p class="tldr-label"><svg class="icon i-sparkle icon-xs" aria-hidden="true"><use href="../images/icons.svg#sparkle" /></svg> TL;DR</p>
+								<p>I've been creating content for as long as I can remember—starting with cringey Fortnite streams on Instagram and evolving into building my first YouTube channel, Twitch streams, and funny highlights. Along the way, I've experimented with names like “Yangers” and “Subspace” before landing on “Mantra,” inspired by one of my favorite songs. Content creation is my way of expressing myself, even though I'm still learning and growing. It's been a challenging journey, but I'm passionate about improving, and I'm determined to keep going—this time with a name that truly feels like me.</p>
+							</div>
+							<h2 id="inspiration">Inspiration</h2>
+							<p>The first time I did anything for an audience was when I pointed my phone's camera at my lousy laptop's
+								screen and played Fortnite on Instagram live. Oh god, it was terrible, but we all start somewhere.</p>
+							<p>Okay, I lied. It was probably actually some piano recital I had when I was 6, but you get the idea.</p>
+							<p>I've always been drawn to creating content—mostly about video games. Growing up, I was inspired by gaming
+								YouTubers, and by middle school, I was uploading videos about anything and everything to anywhere I could. I
+								guess you could say I've always been fascinated by the idea of sharing experiences and entertaining people.</p>
+							<p>Things really kicked off when I built my first PC around 10th grade. It gave me the processing power I needed
+								to record gameplay, edit videos, and stream effectively. That's when I created my first <a
+								href="https://www.youtube.com/@mantra_hd" target="_blank" rel="noopener">YouTube channel</a>, calling it
+								Yangers.</p>
+							<aside class="callout">
+								<p class="callout-title">What's in a name?</p>
+								<p>I distinctly remember a friend helping me come up with that name in middle school band class. Obviously, it's
+									based on my last name Yang.</p>
+							</aside>
+							<p>Those early videos? Let's just say they were a learning experience. I eventually took them down because I
+								couldn't stand to watch them. My equipment wasn't great, my voice was squeaky, and my editing skills were…
+								developing. Still, those years taught me a lot about content creation. I started streaming on <a
+								href="https://twitch.tv/mantrahd" target="_blank" rel="noopener">Twitch</a> during the same time, experimenting
+								with turning stream highlights into (hopefully) funny YouTube videos.</p>
+							<p>A couple of years later, I decided the name “Yangers” no longer felt right. I wanted something that resonated
+								more with who I was, so I rebranded. Enter Subspace.</p>
+							<aside class="callout">
+								<p class="callout-title">What's in a name? II</p>
+								<p>At the time, I was studying linear algebra, and the concept of a subspace—something that fulfills certain
+									mathematical properties—at the time, I was an omega-nerd.</p>
+							</aside>
+							<p>It wasn't more than a year later than when I realized I didn't like my online name again. Generally I know I
+								was struggling with my identity (honestly, I still am, and let's be real, aren't we all). Some people made
+								sexual jokes about being a “sub” and such, and so came name change 3.</p>
+							<h2 id="mantra">Mantra</h2>
+							<p>The inspiration for this name came from one of my favorite songs by one of my favorite bands, Bring me the
+								Horizon. It's got a really catchy bass line.</p>
+							<div class="embed embed--audio">
+								<iframe src="https://open.spotify.com/embed/track/060RNnzoMay3wKJek1faPc?utm_source=generator" title="Mantra by Bring Me The Horizon on Spotify" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+							</div>
+							<p>And my new profile picture? A sleeping fox in Minecraft, because foxes are cute. And Minecraft is cool.</p>
+							<figure class="figure">
+								<img src="../images/mantra/sleeping-fox-800.webp" srcset="../images/mantra/sleeping-fox-800.webp 800w, ../images/mantra/sleeping-fox-1600.webp 1600w" sizes="(min-width: 800px) 720px, 100vw" width="1600" height="900" alt="A fox sleeping in a cozy Minecraft cabin, Mantra's profile picture" loading="lazy" decoding="async" />
+							</figure>
+							<p>And that's where we are now. Honestly, I still have no idea what I'm doing, I just make whatever I think is
+								cool or entertaining and go with it. I try to design funny variety streams and new ideas to make into YouTube
+								videos. Entertainment, comedy, it's all an art form, and I recognize I'm not good at it yet. If I were, my stats
+								would probably be better. But it's a slow process, and I'm a very stubborn person, and it's a skill that I want
+								to have. Of course I've felt like giving up at times and I've doubted myself more times than I can count. But I
+								know I'm passionate about it. Content creation for me is a way to express myself. And growing as a creator and a
+								person. And I feel like I've finally found something that has been so challenging for me that if I can do this,
+								I can do anything. So I'll keep going. And honestly, I really like this name. I actually think I'll stick with
+								it.<span class="end-mark" aria-hidden="true"></span></p>
+						</div>
+						<footer class="article-end">
+							<nav class="pager" aria-label="More projects">
+								<a class="pager-link pager-link--prev" href="hyperdash.html">
+									<img src="../images/hyperdash/logo-800.webp" width="1000" height="1000" alt="" loading="lazy" decoding="async" />
+									<span class="pager-text">
+										<span class="pager-dir"><svg class="icon i-arrow-left icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> Previous</span>
+										<span class="pager-title">Hyperdash</span>
+									</span>
+								</a>
+								<a class="pager-link pager-link--next" href="wormBin.html">
+									<img src="../images/worm-bin/wigglers-800.webp" width="1600" height="1421" alt="" loading="lazy" decoding="async" />
+									<span class="pager-text">
+										<span class="pager-dir">Next <svg class="icon i-arrow-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-right" /></svg></span>
+										<span class="pager-title">Worm Bin</span>
+									</span>
+								</a>
+							</nav>
+						</footer>
+					</div>
+					<aside class="toc" aria-label="Table of contents">
+						<div class="toc-inner">
+							<p class="toc-title"><span>On this page</span><span class="toc-percent" data-toc-percent>0%</span></p>
+							<ol class="toc-list" data-toc></ol>
+							<div class="toc-actions">
+								<button type="button" data-copy="" data-copy-message="Link copied"><svg class="icon i-link" aria-hidden="true"><use href="../images/icons.svg#link" /></svg> Copy link</button>
+								<a href="#main"><svg class="icon i-arrow-up" aria-hidden="true"><use href="../images/icons.svg#arrow-up" /></svg> Back to top</a>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</article>
+		</main>
+		<footer class="site-footer" data-footer>
+			<noscript><div class="container footer-bottom">© Eddie Yang. All rights reserved.</div></noscript>
 		</footer>
-
-		<!-- Back to Top button -->
-		<a href="#top" id="back-to-top">Back to Top</a>
-
-		<!-- Link to the external JavaScript file -->
-		<script src="../js/globalScript.js"></script>
-		<script src="../js/articleScript.js"></script>
-		<script src="../js/buttonScript.js"></script>
 	</body>
 </html>

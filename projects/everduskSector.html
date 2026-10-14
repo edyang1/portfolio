@@ -1,202 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Everdusk Sector</title>
-
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VTTVJNS9Q"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-4VTTVJNS9Q");
-		</script>
-
-		<link rel="stylesheet" href="../css/theme.css" />
-		<link rel="stylesheet" href="../css/articleStyles.css" />
-		<link rel="stylesheet" href="../css/buttonStyles.css" />
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Everdusk Sector · Eddie Yang</title>
+		<meta name="description" content="Over the summer of 2024, I had a burst of creativity and decided to create a visual novel, but life got in the way and the project was shelved. In the fall, I found a new opportunity through a…" />
+		<meta name="author" content="Eddie Yang" />
+		<meta name="theme-color" content="#0a0b10" />
+		<link rel="canonical" href="https://edyang1.github.io/portfolio/projects/everduskSector.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:site_name" content="Eddie Yang" />
+		<meta property="og:title" content="Everdusk Sector" />
+		<meta property="og:description" content="Over the summer of 2024, I had a burst of creativity and decided to create a visual novel, but life got in the way and the project was shelved. In the fall, I found a new opportunity through a…" />
+		<meta property="og:url" content="https://edyang1.github.io/portfolio/projects/everduskSector.html" />
+		<meta property="og:image" content="https://edyang1.github.io/portfolio/images/og/everduskSector.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+		<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";var d=document.documentElement;d.dataset.theme=t;d.classList.add("js")})();</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;display=swap" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="../js/analytics.js" defer></script>
+		<script src="../js/site.js" defer></script>
+		<script src="../js/article.js" defer></script>
 	</head>
-
-	<body>
-		<div class="container content">
-			<!-- Article content -->
-			<div class="article">
-				<!-- Back button -->
-				<div class="back-button">
-					<a href="../projects/projects.html"><span class="material-icons">arrow_back</span> Project feed</a>
+	<body data-root="../">
+		<a class="skip-link" href="#main">Skip to content</a>
+		<header class="site-nav" data-nav>
+			<div class="container nav-inner">
+				<a class="brand" href="../index.html" aria-label="Eddie Yang, home">
+					<span class="brand-mark" aria-hidden="true">ey</span>
+					<span class="brand-name">Eddie Yang</span>
+				</a>
+				<nav class="nav-links" aria-label="Primary">
+					<a href="../projects/projects.html" aria-current="true">Projects</a>
+					<a href="../skills/skills.html">Skills</a>
+					<a href="../writing/writing.html">Writing</a>
+					<a href="https://eddiereviewseverything.wordpress.com" target="_blank" rel="noopener">Reviews <svg class="icon i-arrow-up-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg></a>
+				</nav>
+				<div class="nav-actions">
+					<button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+						<svg class="icon i-sun" aria-hidden="true"><use href="../images/icons.svg#sun" /></svg>
+						<svg class="icon i-moon" aria-hidden="true"><use href="../images/icons.svg#moon" /></svg>
+					</button>
+					<a class="btn btn--sm btn--primary nav-resume" href="../extras/Edward_Yang_resume.pdf" target="_blank" rel="noopener">
+						Résumé <svg class="icon i-arrow-up-right icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg>
+					</a>
+					<button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">
+						<span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+					</button>
 				</div>
-				<h1 id="top">Everdusk Sector</h1>
-				<!-- Author, Date, and Reading time -->
-				<div class="article-meta">
-					<span class="author">Eddie Yang</span> |
-					<span class="reading-time"><span class="material-icons">schedule</span> 4-5 minutes</span>
-				</div>
-
-				<!-- TL;DR Section -->
-				<div class="tidbit-container reveal">
-					<h3 id="Section 1">TL;DR</h3>
-					<p class="reveal-tldr">
-						Over the summer of 2024, I had a burst of creativity and decided to create a visual novel, but life got in
-						the way and the project was shelved. In the fall, I found a new opportunity through a week-long game jam,
-						where I assembled a team and committed to making the game. We faced numerous challenges, including time zone
-						differences and my own midterms, but I worked through the night coding and pulling everything together,
-						eventually submitting just 15 minutes before the deadline. Despite feeling the game wasn't fully finished, I
-						added some final touches, including voice-acting one of the characters. After playing the game for the first
-						time post-development, I caught a few bugs and made improvements. In the end, our team pulled two
-						all-nighters, made 104 Git commits, and finished in the top quartile out of 1,500 entries—a solid
-						achievement for our first game jam.
-					</p>
-				</div>
-
-				<iframe
-					class="article-iframe reveal"
-					frameborder="0"
-					src="https://itch.io/embed/2970563?border_width=5&amp;bg_color=F4EBE8&amp;fg_color=292F36&amp;link_color=FF6B6B&amp;border_color=12d0c9"
-					width="560"
-					height="175"
-					><a href="https://subspace1.itch.io/everdusk-sector">Everdusk Sector by subspace1, Mia Cioffi</a></iframe
-				>
-
-				<iframe
-					class="article-iframe reveal"
-					frameborder="0"
-					src="https://itch.io/embed-upload/11498259?color=12d0c9"
-					allowfullscreen=""
-					width="640"
-					height="600"
-					><a href="https://subspace1.itch.io/everdusk-sector">Play Everdusk Sector on itch.io</a></iframe
-				>
-
-				<a href="https://github.com/edyang1/brackey2024" target="_blank">Github repo</a>
-
-				<!-- Introduction Section -->
-				<h2 id="Section 2">Summer, 2024:</h2>
-				<p>
-					Over the summer of 2024 I had this burst of creativity where I wanted to create a game. Specifically, I wanted
-					to use the medium of the visual novel to tell a really great story. I've always wanted to create things. To
-					tell a story. But life got in the way, and the project was shelved. Still, the urge to create lingered.
-				</p>
-				<p>
-					Fast forward to the fall semester. I was taking a creative writing class focused on fiction, and I found a new
-					opportunity to tell a great story: a game jam. For those unfamiliar, game jams are intense competitions where
-					developers come together to make a game within a limited time frame—this one was just a week long. Inspired
-					and determined, I set out to find a team.
-				</p>
-				<p>
-					I joined a Discord server dedicated to the game jam and quickly assembled a group: an artist, a musician, a
-					pixel artist, and a writer. None of us could devote 10 hours a day to the project, but we all shared the same
-					goal: to create something high-quality in the short time we had.
-				</p>
-
-				<!-- Process Section -->
-				<h2 id="Section 3">September, 2024:</h2>
-				<p>
-					This time, I was committed to seeing it through. I was going to make a game from start to finish in just a
-					week. But several logistical hurdles stood in the way—first, I had a midterm and several assignments due that
-					same week. On top of that, my teammates and I were scattered across different time zones. They were six hours
-					ahead, so with everyone juggling their own work, classes, and responsibilities, we couldn't even find a good
-					time for calls. Instead, we had to rely on messages, sending updates back and forth.
-				</p>
-
-				<h2 id="Section 4">Process</h2>
-
-				<p>
-					When the final stretch arrived, I sat down at my computer around 10 PM, expecting to work until midnight—maybe
-					1 or 2 AM if I hit any snags. I had it all planned out: hit submit, collapse into bed, and finally wrap up a
-					grueling week with my Minecraft fox plush. I started coding, editing the manuscript, and pulling all the
-					pieces together—the story, the artwork, and the music. Hours slipped by in a blur of Visual Studio Code and
-					Google Docs, and when I next checked the clock, it was 3 AM. I wasn't even close to being done. And the due
-					date was in 3 hours—at 6 AM.
-				</p>
-
-				<p>
-					The rest of the night passed in a blur, and to this day I'm still not sure how I actually did it all. I worked
-					for over 12 hours straight, only taking breaks to eat (mostly bananas) and use the bathroom. Visual Studio
-					Code and Google Docs sat open as I typed away, taking the story that the writer submitted and the beautiful
-					art and fantastic music and crafting it into a polished game.
-				</p>
-
-				<img
-					src="../images/everduskSector/everdusk_working.jpg"
-					alt="Working into the morning coding the game"
-					class="article-image reveal"
-				/>
-
-				<p>
-					The rest of the night is a haze. I somehow powered through over 12 hours of straight work, only stopping to
-					grab a banana or run to the bathroom. I kept coding, writing, and making final tweaks. When I finally hit
-					submit, there were 15 minutes left before the deadline. Relief washed over me, but the thought that the game
-					wasn't truly done still gnawed at me. Regardless, I needed a break. Stepping into the sunlight after having
-					locked myself in my dorm for 12 hours straight was among the most euphoric experiences of my life.
-				</p>
-
-				<div class="tidbit-container reveal">
-					<h3>How did you work until the morning if the due date was at 6 AM?</h3>
-					<p>
-						I could make changes to the game after the due date, but 6 AM was when other people could start voting on
-						it.
-					</p>
-				</div>
-
-				<p>
-					Yet, I couldn't shake the feeling that there were more things to polish. I had this ambitious idea to
-					voice-act one of the characters—a two-tailed fox—so I threw together a makeshift voice-acting setup. I must've
-					looked stupid, but I didn't care. I spent the rest of the day wrapping up stylistic touches, recording my
-					lines, and finally called it quits by evening. Time for a much-needed rest.
-				</p>
-
-				<img
-					src="../images/everduskSector/everdusk_VA.png"
-					alt="Voice acting setup for the character"
-					class="article-image reveal"
-				/>
-
-				<p>
-					After a long sleep, I sat down to play my own game for the first time. Amazingly, I'd never gone through it
-					from start to finish during development, so I wanted to estimate the total playtime and catch any remaining
-					bugs. It took just over an hour to get through the dialogue, and I'm glad I played it—catching a few minor
-					issues and making clarity adjustments along the way.
-				</p>
-
-				<img src="../images/everduskSector/everdusk_menu1.png" alt="" class="article-image reveal" />
-				<img src="../images/everduskSector/everdusk_menu2.png" alt="" class="article-image reveal" />
-
-				<p>
-					In the end, our team pulled two all-nighters, I made 104 Git commits, and wrote around 5,147 lines of code,
-					most of which was dialogue. Despite the exhaustion and the chaos, we did it. We made a game. And considering
-					the challenges we faced, it didn't do too badly! Out of 1,500 projects, ours landed in the top quartile. Not
-					bad for a first game jam, especially one where I had so many other responsibilities.■
-				</p>
 			</div>
-
-			<!-- Table of contents -->
-			<div class="toc">
-				<h3>On this page</h3>
-				<ul id="toc-list"></ul>
-			</div>
-		</div>
-
-		<!-- Footer -->
-		<footer>
-			<p>
-				<span class="material-icons">copyright</span>
-				<span class="copyrightMessage"></span>
-			</p>
+		</header>
+		<div class="read-progress" aria-hidden="true"></div>
+		<main id="main">
+			<article>
+				<header class="article-hero">
+					<div class="hero-glow" aria-hidden="true"><img src="../images/everdusk/cover-800.webp" width="1260" height="1000" alt="" decoding="async" /></div>
+					<div class="article-shell">
+						<div>
+							<a class="back-link" href="projects.html"><svg class="icon i-arrow-left icon-sm" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> All projects</a>
+							<p class="article-kicker"><span class="accent">Project</span><span>2024</span></p>
+							<h1 class="article-title">Everdusk Sector</h1>
+							<p class="article-dek">The most grueling project I've ever done: A week to create a visual novel from scratch.</p>
+							<div class="article-meta">
+								<span><span class="avatars"><span class="avatar">EY</span></span>Eddie Yang</span>
+								<span><svg class="icon i-clock" aria-hidden="true"><use href="../images/icons.svg#clock" /></svg> 5 min read</span>
+								<div class="chip-row"><span class="chip">Game jam</span><span class="chip">Ren'Py</span><span class="chip">Team lead</span></div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="article-shell article-body">
+					<div class="article-main">
+						<details class="toc-mobile">
+							<summary><span data-toc-current>On this page</span><svg class="icon i-chevron-down" aria-hidden="true"><use href="../images/icons.svg#chevron-down" /></svg></summary>
+							<ol class="toc-list" data-toc></ol>
+						</details>
+						<div class="prose">
+							<div class="tldr">
+								<p class="tldr-label"><svg class="icon i-sparkle icon-xs" aria-hidden="true"><use href="../images/icons.svg#sparkle" /></svg> TL;DR</p>
+								<p>Over the summer of 2024, I had a burst of creativity and decided to create a visual novel, but life got in the way and the project was shelved. In the fall, I found a new opportunity through a week-long game jam, where I assembled a team and committed to making the game. We faced numerous challenges, including time zone differences and my own midterms, but I worked through the night coding and pulling everything together, eventually submitting just 15 minutes before the deadline. Despite feeling the game wasn't fully finished, I added some final touches, including voice-acting one of the characters. After playing the game for the first time post-development, I caught a few bugs and made improvements. In the end, our team pulled two all-nighters, made 104 Git commits, and finished in the top quartile out of 1,500 entries—a solid achievement for our first game jam.</p>
+							</div>
+							<div class="embed embed--itch">
+								<iframe src="https://itch.io/embed/2970563?border_width=0&amp;bg_color=14161e&amp;fg_color=eef0f6&amp;link_color=ff7a7a&amp;border_color=2a2e3d" title="Everdusk Sector on itch.io" loading="lazy"><a href="https://subspace1.itch.io/everdusk-sector">Everdusk Sector by subspace1, Mia Cioffi</a></iframe>
+							</div>
+							<p class="embed-label">Play it right here in your browser</p>
+							<div class="embed embed--game">
+								<iframe src="https://itch.io/embed-upload/11498259?color=1b1e28" title="Play Everdusk Sector" loading="lazy" allowfullscreen></iframe>
+							</div>
+							<div class="listen">
+								<a href="https://subspace1.itch.io/everdusk-sector" target="_blank" rel="noopener"><svg class="icon i-itch" aria-hidden="true"><use href="../images/icons.svg#itch" /></svg> Play on itch.io</a>
+								<a href="https://github.com/edyang1/brackey2024" target="_blank" rel="noopener"><svg class="icon i-github" aria-hidden="true"><use href="../images/icons.svg#github" /></svg> GitHub repo</a>
+							</div>
+							<h2 id="summer-2024">Summer, 2024:</h2>
+							<p>Over the summer of 2024 I had this burst of creativity where I wanted to create a game. Specifically, I
+								wanted to use the medium of the visual novel to tell a really great story. I've always wanted to create things.
+								To tell a story. But life got in the way, and the project was shelved. Still, the urge to create lingered.</p>
+							<p>Fast forward to the fall semester. I was taking a creative writing class focused on fiction, and I found a
+								new opportunity to tell a great story: a game jam. For those unfamiliar, game jams are intense competitions
+								where developers come together to make a game within a limited time frame—this one was just a week long.
+								Inspired and determined, I set out to find a team.</p>
+							<p>I joined a Discord server dedicated to the game jam and quickly assembled a group: an artist, a musician, a
+								pixel artist, and a writer. None of us could devote 10 hours a day to the project, but we all shared the same
+								goal: to create something high-quality in the short time we had.</p>
+							<h2 id="september-2024">September, 2024:</h2>
+							<p>This time, I was committed to seeing it through. I was going to make a game from start to finish in just a
+								week. But several logistical hurdles stood in the way—first, I had a midterm and several assignments due that
+								same week. On top of that, my teammates and I were scattered across different time zones. They were six hours
+								ahead, so with everyone juggling their own work, classes, and responsibilities, we couldn't even find a good
+								time for calls. Instead, we had to rely on messages, sending updates back and forth.</p>
+							<h2 id="process">Process</h2>
+							<p>When the final stretch arrived, I sat down at my computer around 10 PM, expecting to work until
+								midnight—maybe 1 or 2 AM if I hit any snags. I had it all planned out: hit submit, collapse into bed, and
+								finally wrap up a grueling week with my Minecraft fox plush. I started coding, editing the manuscript, and
+								pulling all the pieces together—the story, the artwork, and the music. Hours slipped by in a blur of Visual
+								Studio Code and Google Docs, and when I next checked the clock, it was 3 AM. I wasn't even close to being done.
+								And the due date was in 3 hours—at 6 AM.</p>
+							<p>The rest of the night passed in a blur, and to this day I'm still not sure how I actually did it all. I
+								worked for over 12 hours straight, only taking breaks to eat (mostly bananas) and use the bathroom. Visual
+								Studio Code and Google Docs sat open as I typed away, taking the story that the writer submitted and the
+								beautiful art and fantastic music and crafting it into a polished game.</p>
+							<figure class="figure">
+								<img src="../images/everdusk/working-800.webp" srcset="../images/everdusk/working-800.webp 800w, ../images/everdusk/working-1600.webp 1600w" sizes="(min-width: 800px) 720px, 100vw" width="1600" height="1200" alt="Eddie at his desk in headphones, coding the game late into the night" loading="lazy" decoding="async" />
+							</figure>
+							<p>The rest of the night is a haze. I somehow powered through over 12 hours of straight work, only stopping to
+								grab a banana or run to the bathroom. I kept coding, writing, and making final tweaks. When I finally hit
+								submit, there were 15 minutes left before the deadline. Relief washed over me, but the thought that the game
+								wasn't truly done still gnawed at me. Regardless, I needed a break. Stepping into the sunlight after having
+								locked myself in my dorm for 12 hours straight was among the most euphoric experiences of my life.</p>
+							<aside class="callout">
+								<p class="callout-title">How did you work until the morning if the due date was at 6 AM?</p>
+								<p>I could make changes to the game after the due date, but 6 AM was when other people could start voting on
+									it.</p>
+							</aside>
+							<p>Yet, I couldn't shake the feeling that there were more things to polish. I had this ambitious idea to
+								voice-act one of the characters—a two-tailed fox—so I threw together a makeshift voice-acting setup. I must've
+								looked stupid, but I didn't care. I spent the rest of the day wrapping up stylistic touches, recording my lines,
+								and finally called it quits by evening. Time for a much-needed rest.</p>
+							<figure class="figure">
+								<img src="../images/everdusk/voice-acting-800.webp" srcset="../images/everdusk/voice-acting-800.webp 800w, ../images/everdusk/voice-acting-1600.webp 1600w" sizes="(min-width: 800px) 720px, 100vw" width="1600" height="900" alt="A makeshift voice-acting booth: a blanket draped over a chair and microphone" loading="lazy" decoding="async" />
+							</figure>
+							<p>After a long sleep, I sat down to play my own game for the first time. Amazingly, I'd never gone through it
+								from start to finish during development, so I wanted to estimate the total playtime and catch any remaining
+								bugs. It took just over an hour to get through the dialogue, and I'm glad I played it—catching a few minor
+								issues and making clarity adjustments along the way.</p>
+							<figure class="figure figure--pair" style="--ar: 1.778">
+								<img src="../images/everdusk/menu-valley-800.webp" srcset="../images/everdusk/menu-valley-800.webp 800w, ../images/everdusk/menu-valley-1600.webp 1600w" sizes="(min-width: 800px) 360px, (min-width: 640px) 50vw, 100vw" width="1600" height="900" alt="Everdusk Valley title screen showing a sunny pixel-art village" loading="lazy" decoding="async" />
+								<img src="../images/everdusk/menu-sector-800.webp" srcset="../images/everdusk/menu-sector-800.webp 800w, ../images/everdusk/menu-sector-1600.webp 1600w" sizes="(min-width: 800px) 360px, (min-width: 640px) 50vw, 100vw" width="1600" height="900" alt="Everdusk Sector title screen showing a rainy, neon-lit pixel-art city street" loading="lazy" decoding="async" />
+							</figure>
+							<p>In the end, our team pulled two all-nighters, I made 104 Git commits, and wrote around 5,147 lines of code,
+								most of which was dialogue. Despite the exhaustion and the chaos, we did it. We made a game. And considering the
+								challenges we faced, it didn't do too badly! Out of 1,500 projects, ours landed in the top quartile. Not bad for
+								a first game jam, especially one where I had so many other responsibilities.<span class="end-mark"
+								aria-hidden="true"></span></p>
+						</div>
+						<footer class="article-end">
+							<nav class="pager" aria-label="More projects">
+								<a class="pager-link pager-link--prev" href="cuttingBoard.html">
+									<img src="../images/cutting-board/finished-board-800.webp" width="1600" height="1200" alt="" loading="lazy" decoding="async" />
+									<span class="pager-text">
+										<span class="pager-dir"><svg class="icon i-arrow-left icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-left" /></svg> Previous</span>
+										<span class="pager-title">Custom Cutting Board</span>
+									</span>
+								</a>
+								<a class="pager-link pager-link--next" href="reverie.html">
+									<img src="../images/reverie/hysteria-light-800.webp" width="1600" height="1200" alt="" loading="lazy" decoding="async" />
+									<span class="pager-text">
+										<span class="pager-dir">Next <svg class="icon i-arrow-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-right" /></svg></span>
+										<span class="pager-title">Reverie Engravings</span>
+									</span>
+								</a>
+							</nav>
+						</footer>
+					</div>
+					<aside class="toc" aria-label="Table of contents">
+						<div class="toc-inner">
+							<p class="toc-title"><span>On this page</span><span class="toc-percent" data-toc-percent>0%</span></p>
+							<ol class="toc-list" data-toc></ol>
+							<div class="toc-actions">
+								<button type="button" data-copy="" data-copy-message="Link copied"><svg class="icon i-link" aria-hidden="true"><use href="../images/icons.svg#link" /></svg> Copy link</button>
+								<a href="#main"><svg class="icon i-arrow-up" aria-hidden="true"><use href="../images/icons.svg#arrow-up" /></svg> Back to top</a>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</article>
+		</main>
+		<footer class="site-footer" data-footer>
+			<noscript><div class="container footer-bottom">© Eddie Yang. All rights reserved.</div></noscript>
 		</footer>
-
-		<!-- Back to Top button -->
-		<a href="#top" id="back-to-top">Back to Top</a>
-
-		<!-- Link to the external JavaScript file -->
-		<script src="../js/globalScript.js"></script>
-		<script src="../js/articleScript.js"></script>
-		<script src="../js/buttonScript.js"></script>
 	</body>
 </html>
