@@ -1749,6 +1749,200 @@ a.chip:hover {
 	text-transform: uppercase;
 }
 
+/* Novel in progress: a blood-moon variant of the book */
+.book--moons .book-cover {
+	background: radial-gradient(95% 60% at 50% 16%, #5c0f1d 0%, #2a0710 44%, #0c0306 100%);
+}
+
+.book-stars {
+	position: absolute;
+	inset: 0;
+	opacity: 0.55;
+	background-image: radial-gradient(1px 1px at 18% 22%, #fff 50%, transparent 51%),
+		radial-gradient(1px 1px at 72% 12%, #fff 50%, transparent 51%),
+		radial-gradient(1.5px 1.5px at 84% 38%, #ffd9d9 50%, transparent 51%),
+		radial-gradient(1px 1px at 30% 48%, #fff 50%, transparent 51%),
+		radial-gradient(1px 1px at 60% 56%, #fff 50%, transparent 51%),
+		radial-gradient(1.5px 1.5px at 12% 64%, #ffd9d9 50%, transparent 51%),
+		radial-gradient(1px 1px at 90% 70%, #fff 50%, transparent 51%);
+}
+
+.book--moons .book-moon {
+	top: 22%;
+	left: 50%;
+	right: auto;
+	width: calc(var(--book-w) * 0.22);
+	height: calc(var(--book-w) * 0.22);
+	background: radial-gradient(circle at 38% 34%, #ffb0a3, #e3283f 46%, #6e0818 100%);
+	box-shadow: 0 0 48px 12px rgb(227 40 63 / 0.35);
+	transform: translateX(-50%);
+}
+
+/* The moon cries: one drop, forever */
+.book-tear {
+	position: absolute;
+	top: calc(22% + var(--book-w) * 0.205);
+	left: calc(50% + var(--book-w) * 0.03);
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 0 50% 50% 50%;
+	background: #e3283f;
+	box-shadow: 0 0 8px rgb(227 40 63 / 0.8);
+	transform: rotate(45deg);
+	animation: drip 3.4s cubic-bezier(0.55, 0, 0.9, 0.6) infinite;
+}
+
+.book-blurb {
+	position: relative;
+	max-width: 13rem;
+	color: rgb(244 239 230 / 0.7);
+	font-family: var(--font-mono);
+	font-size: 0.56rem;
+	letter-spacing: 0.14em;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+.book-blurb .cite {
+	color: #9db8ff;
+	font-size: 0.95em;
+	font-style: italic;
+	letter-spacing: 0.02em;
+	text-transform: none;
+	vertical-align: 0.35em;
+}
+
+.book--moons .book-title {
+	font-size: calc(var(--book-w) * 0.112);
+}
+
+.book-emoji {
+	margin-top: 0.6rem;
+	font-size: calc(var(--book-w) * 0.06);
+	letter-spacing: 0.12em;
+}
+
+.book-sticker {
+	position: absolute;
+	bottom: 9%;
+	right: -0.9rem;
+	z-index: 2;
+	display: grid;
+	place-items: center;
+	width: 4.6rem;
+	height: 4.6rem;
+	border-radius: 50%;
+	background: #ffd166;
+	box-shadow: 0 8px 18px -6px rgb(0 0 0 / 0.55);
+	color: #2a0710;
+	font-size: 0.68rem;
+	font-weight: 800;
+	line-height: 1.05;
+	letter-spacing: -0.01em;
+	text-align: center;
+	transform: rotate(14deg) translateZ(1px);
+}
+
+/* Tiny CSS book covers for links that have no photo */
+.mini-cover {
+	position: relative;
+	flex: none;
+	display: block;
+	width: 3.4rem;
+	height: 4.8rem;
+	border-radius: 3px 8px 8px 3px;
+	overflow: hidden;
+	box-shadow: 6px 8px 18px -8px rgb(0 0 0 / 0.6), inset 3px 0 4px rgb(0 0 0 / 0.35);
+}
+
+.mini-cover::after {
+	content: "";
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	width: 40%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	transform: translateX(-50%);
+}
+
+.mini-cover--moons {
+	background: radial-gradient(95% 60% at 50% 16%, #5c0f1d, #2a0710 45%, #0c0306);
+}
+
+.mini-cover--moons::after {
+	background: radial-gradient(circle at 38% 34%, #ffb0a3, #e3283f 46%, #6e0818);
+	box-shadow: 0 0 14px 3px rgb(227 40 63 / 0.45);
+}
+
+.mini-cover--teardrops {
+	background: radial-gradient(110% 70% at 70% 8%, #3a2f6b, #1a1734 40%, #0b0a16);
+}
+
+.mini-cover--teardrops::after {
+	left: 70%;
+	width: 26%;
+	background: radial-gradient(circle at 35% 35%, #fff8e6, #f2dfb0 55%, #c8ad73);
+	box-shadow: 0 0 12px 2px rgb(255 231 170 / 0.3);
+}
+
+/* Up-next row under the writing feature */
+.writing-next {
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	margin-top: 1.25rem;
+	padding: 1.1rem 1.4rem 1.1rem 1.2rem;
+	border: 1px solid var(--line);
+	border-radius: var(--r-xl);
+	background: radial-gradient(90% 160% at 0% 50%, color-mix(in oklab, #e3283f 10%, transparent), transparent 60%),
+		var(--surface);
+	color: inherit;
+	text-decoration: none;
+	transition: border-color 0.25s, transform 0.4s var(--ease-out), box-shadow 0.4s;
+}
+
+.writing-next:hover {
+	border-color: var(--line-strong);
+	box-shadow: var(--shadow-lg);
+	transform: translateY(-3px);
+}
+
+.writing-next-text {
+	display: grid;
+	flex: 1;
+	gap: 0.25rem;
+	min-width: 0;
+}
+
+.writing-next-title {
+	font-family: var(--font-serif);
+	font-size: clamp(1.3rem, 1rem + 1vw, 1.75rem);
+	font-style: italic;
+	font-weight: 500;
+	line-height: 1.15;
+	letter-spacing: -0.02em;
+}
+
+.writing-next-desc {
+	color: var(--text-2);
+	font-size: 0.95rem;
+}
+
+.writing-feature + .writing-feature {
+	margin-top: 1.25rem;
+}
+
+.writing-feature--flip {
+	grid-template-columns: minmax(0, 1fr) auto;
+	background: radial-gradient(120% 140% at 100% 0%, color-mix(in oklab, #e3283f 13%, transparent), transparent 55%),
+		var(--surface);
+}
+
+.writing-feature--flip .book {
+	order: 2;
+}
+
 /* Reviews shelf */
 .shelf {
 	display: grid;
@@ -2180,7 +2374,8 @@ a.chip:hover {
 }
 
 .card:hover .card-arrow,
-.shelf-item:hover .card-arrow {
+.shelf-item:hover .card-arrow,
+.writing-next:hover .card-arrow {
 	border-color: transparent;
 	background: var(--text);
 	color: var(--bg);
@@ -2277,6 +2472,13 @@ a.chip:hover {
 .hero-glow--night {
 	background: radial-gradient(45% 65% at 78% 35%, rgb(140 125 255 / 0.4), transparent 70%),
 		radial-gradient(35% 50% at 12% 5%, rgb(18 208 201 / 0.16), transparent 70%),
+		radial-gradient(30% 40% at 55% 0%, rgb(255 107 107 / 0.12), transparent 70%);
+	opacity: calc(var(--glow-opacity) * 2.2);
+}
+
+.hero-glow--blood {
+	background: radial-gradient(45% 65% at 78% 35%, rgb(227 40 63 / 0.4), transparent 70%),
+		radial-gradient(35% 50% at 12% 5%, rgb(140 125 255 / 0.14), transparent 70%),
 		radial-gradient(30% 40% at 55% 0%, rgb(255 107 107 / 0.12), transparent 70%);
 	opacity: calc(var(--glow-opacity) * 2.2);
 }
@@ -2505,6 +2707,12 @@ a.chip:hover {
 	letter-spacing: -0.02em;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+
+.pager-link .mini-cover {
+	width: 5.5rem;
+	height: 4.25rem;
+	border-radius: 12px;
 }
 
 .pager-link--next {
@@ -3058,6 +3266,46 @@ a.chip:hover {
 	margin-top: 0.9em;
 }
 
+.prose > .callout:first-child {
+	margin-top: 0 !important;
+}
+
+/* Back-cover praise (novel page) */
+.praise {
+	display: grid;
+	gap: 0.9rem;
+}
+
+.praise figure {
+	margin: 0;
+	padding: 1.35rem 1.6rem;
+	border: 1px solid var(--line);
+	border-radius: var(--r-lg);
+	background: var(--surface);
+}
+
+.praise blockquote {
+	margin: 0;
+	color: var(--text);
+	font-size: 1.15em;
+	font-style: italic;
+	line-height: 1.5;
+}
+
+.praise figcaption {
+	margin-top: 0.7rem;
+	color: var(--text-3);
+	font-family: var(--font-mono);
+	font-size: 0.74rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.praise .stars {
+	color: var(--sun);
+	letter-spacing: 0.1em;
+}
+
 /* Manuscript reader (writing) */
 .reader {
 	margin-block: 2.6rem !important;
@@ -3501,6 +3749,24 @@ a.chip:hover {
 	}
 }
 
+@keyframes drip {
+	0% {
+		opacity: 0;
+		transform: translateY(-4px) rotate(45deg) scale(0.3);
+	}
+	18% {
+		opacity: 1;
+		transform: translateY(0) rotate(45deg) scale(1);
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(90px) rotate(45deg) scale(0.85);
+	}
+}
+
 @keyframes fall {
 	to {
 		transform: translate3d(var(--dx), 110vh, 0) rotate(var(--rot));
@@ -3714,6 +3980,10 @@ a.chip:hover {
 		justify-self: center;
 		order: -1;
 	}
+
+	.writing-feature--flip .book {
+		order: 0;
+	}
 }
 
 @media (max-width: 640px) {
@@ -3748,9 +4018,14 @@ a.chip:hover {
 		grid-template-columns: minmax(0, 1fr);
 	}
 
-	.pager-link img {
+	.pager-link img,
+	.pager-link .mini-cover {
 		width: 4.25rem;
 		height: 3.5rem;
+	}
+
+	.writing-next {
+		align-items: flex-start;
 	}
 
 	.figure--pair {

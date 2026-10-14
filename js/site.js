@@ -146,7 +146,7 @@
 				<div class="footer-grid">
 					<div>
 						<a class="brand" href="${base}index.html"><span class="brand-mark" aria-hidden="true">ey</span>Eddie Yang</a>
-						<p class="footer-blurb">CS + Business at UNC Chapel Hill. Maker, podcaster, streamer, writer, and occasional banana bandit.</p>
+						<p class="footer-blurb">Information Science at UNC Chapel Hill. Maker, podcaster, streamer, writer, and occasional banana bandit.</p>
 					</div>
 					<div class="footer-col">
 						<h2>Explore</h2>
