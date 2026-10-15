@@ -85,7 +85,8 @@
 		const pill = document.createElement("div");
 		pill.className = "cursor-pill";
 		pill.setAttribute("aria-hidden", "true");
-		pill.innerHTML = `<span></span><svg class="icon icon-sm" aria-hidden="true"><use href="${base}images/icons.svg#arrow-up-right"/></svg>`;
+		const sprite = window.EY?.asset?.("images/icons.svg") ?? `${base}images/icons.svg`;
+		pill.innerHTML = `<span></span><svg class="icon icon-sm" aria-hidden="true"><use href="${sprite}#arrow-up-right"/></svg>`;
 		document.body.append(pill);
 		const label = pill.querySelector("span");
 		const pos = { x: 0, y: 0, tx: 0, ty: 0 };

@@ -32,8 +32,11 @@
 		{ label: "Résumé", href: RESUME, external: true },
 	];
 
+	// The ?v= on this script's own URL (set by tools/bump-assets.py) versions the files we build links to
+	const version = (document.currentScript?.src.match(/[?&]v=(\w+)/) || [])[1];
+	const asset = (path) => `${base}${path}${version ? `?v=${version}` : ""}`;
 	const icon = (id, cls = "") =>
-		`<svg class="icon i-${id} ${cls}" aria-hidden="true"><use href="${base}images/icons.svg#${id}"/></svg>`;
+		`<svg class="icon i-${id} ${cls}" aria-hidden="true"><use href="${asset("images/icons.svg")}#${id}"/></svg>`;
 	const ext = (external) => (external ? ' target="_blank" rel="noopener"' : "");
 
 	/* ---------- Toast ---------- */
@@ -88,12 +91,16 @@
 
 		root.classList.add("vt-local");
 		const transition = document.startViewTransition(() => applyTheme(next));
-		transition.ready.then(() => {
-			root.animate(
-				{ clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
-				{ duration: 700, easing: "cubic-bezier(0.22, 1, 0.36, 1)", pseudoElement: "::view-transition-new(root)" }
-			);
-		});
+		transition.ready
+			.then(() => {
+				root.animate(
+					{ clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`] },
+					{ duration: 700, easing: "cubic-bezier(0.22, 1, 0.36, 1)", pseudoElement: "::view-transition-new(root)" }
+				);
+			})
+			.catch(() => {
+				/* skipped (e.g. clicked twice quickly): the theme still changed, just without the reveal */
+			});
 		transition.finished.finally(() => root.classList.remove("vt-local"));
 	});
 
@@ -298,6 +305,7 @@
 			cards.forEach((card, i) => (card.style.viewTransitionName = `card-${i}`));
 			root.classList.add("vt-local");
 			const transition = document.startViewTransition(apply);
+			transition.ready.catch(() => {}); // a skipped animation is fine; the filter still applies
 			transition.finished.finally(() => {
 				root.classList.remove("vt-local");
 				cards.forEach((card) => (card.style.viewTransitionName = ""));
@@ -341,7 +349,7 @@
 		}
 	});
 
-	window.EY = { toast, bananaRain, icon };
+	window.EY = { toast, bananaRain, icon, asset };
 
 	console.log(
 		"%c👋 Hey there, curious one.",

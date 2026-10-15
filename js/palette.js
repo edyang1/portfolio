@@ -9,7 +9,8 @@
 	const root = document.documentElement;
 	const base = document.body.dataset.root || "";
 	const isMac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
-	const icon = (id) => `<svg class="icon" aria-hidden="true"><use href="${base}images/icons.svg#${id}"/></svg>`;
+	const sprite = window.EY?.asset?.("images/icons.svg") ?? `${base}images/icons.svg`;
+	const icon = (id) => `<svg class="icon" aria-hidden="true"><use href="${sprite}#${id}"/></svg>`;
 	const go = (path) => () => (location.href = base + path);
 	const open = (url) => () => window.open(url, "_blank", "noopener");
 

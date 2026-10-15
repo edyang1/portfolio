@@ -19,6 +19,7 @@ js/article.js              Articles only: table of contents, reading progress, i
 js/analytics.js            Google Analytics; the measurement ID lives here and nowhere else
 images/                    WebP at 800px and 1600px wide; icons.svg is the icon sprite; og/ holds link-preview cards
 extras/                    Résumé, manuscript PDF, and template.html for new articles
+tools/bump-assets.py       Stamps a fresh ?v= on CSS/JS/icon links before a deploy (see below)
 ```
 
 ## Editing
@@ -28,6 +29,16 @@ extras/                    Résumé, manuscript PDF, and template.html for new a
 - **New article:** copy `extras/template.html`. The comment at its top walks through the steps, including adding the page to the command menu in `js/palette.js`.
 - **Motion:** every effect respects the visitor's reduced-motion setting, and pointer effects only run on mouse/trackpad devices.
 - **404 page:** it uses `<base href="/portfolio/">` so its links work from any missing URL. If the site moves to a custom domain, change that one line.
+
+## Deploying
+
+Push to `main` and GitHub Pages publishes it within a minute. **If you changed anything in `css/` or `js/`, run this first:**
+
+```bash
+python tools/bump-assets.py
+```
+
+GitHub Pages caches every file separately for 10 minutes. Without fresh `?v=` links, a returning visitor can get a new page with an old stylesheet or script, which looks like a broken site until the cache expires.
 
 ## Preview locally
 
