@@ -1,6 +1,8 @@
 /* ==========================================================================
    Home page: WebGL hero, typing headline, hero spotlight + card-stack tilt,
    stat counters, scroll-lit quote, scroll-reactive marquee.
+   Reduced motion turns off what moves across the screen (the flowing shader,
+   tilt, marquee). What only changes text or brightness keeps running.
    ========================================================================== */
 
 (() => {
@@ -164,7 +166,7 @@
 	/* ---------- Scroll-lit quote: words brighten as it passes through the viewport ---------- */
 
 	const lit = document.querySelector("[data-scroll-lit]");
-	if (lit && !reduceMotion) {
+	if (lit) {
 		const walker = document.createTreeWalker(lit, NodeFilter.SHOW_TEXT);
 		const texts = [];
 		while (walker.nextNode()) if (!walker.currentNode.parentElement.closest("cite")) texts.push(walker.currentNode);
@@ -297,21 +299,11 @@
 			}
 		};
 
-		const swap = () => {
-			index = (index + 1) % titles.length;
-			output.textContent = titles[index];
-		};
-
-		if (reduceMotion) {
-			timer = setInterval(swap, 2600);
-		} else {
-			timer = setTimeout(tick, HOLD_MS);
-		}
+		timer = setTimeout(tick, HOLD_MS);
 
 		// Click the word: skip ahead (and the bandit gets a little celebration)
 		rotator?.addEventListener("click", () => {
 			if (titles[index].includes("banana") && output.textContent.length > 4) window.EY?.bananaRain();
-			if (reduceMotion) return swap();
 			clearTimeout(timer);
 			deleting = true;
 			tick();
@@ -348,7 +340,7 @@
 	/* ---------- Count-up stats ---------- */
 
 	const counters = document.querySelectorAll("[data-count]");
-	if (counters.length && "IntersectionObserver" in window && !reduceMotion) {
+	if (counters.length && "IntersectionObserver" in window) {
 		const format = (n) => n.toLocaleString("en-US");
 		const io = new IntersectionObserver(
 			(entries) => {
