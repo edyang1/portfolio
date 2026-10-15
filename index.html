@@ -6,7 +6,7 @@
 		<title>Eddie Yang · Maker, storyteller, Information Science at UNC</title>
 		<meta name="description" content="Eddie Yang's portfolio: games, podcasts, small businesses, woodworking, wildlife photography and short fiction from an Information Science student at UNC Chapel Hill." />
 		<meta name="author" content="Eddie Yang" />
-		<meta name="theme-color" content="#0a0b10" />
+		<meta name="theme-color" content="#0a0a0a" />
 		<link rel="canonical" href="https://edyang1.github.io/portfolio/" />
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="Eddie Yang" />
@@ -24,6 +24,8 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<script src="js/analytics.js" defer></script>
 		<script src="js/site.js" defer></script>
+		<script src="js/palette.js" defer></script>
+		<script src="js/fx.js" defer></script>
 		<script src="js/home.js" defer></script>
 	</head>
 	<body data-root="">
@@ -41,6 +43,7 @@
 					<a href="https://eddiereviewseverything.wordpress.com" target="_blank" rel="noopener">Reviews <svg class="icon i-arrow-up-right icon-xs" aria-hidden="true"><use href="images/icons.svg#arrow-up-right" /></svg></a>
 				</nav>
 				<div class="nav-actions">
+					<button class="icon-btn palette-btn" type="button" data-palette-open aria-label="Search the site"><svg class="icon i-search" aria-hidden="true"><use href="images/icons.svg#search" /></svg><kbd>Ctrl K</kbd></button>
 					<button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
 						<svg class="icon i-sun" aria-hidden="true"><use href="images/icons.svg#sun" /></svg>
 						<svg class="icon i-moon" aria-hidden="true"><use href="images/icons.svg#moon" /></svg>
@@ -61,7 +64,7 @@
 				<div class="container hero-inner">
 					<p class="status hero-intro" style="--d: 0"><span class="status-dot" aria-hidden="true"></span>Information Science @ UNC Chapel Hill · Class of 2028</p>
 					<h1 class="hero-title" id="hero-title">
-						<span class="line"><span class="line-inner" style="--d: 80">I'm Eddie Yang,</span></span>
+						<span class="line"><span class="line-inner flux-line"><span class="sr-only">I'm Eddie Yang,</span><span class="flux" data-flux data-flux-min="220" data-flux-radius="240" aria-hidden="true"><span class="w"><span class="ch" style="--ci: 0">I</span><span class="ch" style="--ci: 1">'</span><span class="ch" style="--ci: 2">m</span></span> <span class="w"><span class="ch" style="--ci: 3">E</span><span class="ch" style="--ci: 4">d</span><span class="ch" style="--ci: 5">d</span><span class="ch" style="--ci: 6">i</span><span class="ch" style="--ci: 7">e</span></span> <span class="w"><span class="ch kern-ya" style="--ci: 8">Y</span><span class="ch" style="--ci: 9">a</span><span class="ch" style="--ci: 10">n</span><span class="ch" style="--ci: 11">g</span><span class="ch" style="--ci: 12">,</span></span></span></span></span>
 						<span class="line"><span class="line-inner" style="--d: 200"><span class="rotator" title="Click me"><span class="rotator-text" id="dynamic-text">a maker.</span><span class="caret" aria-hidden="true"></span></span></span></span>
 					</h1>
 					<div class="hero-bottom">
@@ -109,7 +112,7 @@
 					<div class="about-grid">
 						<div data-reveal>
 							<h2 class="eyebrow" id="about-title">About me</h2>
-							<blockquote class="pull-quote">
+							<blockquote class="pull-quote" data-scroll-lit>
 								I've always wanted to create things. To tell a story.
 								<cite class="pull-quote-cite">From <a href="projects/everduskSector.html">Everdusk Sector</a></cite>
 							</blockquote>

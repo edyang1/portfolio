@@ -63,7 +63,7 @@
 			/* storage unavailable: the choice just won't persist */
 		}
 		const meta = document.querySelector('meta[name="theme-color"]');
-		if (meta) meta.content = theme === "light" ? "#f7f2ec" : "#0a0b10";
+		if (meta) meta.content = theme === "light" ? "#ffffff" : "#0a0a0a";
 		document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
 			btn.setAttribute("aria-label", theme === "light" ? "Switch to dark theme" : "Switch to light theme");
 		});
@@ -160,7 +160,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="footer-wordmark" aria-hidden="true">Eddie Yang</div>
+				<div class="footer-wordmark" aria-hidden="true" data-flux-split data-flux-min="200" data-flux-radius="340">Eddie Yang</div>
 				<div class="footer-bottom">
 					<span>© 2024–${new Date().getFullYear()} Eddie Yang. All rights reserved.</span>
 					<span>Hand-coded. No frameworks were harmed.</span>
@@ -278,11 +278,12 @@
 
 	const filterBar = document.querySelector("[data-filters]");
 	if (filterBar) {
-		const cards = [...document.querySelectorAll("[data-tags]")];
 		filterBar.addEventListener("click", (event) => {
 			const btn = event.target.closest("[data-filter]");
 			if (!btn || btn.getAttribute("aria-pressed") === "true") return;
 			const filter = btn.dataset.filter;
+			// Looked up per click so views added later (the list view in fx.js) filter too
+			const cards = [...document.querySelectorAll("[data-tags]")];
 			filterBar.querySelectorAll("[data-filter]").forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
 
 			const apply = () =>
@@ -344,7 +345,7 @@
 
 	console.log(
 		"%c👋 Hey there, curious one.",
-		"font: 600 15px system-ui; padding: 4px 0; color: #8c7dff"
+		"font: 600 15px system-ui; padding: 4px 0; color: #ff3b47"
 	);
 	console.log("This site is hand-written HTML, CSS and JS. Psst: try the Konami code, or just type “banana”.");
 })();

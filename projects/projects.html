@@ -6,7 +6,7 @@
 		<title>Projects · Eddie Yang</title>
 		<meta name="description" content="Things Eddie Yang has built, launched, recorded, and composted: a game jam visual novel, a podcast, a laser-engraving business, a dorm worm bin and more." />
 		<meta name="author" content="Eddie Yang" />
-		<meta name="theme-color" content="#0a0b10" />
+		<meta name="theme-color" content="#0a0a0a" />
 		<link rel="canonical" href="https://edyang1.github.io/portfolio/projects/projects.html" />
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="Eddie Yang" />
@@ -24,6 +24,8 @@
 		<link rel="stylesheet" href="../css/main.css" />
 		<script src="../js/analytics.js" defer></script>
 		<script src="../js/site.js" defer></script>
+		<script src="../js/palette.js" defer></script>
+		<script src="../js/fx.js" defer></script>
 	</head>
 	<body data-root="../">
 		<a class="skip-link" href="#main">Skip to content</a>
@@ -40,6 +42,7 @@
 					<a href="https://eddiereviewseverything.wordpress.com" target="_blank" rel="noopener">Reviews <svg class="icon i-arrow-up-right icon-xs" aria-hidden="true"><use href="../images/icons.svg#arrow-up-right" /></svg></a>
 				</nav>
 				<div class="nav-actions">
+					<button class="icon-btn palette-btn" type="button" data-palette-open aria-label="Search the site"><svg class="icon i-search" aria-hidden="true"><use href="../images/icons.svg#search" /></svg><kbd>Ctrl K</kbd></button>
 					<button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
 						<svg class="icon i-sun" aria-hidden="true"><use href="../images/icons.svg#sun" /></svg>
 						<svg class="icon i-moon" aria-hidden="true"><use href="../images/icons.svg#moon" /></svg>
@@ -68,12 +71,18 @@
 				</header>
 			<section class="section section--flush-top" aria-label="All projects">
 				<div class="container">
-					<div class="filters" data-filters role="group" aria-label="Filter projects">
-						<button class="filter" type="button" data-filter="all" aria-pressed="true">All<sup>6</sup></button>
-						<button class="filter" type="button" data-filter="making" aria-pressed="false">Making<sup>3</sup></button>
-						<button class="filter" type="button" data-filter="media" aria-pressed="false">Media<sup>2</sup></button>
-						<button class="filter" type="button" data-filter="games" aria-pressed="false">Games<sup>1</sup></button>
-						<button class="filter" type="button" data-filter="business" aria-pressed="false">Business<sup>1</sup></button>
+					<div class="hub-controls">
+						<div class="filters" data-filters role="group" aria-label="Filter projects">
+							<button class="filter" type="button" data-filter="all" aria-pressed="true">All<sup>6</sup></button>
+							<button class="filter" type="button" data-filter="making" aria-pressed="false">Making<sup>3</sup></button>
+							<button class="filter" type="button" data-filter="media" aria-pressed="false">Media<sup>2</sup></button>
+							<button class="filter" type="button" data-filter="games" aria-pressed="false">Games<sup>1</sup></button>
+							<button class="filter" type="button" data-filter="business" aria-pressed="false">Business<sup>1</sup></button>
+						</div>
+						<div class="view-toggle" data-view-toggle role="group" aria-label="Layout">
+							<button type="button" data-view="grid" aria-pressed="true" aria-label="Grid view"><svg class="icon" aria-hidden="true"><use href="../images/icons.svg#grid" /></svg></button>
+							<button type="button" data-view="list" aria-pressed="false" aria-label="List view"><svg class="icon" aria-hidden="true"><use href="../images/icons.svg#rows" /></svg></button>
+						</div>
 					</div>
 					<div class="card-grid" data-stagger>
 						<a class="card card--feature" href="everduskSector.html" data-tags="games">
